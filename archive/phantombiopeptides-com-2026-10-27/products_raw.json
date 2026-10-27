@@ -1,0 +1,3460 @@
+{
+  "semax": {
+    "slug": "semax",
+    "name": "Semax",
+    "images": [
+      {
+        "id": 731,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Semax-5mg.png?fit=1254%2C1254&ssl=1",
+        "name": "Semax 5mg",
+        "alt": ""
+      }
+    ],
+    "id": 660,
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/semax/",
+    "type": "variable",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>Semax is a synthetic peptide studied in the cognitive category for its potential nootropic and neuroprotective effects. Research has examined its influence on focus, memory, and neuroplasticity, including its interaction with brain-derived neurotrophic factor. This 5 mg vial is an accessible entry size for researchers exploring cognitive-enhancement and neuroprotection pathways. It is supplied as a lyophilized powder for reconstitution with bacteriostatic water. Offered for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "SEMAX",
+    "price": "34.99",
+    "regular_price": "",
+    "sale_price": "",
+    "on_sale": true,
+    "stock_status": "instock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1398,
+        "name": "Cognitive",
+        "slug": "cognitive"
+      }
+    ],
+    "tags": [],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg",
+          "5 mg"
+        ],
+        "variation": true,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      591,
+      571,
+      587
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": "748"
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      }
+    ],
+    "variations": [
+      {
+        "id": 664,
+        "price": "34.99",
+        "regular_price": "54.99",
+        "sale_price": "34.99",
+        "on_sale": true,
+        "stock_status": "instock",
+        "stock_quantity": null,
+        "image": {
+          "id": 731,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Semax-5mg.png?fit=1254%2C1254&ssl=1",
+          "name": "Semax 5mg",
+          "alt": ""
+        },
+        "sku": "SEMAX",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "5 mg"
+          }
+        ]
+      },
+      {
+        "id": 663,
+        "price": "49.99",
+        "regular_price": "49.99",
+        "sale_price": "",
+        "on_sale": false,
+        "stock_status": "outofstock",
+        "stock_quantity": null,
+        "image": {
+          "id": 732,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Semax.png?fit=1254%2C1254&ssl=1",
+          "name": "Semax",
+          "alt": ""
+        },
+        "sku": "SEMAX",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "10 mg"
+          }
+        ]
+      }
+    ]
+  },
+  "selank": {
+    "id": 591,
+    "name": "Selank",
+    "slug": "selank",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/selank/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>Selank is a synthetic peptide studied in the cognitive category for its potential anxiolytic (anti-anxiety) and nootropic properties. Research has explored its influence on mood, stress resilience, and cognitive performance, partly through effects on brain-derived neurotrophic factor. This 5 mg vial gives researchers a supply for studies of anxiety pathways and cognitive support. It is delivered as a lyophilized powder for reconstitution with bacteriostatic water. Provided for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "44.99",
+    "regular_price": "64.99",
+    "sale_price": "44.99",
+    "on_sale": true,
+    "stock_status": "instock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1398,
+        "name": "Cognitive",
+        "slug": "cognitive"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 730,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Selank-5mg-1.png?fit=1254%2C1254&ssl=1",
+        "name": "Selank 5mg (1)",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "5 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      571,
+      660,
+      587
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": "749"
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      }
+    ],
+    "variations": []
+  },
+  "pinealon": {
+    "id": 587,
+    "name": "Pinealon",
+    "slug": "pinealon",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/pinealon/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>Pinealon is a short synthetic peptide studied in the cognitive category for its potential neuroprotective and brain-supporting properties. Research has explored its influence on neuronal cell function, oxidative-stress resistance, and cognitive processes. This 10 mg vial supports investigators studying brain health, aging, and neuroprotection. It arrives as a freeze-dried powder for reconstitution with bacteriostatic water. Provided for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "79.99",
+    "regular_price": "99.99",
+    "sale_price": "79.99",
+    "on_sale": true,
+    "stock_status": "outofstock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1398,
+        "name": "Cognitive",
+        "slug": "cognitive"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 728,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Pinealon.png?fit=1254%2C1254&ssl=1",
+        "name": "Pinealon",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      660,
+      591,
+      571
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      }
+    ],
+    "variations": []
+  },
+  "dsip": {
+    "id": 571,
+    "name": "DSIP",
+    "slug": "dsip",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/dsip/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>DSIP (Delta Sleep-Inducing Peptide) is a naturally occurring neuropeptide studied for its potential role in sleep regulation and the body's stress response. Research has examined its influence on delta-wave (deep) sleep, circadian rhythm, and neuroendocrine balance. This 10 mg vial serves investigators exploring sleep architecture, recovery, and cognitive-restorative pathways. Like all our peptides, it ships lyophilized for reconstitution with bacteriostatic water. Provided strictly for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "59.99",
+    "regular_price": "79.99",
+    "sale_price": "59.99",
+    "on_sale": true,
+    "stock_status": "outofstock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1398,
+        "name": "Cognitive",
+        "slug": "cognitive"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 704,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/DSIP-10mg.png?fit=1254%2C1254&ssl=1",
+        "name": "DSIP 10mg",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      587,
+      591,
+      660
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      }
+    ],
+    "variations": []
+  },
+  "ipamorelin": {
+    "slug": "ipamorelin",
+    "name": "Ipamorelin",
+    "images": [
+      {
+        "id": 722,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Ipamorlin-5mg.png?fit=1254%2C1254&ssl=1",
+        "name": "Ipamorlin 5mg",
+        "alt": ""
+      }
+    ],
+    "id": 604,
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/ipamorelin/",
+    "type": "variable",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>Ipamorelin is a selective growth-hormone secretagogue prized in research for its clean, targeted stimulation of GH release with minimal effect on other hormones. This makes it a popular reference peptide for studies focused specifically on growth-hormone pathways. The 5 mg vial is an accessible entry size for researchers beginning a protocol. It arrives as a lyophilized powder for reconstitution with bacteriostatic water. Supplied for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "34.99",
+    "regular_price": "",
+    "sale_price": "",
+    "on_sale": false,
+    "stock_status": "outofstock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1391,
+        "name": "Growth Hormone",
+        "slug": "growth-hormone"
+      }
+    ],
+    "tags": [],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg",
+          "5 mg"
+        ],
+        "variation": true,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      46,
+      575,
+      42,
+      573,
+      39
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      }
+    ],
+    "variations": [
+      {
+        "id": 606,
+        "price": "34.99",
+        "regular_price": "34.99",
+        "sale_price": "",
+        "on_sale": false,
+        "stock_status": "outofstock",
+        "stock_quantity": null,
+        "image": {
+          "id": 722,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Ipamorlin-5mg.png?fit=1254%2C1254&ssl=1",
+          "name": "Ipamorlin 5mg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "5 mg"
+          }
+        ]
+      },
+      {
+        "id": 605,
+        "price": "54.99",
+        "regular_price": "54.99",
+        "sale_price": "",
+        "on_sale": false,
+        "stock_status": "outofstock",
+        "stock_quantity": null,
+        "image": {
+          "id": 721,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Ipa-10mg.png?fit=1254%2C1254&ssl=1",
+          "name": "Ipa 10mg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "10 mg"
+          }
+        ]
+      }
+    ]
+  },
+  "ghrp-6": {
+    "id": 575,
+    "name": "GHRP-6",
+    "slug": "ghrp-6",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/ghrp-6/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>GHRP-6 is an early and well-characterized growth-hormone-releasing peptide, studied for its strong stimulation of GH secretion and its pronounced effect on appetite signaling. Researchers examine it for insights into the ghrelin receptor, hunger regulation, and growth-hormone pulse dynamics. This 10 mg vial provides a research-grade supply for growth-hormone and metabolic studies. Like the rest of our range, it is freeze-dried for stability and reconstituted with bacteriostatic water. Supplied for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "54.99",
+    "regular_price": "74.99",
+    "sale_price": "54.99",
+    "on_sale": true,
+    "stock_status": "outofstock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1391,
+        "name": "Growth Hormone",
+        "slug": "growth-hormone"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 708,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/GHRP-6-10mg.png?fit=1254%2C1254&ssl=1",
+        "name": "GHRP-6 10mg",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      604,
+      39,
+      42,
+      46,
+      573
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      }
+    ],
+    "variations": []
+  },
+  "ghrp-2": {
+    "id": 573,
+    "name": "GHRP-2",
+    "slug": "ghrp-2",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/ghrp-2/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>GHRP-2 (Growth Hormone-Releasing Peptide 2) is a potent secretagogue studied for its ability to stimulate the release of growth hormone. Research has examined its influence on GH secretion, appetite signaling, and the ghrelin pathway. This 10 mg vial supplies researchers investigating growth-hormone dynamics and related metabolic effects. It arrives lyophilized and is reconstituted with bacteriostatic water prior to use. Intended for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "54.99",
+    "regular_price": "74.99",
+    "sale_price": "54.99",
+    "on_sale": true,
+    "stock_status": "outofstock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1391,
+        "name": "Growth Hormone",
+        "slug": "growth-hormone"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 707,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/GHRP-2.png?fit=1254%2C1254&ssl=1",
+        "name": "GHRP 2",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      46,
+      39,
+      42,
+      575,
+      604
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      }
+    ],
+    "variations": []
+  },
+  "igf-1-lr3": {
+    "id": 42,
+    "name": "IGF-1 LR3",
+    "slug": "igf-1-lr3",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/igf-1-lr3/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>IGF-1 LR3 is a long-acting analog of Insulin-like Growth Factor 1, engineered for an extended half-life and studied within the growth-hormone category. Research explores its potential role in cellular growth, muscle-tissue development, and the downstream effects of the GH/IGF-1 axis. This 1 mg vial is a concentrated, research-grade supply for advanced growth-factor studies. It is freeze-dried for stability and reconstituted with bacteriostatic water prior to use. Intended strictly for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "84.99",
+    "regular_price": "84.99",
+    "sale_price": "",
+    "on_sale": false,
+    "stock_status": "instock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1391,
+        "name": "Growth Hormone",
+        "slug": "growth-hormone"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 720,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/IGF-1mg.png?fit=1254%2C1254&ssl=1",
+        "name": "IGF 1mg",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "1 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      575,
+      39,
+      604,
+      46,
+      573
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": "757"
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_page_assets",
+        "value": []
+      }
+    ],
+    "variations": []
+  },
+  "cjc-1295-no-dac-ipomerelin": {
+    "id": 39,
+    "name": "CJC-1295 (No DAC) Ipomerelin",
+    "slug": "cjc-1295-no-dac-ipomerelin",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/cjc-1295-no-dac-ipomerelin/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>This popular combination pairs CJC-1295 with Ipamorelin in a single 10 mg vial, blending two peptides frequently studied together in the growth-hormone category. CJC-1295 is a growth-hormone-releasing hormone analog, while Ipamorelin is a selective secretagogue; together they are researched for their potential to stimulate a stronger, more sustained pulse of growth hormone. The pairing is valued in research for combining a steady baseline with a clean, targeted release. Co-formulating them saves preparation time and keeps ratios consistent across a study. Supplied as a freeze-dried powder for research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "84.99",
+    "regular_price": "104.99",
+    "sale_price": "84.99",
+    "on_sale": true,
+    "stock_status": "instock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1391,
+        "name": "Growth Hormone",
+        "slug": "growth-hormone"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 703,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/CJC-Ipa-10mg-.png?fit=1254%2C1254&ssl=1",
+        "name": "CJC + Ipa 10mg",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      604,
+      575,
+      573,
+      42,
+      46
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": "760"
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_page_assets",
+        "value": []
+      }
+    ],
+    "variations": []
+  },
+  "epithalon": {
+    "slug": "epithalon",
+    "name": "Epithalon",
+    "images": [
+      {
+        "id": 705,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Epithilone.png?fit=1254%2C1254&ssl=1",
+        "name": "Epithilone",
+        "alt": ""
+      }
+    ],
+    "id": 602,
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/epithalon/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>Epithalon (also spelled Epitalon) is a synthetic tetrapeptide studied within the longevity category for its potential effects on telomere and cellular-aging pathways. Research interest centers on its proposed influence on the enzyme telomerase and on the regulation of the pineal gland and circadian rhythm. This 10 mg vial gives longevity and cellular-health researchers a research-grade supply to work from. It is supplied as a stable freeze-dried powder for reconstitution with bacteriostatic water. Sold for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "49.99",
+    "regular_price": "69.99",
+    "sale_price": "49.99",
+    "on_sale": true,
+    "stock_status": "outofstock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1394,
+        "name": "Longevity",
+        "slug": "longevity"
+      }
+    ],
+    "tags": [],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      600,
+      577
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      }
+    ],
+    "variations": []
+  },
+  "thymosin-alpha-1": {
+    "id": 600,
+    "name": "Thymosin Alpha-1",
+    "slug": "thymosin-alpha-1",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/thymosin-alpha-1/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>Thymosin Alpha-1 is an immune-modulating peptide studied in the longevity category for its role in supporting and regulating immune function. Research has explored its influence on T-cell activity, immune response, and resilience against oxidative and infectious stress. This 10 mg vial gives researchers a supply for studies of immunity, aging, and overall cellular health. It is delivered as a lyophilized powder for reconstitution with bacteriostatic water. Offered strictly for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "59.99",
+    "regular_price": "79.99",
+    "sale_price": "59.99",
+    "on_sale": true,
+    "stock_status": "outofstock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1394,
+        "name": "Longevity",
+        "slug": "longevity"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 739,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Thymos.png?fit=1254%2C1254&ssl=1",
+        "name": "Thymos",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      577,
+      602
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      }
+    ],
+    "variations": []
+  },
+  "glutathione": {
+    "id": 577,
+    "name": "Glutathione",
+    "slug": "glutathione",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/glutathione/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>Glutathione is the body's master antioxidant, studied extensively in the longevity and cellular-health category. Research has focused on its role in neutralizing oxidative stress, supporting detoxification pathways, and maintaining cellular integrity. This high-strength 1500 mg vial gives antioxidant and longevity researchers a substantial supply for their protocols. It is supplied as a freeze-dried powder for reconstitution with bacteriostatic water. Offered strictly for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "74.99",
+    "regular_price": "74.99",
+    "sale_price": "",
+    "on_sale": false,
+    "stock_status": "outofstock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1394,
+        "name": "Longevity",
+        "slug": "longevity"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 718,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Glutathione.png?fit=1254%2C1254&ssl=1",
+        "name": "Glutathione",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "1500 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      600,
+      602
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      }
+    ],
+    "variations": []
+  },
+  "ss-31": {
+    "slug": "ss-31",
+    "name": "SS-31",
+    "images": [
+      {
+        "id": 734,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/SS-31-.png?fit=1254%2C1254&ssl=1",
+        "name": "SS-31",
+        "alt": ""
+      }
+    ],
+    "id": 598,
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/ss-31/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>SS-31 (Elamipretide) is a mitochondria-targeting peptide studied for its potential to support mitochondrial structure and function. Research has focused on its interaction with cardiolipin in the inner mitochondrial membrane and its role in reducing oxidative stress and preserving cellular energy production. This 10 mg vial provides a research-grade supply for investigators studying mitochondrial health and energy metabolism. It arrives freeze-dried for stability and is reconstituted with bacteriostatic water. Provided strictly for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "54.99",
+    "regular_price": "74.99",
+    "sale_price": "54.99",
+    "on_sale": true,
+    "stock_status": "outofstock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1393,
+        "name": "Mitochondrial & Energy",
+        "slug": "mitochondrial-and-energy"
+      }
+    ],
+    "tags": [],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      44
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      }
+    ],
+    "variations": []
+  },
+  "mots-c": {
+    "id": 44,
+    "name": "MOTS-c",
+    "slug": "mots-c",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/mots-c/",
+    "type": "variable",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>MOTS-c is a mitochondrial-derived peptide studied for its role in cellular energy metabolism and metabolic regulation. Research has focused on its potential influence on insulin sensitivity, exercise capacity, and the way cells produce and use energy. This 10 mg vial is a research-grade supply for investigators exploring mitochondrial function and metabolic health. It is supplied as a lyophilized powder for reconstitution with bacteriostatic water. Offered for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "49.99",
+    "regular_price": "",
+    "sale_price": "",
+    "on_sale": true,
+    "stock_status": "instock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1393,
+        "name": "Mitochondrial & Energy",
+        "slug": "mitochondrial-and-energy"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 726,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/MOTS-c.png?fit=1254%2C1254&ssl=1",
+        "name": "MOTS-c",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg",
+          "40 mg"
+        ],
+        "variation": true,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      598
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": "756"
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      }
+    ],
+    "variations": [
+      {
+        "id": 214,
+        "price": "109.99",
+        "regular_price": "129.99",
+        "sale_price": "109.99",
+        "on_sale": true,
+        "stock_status": "outofstock",
+        "stock_quantity": null,
+        "image": {
+          "id": 726,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/MOTS-c.png?fit=1254%2C1254&ssl=1",
+          "name": "MOTS-c",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "40 mg"
+          }
+        ]
+      },
+      {
+        "id": 213,
+        "price": "49.99",
+        "regular_price": "69.99",
+        "sale_price": "49.99",
+        "on_sale": true,
+        "stock_status": "instock",
+        "stock_quantity": null,
+        "image": {
+          "id": 726,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/MOTS-c.png?fit=1254%2C1254&ssl=1",
+          "name": "MOTS-c",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "10 mg"
+          }
+        ]
+      }
+    ]
+  },
+  "snap-8": {
+    "slug": "snap-8",
+    "name": "Snap-8",
+    "images": [
+      {
+        "id": 733,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Snap-8.png?fit=1254%2C1254&ssl=1",
+        "name": "Snap 8",
+        "alt": ""
+      }
+    ],
+    "id": 596,
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/snap-8/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>SNAP-8 is an octapeptide studied in the cosmetic category as a topical option for smoothing the appearance of expression lines. Research interest centers on its proposed ability to moderate the muscle-contraction signaling involved in fine wrinkles, sometimes described as a 'peptide alternative' approach in skincare research. This 10 mg vial supports cosmetic and topical-formulation studies. It is supplied as a lyophilized powder for reconstitution with bacteriostatic water. Sold strictly for laboratory and cosmetic research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "89.99",
+    "regular_price": "109.99",
+    "sale_price": "89.99",
+    "on_sale": true,
+    "stock_status": "outofstock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1397,
+        "name": "Cosmetic",
+        "slug": "cosmetic"
+      }
+    ],
+    "tags": [],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      508,
+      585
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      }
+    ],
+    "variations": []
+  },
+  "mt-2-melanotan-ii": {
+    "id": 585,
+    "name": "MT-2 (Melanotan II)",
+    "slug": "mt-2-melanotan-ii",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/mt-2-melanotan-ii/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>Melanotan II (MT-2) is a synthetic analog of alpha-MSH studied in the cosmetic category for its effect on melanin production and skin pigmentation. Research has also examined its influence on appetite and libido pathways through melanocortin receptor activity. This 10 mg vial provides a research-grade supply for investigators studying pigmentation and melanocortin signaling. It is delivered as a lyophilized powder for reconstitution with bacteriostatic water. Sold strictly for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "59.99",
+    "regular_price": "79.99",
+    "sale_price": "59.99",
+    "on_sale": true,
+    "stock_status": "outofstock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1397,
+        "name": "Cosmetic",
+        "slug": "cosmetic"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 727,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/MT-2.png?fit=1254%2C1254&ssl=1",
+        "name": "MT-2",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      508,
+      596
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      }
+    ],
+    "variations": []
+  },
+  "ghk-cu": {
+    "id": 508,
+    "name": "GHK-Cu",
+    "slug": "ghk-cu",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/ghk-cu/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>GHK-Cu is a naturally occurring copper-binding peptide widely studied in the cosmetic and skin-health category. Research has explored its potential role in collagen production, skin remodeling, wound healing, and hair-follicle support. This generous 50 mg vial is a favorite for topical and cosmetic research formulations where a larger quantity is useful. It carries a signature blue tint from its copper complex and reconstitutes readily with bacteriostatic water. Supplied strictly for laboratory and cosmetic research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "39.99",
+    "regular_price": "59.99",
+    "sale_price": "39.99",
+    "on_sale": true,
+    "stock_status": "instock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1397,
+        "name": "Cosmetic",
+        "slug": "cosmetic"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 762,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/ChatGPT-Image-Jul-17-2026-09_15_39-PM.png?fit=1254%2C1254&ssl=1",
+        "name": "ChatGPT Image Jul 17, 2026, 09_15_39 PM",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "50 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      596,
+      585
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": "761"
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      }
+    ],
+    "variations": []
+  },
+  "semaglutide-glp-1": {
+    "slug": "semaglutide-glp-1",
+    "name": "Semaglutide (GLP-1)",
+    "images": [
+      {
+        "id": 711,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/GLP-1-S-5mg.png?fit=1254%2C1254&ssl=1",
+        "name": "GLP-1 (S) 5mg",
+        "alt": ""
+      }
+    ],
+    "id": 594,
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/semaglutide-glp-1/",
+    "type": "variable",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>Semaglutide is a widely studied GLP-1 receptor agonist and one of the most researched peptides in the metabolic category. Research has focused on its role in appetite regulation, blood-sugar control, and body-weight management by mimicking the GLP-1 hormone. This 5 mg vial provides a research-grade supply for investigators exploring metabolic and appetite pathways. It arrives freeze-dried for stability and is reconstituted with bacteriostatic water. Supplied strictly for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "39.99",
+    "regular_price": "",
+    "sale_price": "",
+    "on_sale": true,
+    "stock_status": "instock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1373,
+        "name": "Metabolic",
+        "slug": "metabolic"
+      }
+    ],
+    "tags": [],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg",
+          "5 mg"
+        ],
+        "variation": true,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      41,
+      569,
+      47
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      }
+    ],
+    "variations": [
+      {
+        "id": 677,
+        "price": "39.99",
+        "regular_price": "59.99",
+        "sale_price": "39.99",
+        "on_sale": true,
+        "stock_status": "instock",
+        "stock_quantity": null,
+        "image": {
+          "id": 711,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/GLP-1-S-5mg.png?fit=1254%2C1254&ssl=1",
+          "name": "GLP-1 (S) 5mg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "5 mg"
+          }
+        ]
+      },
+      {
+        "id": 676,
+        "price": "59.99",
+        "regular_price": "59.99",
+        "sale_price": "",
+        "on_sale": false,
+        "stock_status": "instock",
+        "stock_quantity": null,
+        "image": {
+          "id": 712,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/GLP-1-S-Final.jpg?fit=1024%2C1024&ssl=1",
+          "name": "GLP-1 (S) Final",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "10 mg"
+          }
+        ]
+      }
+    ]
+  },
+  "cagrilintide": {
+    "id": 569,
+    "name": "Cagrilintide",
+    "slug": "cagrilintide",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/cagrilintide/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>Cagrilintide is a long-acting amylin analog studied within the metabolic category for its potential influence on appetite regulation and energy balance. Research has focused on how amylin-based compounds may affect satiety, gastric emptying, and body-weight management, often alongside GLP-1 based peptides. This 5 mg vial provides a research-grade supply for investigators exploring metabolic and appetite pathways. It is delivered as a lyophilized powder for reconstitution with bacteriostatic water. Offered strictly for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "CAG-5",
+    "price": "84.99",
+    "regular_price": "104.99",
+    "sale_price": "84.99",
+    "on_sale": true,
+    "stock_status": "outofstock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1373,
+        "name": "Metabolic",
+        "slug": "metabolic"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 702,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Cagrilintide-5mg-1.png?fit=1254%2C1254&ssl=1",
+        "name": "Cagrilintide 5mg (1)",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "5 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      41,
+      47,
+      594
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      }
+    ],
+    "variations": []
+  },
+  "tirzepatide": {
+    "id": 47,
+    "name": "Tirzepatide (GLP-2)",
+    "slug": "tirzepatide",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/tirzepatide/",
+    "type": "variable",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>Tirzepatide is a dual-receptor agonist (GLP-1 and GIP) studied intensively in the metabolic category for its combined effects on appetite and glucose regulation. Research has focused on how activating both incretin pathways may influence blood-sugar control and body-weight management. This 5 mg vial is the entry size in our Tirzepatide range, a popular starting point for a study protocol. It is supplied as a lyophilized powder for reconstitution with bacteriostatic water. Provided strictly for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "44.99",
+    "regular_price": "",
+    "sale_price": "",
+    "on_sale": true,
+    "stock_status": "instock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1373,
+        "name": "Metabolic",
+        "slug": "metabolic"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 713,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/GLP-2-T-5mg.png?fit=1254%2C1254&ssl=1",
+        "name": "GLP-2 (T) 5mg",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg",
+          "20 mg",
+          "5 mg"
+        ],
+        "variation": true,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      41,
+      594,
+      569
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": "752"
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_page_assets",
+        "value": []
+      }
+    ],
+    "variations": [
+      {
+        "id": 208,
+        "price": "44.99",
+        "regular_price": "64.99",
+        "sale_price": "44.99",
+        "on_sale": true,
+        "stock_status": "outofstock",
+        "stock_quantity": null,
+        "image": {
+          "id": 713,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/GLP-2-T-5mg.png?fit=1254%2C1254&ssl=1",
+          "name": "GLP-2 (T) 5mg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "5 mg"
+          }
+        ]
+      },
+      {
+        "id": 207,
+        "price": "99.99",
+        "regular_price": "119.99",
+        "sale_price": "99.99",
+        "on_sale": true,
+        "stock_status": "outofstock",
+        "stock_quantity": null,
+        "image": {
+          "id": 710,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/GLP-2-T-20mg.png?fit=1254%2C1254&ssl=1",
+          "name": "GLP 2 (T) 20mg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "20 mg"
+          }
+        ]
+      },
+      {
+        "id": 206,
+        "price": "64.99",
+        "regular_price": "84.99",
+        "sale_price": "64.99",
+        "on_sale": true,
+        "stock_status": "instock",
+        "stock_quantity": null,
+        "image": {
+          "id": 709,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/GLP-2-T-10mg.png?fit=1254%2C1254&ssl=1",
+          "name": "GLP 2 (T) 10mg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "10 mg"
+          }
+        ]
+      }
+    ]
+  },
+  "glp-3-rt": {
+    "id": 41,
+    "name": "GLP-3 (Rt)",
+    "slug": "glp-3-rt",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/glp-3-rt/",
+    "type": "variable",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>Retatrutide is a next-generation triple-receptor agonist (GLP-1, GIP, and glucagon) studied intensively in the metabolic category. Research has focused on its potential influence on appetite regulation, blood-sugar control, and body-weight management through simultaneous action on three metabolic pathways. This 5 mg vial is the entry size in our Retatrutide range, popular for starting a study protocol. It is supplied as a lyophilized powder for reconstitution with bacteriostatic water. Offered strictly for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "49.99",
+    "regular_price": "",
+    "sale_price": "",
+    "on_sale": true,
+    "stock_status": "instock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1373,
+        "name": "Metabolic",
+        "slug": "metabolic"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 716,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/GLP-3rt-5mg.png?fit=1254%2C1254&ssl=1",
+        "name": "GLP-3(rt) 5mg",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg",
+          "20 mg",
+          "40 mg",
+          "5 mg"
+        ],
+        "variation": true,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      47,
+      569,
+      594
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": "758"
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_page_assets",
+        "value": []
+      }
+    ],
+    "variations": [
+      {
+        "id": 218,
+        "price": "49.99",
+        "regular_price": "49.99",
+        "sale_price": "",
+        "on_sale": false,
+        "stock_status": "instock",
+        "stock_quantity": null,
+        "image": {
+          "id": 716,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/GLP-3rt-5mg.png?fit=1254%2C1254&ssl=1",
+          "name": "GLP-3(rt) 5mg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "5 mg"
+          }
+        ]
+      },
+      {
+        "id": 217,
+        "price": "159.99",
+        "regular_price": "179.99",
+        "sale_price": "159.99",
+        "on_sale": true,
+        "stock_status": "outofstock",
+        "stock_quantity": null,
+        "image": {
+          "id": 715,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/GLP-3Rt-4omg.png?fit=1254%2C1254&ssl=1",
+          "name": "GLP-3(Rt) 4omg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "40 mg"
+          }
+        ]
+      },
+      {
+        "id": 216,
+        "price": "109.99",
+        "regular_price": "129.99",
+        "sale_price": "109.99",
+        "on_sale": true,
+        "stock_status": "instock",
+        "stock_quantity": null,
+        "image": {
+          "id": 717,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/GLP-3Rt-20mg.png?fit=1254%2C1254&ssl=1",
+          "name": "GLP-3(Rt) 20mg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "20 mg"
+          }
+        ]
+      },
+      {
+        "id": 215,
+        "price": "69.99",
+        "regular_price": "89.99",
+        "sale_price": "69.99",
+        "on_sale": true,
+        "stock_status": "instock",
+        "stock_quantity": null,
+        "image": {
+          "id": 714,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/GLP-3-Rt-10mg.png?fit=1254%2C1254&ssl=1",
+          "name": "GLP-3 (Rt) 10mg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "10 mg"
+          }
+        ]
+      }
+    ]
+  },
+  "pt-141": {
+    "slug": "pt-141",
+    "name": "PT-141",
+    "images": [
+      {
+        "id": 729,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/PT-141.png?fit=1254%2C1254&ssl=1",
+        "name": "PT 141",
+        "alt": ""
+      }
+    ],
+    "id": 589,
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/pt-141/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>PT-141 (Bremelanotide) is a melanocortin-receptor-activating peptide studied in the hormonal category for its role in libido and sexual-response pathways. Unlike vascular-based approaches, research interest centers on its action through the central nervous system. This 10 mg vial gives researchers a supply for studies of melanocortin signaling and sexual-health mechanisms. It ships lyophilized and is reconstituted with bacteriostatic water prior to use. Supplied strictly for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "69.99",
+    "regular_price": "89.99",
+    "sale_price": "69.99",
+    "on_sale": true,
+    "stock_status": "outofstock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1396,
+        "name": "Hormonal",
+        "slug": "hormonal"
+      }
+    ],
+    "tags": [],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      581,
+      579
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      }
+    ],
+    "variations": []
+  },
+  "kisspeptin": {
+    "id": 581,
+    "name": "Kisspeptin",
+    "slug": "kisspeptin",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/kisspeptin/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>Kisspeptin is a signaling peptide studied in the hormonal category for its central role in initiating and regulating the reproductive hormone cascade. Research has examined its influence on the release of GnRH, LH, and downstream sex hormones, as well as its role in fertility and puberty. This 10 mg vial supports investigators studying reproductive endocrinology and the HPG axis. It is supplied as a lyophilized powder for reconstitution with bacteriostatic water. Sold for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "74.99",
+    "regular_price": "94.99",
+    "sale_price": "74.99",
+    "on_sale": true,
+    "stock_status": "outofstock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1396,
+        "name": "Hormonal",
+        "slug": "hormonal"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 723,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Kissipep.png?fit=1254%2C1254&ssl=1",
+        "name": "Kissipep",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      589,
+      579
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      }
+    ],
+    "variations": []
+  },
+  "hcg": {
+    "id": 579,
+    "name": "HCG",
+    "slug": "hcg",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/hcg/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>HCG (Human Chorionic Gonadotropin) is a glycoprotein hormone studied in the hormonal category for its role in signaling the gonads and supporting endogenous hormone production. Research has examined its influence on testosterone pathways, fertility, and reproductive endocrinology. This 5000 IU vial provides a research-grade supply for investigators studying the hypothalamic-pituitary-gonadal axis. It ships lyophilized and is reconstituted with bacteriostatic water before use. Supplied for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "52.99",
+    "regular_price": "52.99",
+    "sale_price": "",
+    "on_sale": false,
+    "stock_status": "outofstock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1396,
+        "name": "Hormonal",
+        "slug": "hormonal"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 719,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/HCG.png?fit=1254%2C1254&ssl=1",
+        "name": "HCG",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "5000 iu"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      589,
+      581
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      }
+    ],
+    "variations": []
+  },
+  "kpv-2": {
+    "slug": "kpv-2",
+    "name": "KPV",
+    "images": [
+      {
+        "id": 725,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/KPV-10mg.png?fit=1254%2C1254&ssl=1",
+        "name": "KPV 10mg",
+        "alt": ""
+      }
+    ],
+    "id": 583,
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/kpv-2/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>KPV is a tripeptide fragment of alpha-MSH studied for its anti-inflammatory properties in the recovery-and-repair category. Research has explored its potential role in calming inflammatory pathways, supporting gut health, and aiding tissue recovery. This 10 mg vial gives researchers a focused supply for inflammation and healing studies. It arrives freeze-dried for stability and is reconstituted with bacteriostatic water. Supplied strictly for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "44.99",
+    "regular_price": "44.99",
+    "sale_price": "",
+    "on_sale": false,
+    "stock_status": "instock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1392,
+        "name": "Recovery & Repair",
+        "slug": "recovery-and-repair"
+      }
+    ],
+    "tags": [],
+    "attributes": [],
+    "related_ids": [
+      24,
+      43,
+      40,
+      38,
+      45
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": "750"
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      }
+    ],
+    "variations": []
+  },
+  "tb-500": {
+    "id": 45,
+    "name": "TB-500",
+    "slug": "tb-500",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/tb-500/",
+    "type": "variable",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>TB-500 is a synthetic version of the peptide Thymosin Beta-4, widely studied in the recovery-and-repair category. Research has explored its potential role in cell migration, tissue healing, flexibility, and reducing inflammation across the body. This 5 mg vial is the standard entry size, popular for beginning a recovery-focused study protocol. It is supplied as a lyophilized powder for reconstitution with bacteriostatic water. Offered for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "34.99",
+    "regular_price": "",
+    "sale_price": "",
+    "on_sale": false,
+    "stock_status": "instock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1392,
+        "name": "Recovery & Repair",
+        "slug": "recovery-and-repair"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 735,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Tb-500-5mg.png?fit=1254%2C1254&ssl=1",
+        "name": "Tb-500 5mg",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg",
+          "5 mg"
+        ],
+        "variation": true,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      40,
+      24,
+      583,
+      38,
+      43
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": "755"
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      }
+    ],
+    "variations": [
+      {
+        "id": 212,
+        "price": "34.99",
+        "regular_price": "34.99",
+        "sale_price": "",
+        "on_sale": false,
+        "stock_status": "instock",
+        "stock_quantity": null,
+        "image": {
+          "id": 735,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Tb-500-5mg.png?fit=1254%2C1254&ssl=1",
+          "name": "Tb-500 5mg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "5 mg"
+          }
+        ]
+      },
+      {
+        "id": 211,
+        "price": "49.99",
+        "regular_price": "49.99",
+        "sale_price": "",
+        "on_sale": false,
+        "stock_status": "outofstock",
+        "stock_quantity": null,
+        "image": {
+          "id": 736,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Tb-500-10mg.png?fit=1254%2C1254&ssl=1",
+          "name": "Tb-500 10mg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "10 mg"
+          }
+        ]
+      }
+    ]
+  },
+  "klow": {
+    "id": 43,
+    "name": "KLOW",
+    "slug": "klow",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/klow/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>KLOW is a comprehensive multi-peptide blend combining KPV, GHK-Cu, BPC-157, and TB-500 in one 80 mg vial - our most complete recovery-and-repair formulation. This four-peptide stack is studied for potential synergy across tissue healing, inflammation modulation, skin quality, and systemic recovery. It's designed for researchers who want a single, high-content vial rather than reconstituting multiple compounds individually. The 80 mg total makes it well suited to extensive or multi-arm study designs. Provided as a lyophilized powder for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "109.00",
+    "regular_price": "109.00",
+    "sale_price": "",
+    "on_sale": false,
+    "stock_status": "instock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1392,
+        "name": "Recovery & Repair",
+        "slug": "recovery-and-repair"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 753,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/06/KLOW-80mg-1.png?fit=1362%2C1368&ssl=1",
+        "name": "KLOW 80mg (1)",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "80 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      40,
+      45,
+      38,
+      24,
+      583
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": "747"
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_page_assets",
+        "value": []
+      }
+    ],
+    "variations": []
+  },
+  "glow": {
+    "id": 40,
+    "name": "GLOW",
+    "slug": "glow",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/glow/",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>GLOW is a premium multi-peptide blend that combines BPC-157, TB-500, and GHK-Cu in one 70 mg vial, uniting recovery and cosmetic research favorites. This trio is studied together for potential synergistic effects on tissue repair, skin quality, and overall regeneration - the inspiration behind the 'GLOW' name. It's a convenient all-in-one option for researchers who would otherwise reconstitute three separate peptides. The high total content supports extended or multi-arm study designs. Provided as a lyophilized powder for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "99.00",
+    "regular_price": "99.00",
+    "sale_price": "",
+    "on_sale": false,
+    "stock_status": "instock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1392,
+        "name": "Recovery & Repair",
+        "slug": "recovery-and-repair"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 745,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/06/GLOW-70mg.png?fit=1370%2C1374&ssl=1",
+        "name": "GLOW 70mg",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "70 mg"
+        ],
+        "variation": false,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      24,
+      43,
+      583,
+      45,
+      38
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      }
+    ],
+    "variations": []
+  },
+  "bpc-157-tb-500": {
+    "id": 24,
+    "name": "BPC-157 + TB-500",
+    "slug": "bpc-157-tb-500",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/bpc-157-tb-500/",
+    "type": "variable",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>This dual-peptide blend combines BPC-157 and TB-500 in a single 10 mg vial, pairing two of the most researched recovery compounds together. BPC-157 is studied for localized tissue and gut repair, while TB-500 is explored for broader systemic healing, flexibility, and cell migration. Researchers often study them in combination to investigate potential synergistic effects on soft-tissue recovery. The convenient co-formulated vial removes the need to reconstitute two separate peptides. Provided as a lyophilized powder for research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "59.99",
+    "regular_price": "",
+    "sale_price": "",
+    "on_sale": true,
+    "stock_status": "instock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1392,
+        "name": "Recovery & Repair",
+        "slug": "recovery-and-repair"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 740,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Wolverine-stack-10mg.png?fit=1254%2C1254&ssl=1",
+        "name": "Wolverine stack 10mg",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg",
+          "20 mg",
+          "5 mg"
+        ],
+        "variation": true,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      45,
+      40,
+      583,
+      43,
+      38
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "unknown"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_page_assets",
+        "value": []
+      }
+    ],
+    "variations": [
+      {
+        "id": 223,
+        "price": "99.99",
+        "regular_price": "119.99",
+        "sale_price": "99.99",
+        "on_sale": true,
+        "stock_status": "outofstock",
+        "stock_quantity": null,
+        "image": {
+          "id": 741,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Wolverine-stack-20mg.png?fit=1254%2C1254&ssl=1",
+          "name": "Wolverine stack 20mg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "20 mg"
+          }
+        ]
+      },
+      {
+        "id": 222,
+        "price": "59.99",
+        "regular_price": "79.99",
+        "sale_price": "59.99",
+        "on_sale": true,
+        "stock_status": "instock",
+        "stock_quantity": null,
+        "image": {
+          "id": 740,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Wolverine-stack-10mg.png?fit=1254%2C1254&ssl=1",
+          "name": "Wolverine stack 10mg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "10 mg"
+          }
+        ]
+      }
+    ]
+  },
+  "recon-water": {
+    "slug": "recon-water",
+    "name": "BAC Water",
+    "images": [
+      {
+        "id": 697,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/BAC-Water-3ml.png?fit=1254%2C1254&ssl=1",
+        "name": "BAC Water 3ml",
+        "alt": ""
+      }
+    ],
+    "id": 386,
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/recon-water/",
+    "type": "variable",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>Bacteriostatic water (Recon Water) is the standard reconstitution solvent used to prepare freeze-dried peptides for research. This 3 mL vial contains sterile water with 0.9% benzyl alcohol, a preservative that inhibits bacterial growth so a reconstituted vial can be accessed multiple times over an extended period. It's an essential companion supply for any peptide research workflow, keeping prepared solutions stable and contamination-free. The compact 3 mL size is ideal for smaller peptide vials or single-project use. Sold as a laboratory supply for research and reconstitution purposes only.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "7.99",
+    "regular_price": "",
+    "sale_price": "",
+    "on_sale": false,
+    "stock_status": "instock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1400,
+        "name": "Solvents and Supplies",
+        "slug": "supplies"
+      }
+    ],
+    "tags": [],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 ml",
+          "3 ml"
+        ],
+        "variation": true,
+        "visible": true
+      }
+    ],
+    "related_ids": [],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": ""
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      }
+    ],
+    "variations": [
+      {
+        "id": 684,
+        "price": "7.99",
+        "regular_price": "7.99",
+        "sale_price": "",
+        "on_sale": false,
+        "stock_status": "instock",
+        "stock_quantity": null,
+        "image": {
+          "id": 697,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/BAC-Water-3ml.png?fit=1254%2C1254&ssl=1",
+          "name": "BAC Water 3ml",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "3 ml"
+          }
+        ]
+      },
+      {
+        "id": 669,
+        "price": "12.99",
+        "regular_price": "12.99",
+        "sale_price": "",
+        "on_sale": false,
+        "stock_status": "outofstock",
+        "stock_quantity": null,
+        "image": {
+          "id": 698,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/BAC-Water-10ml.png?fit=1254%2C1254&ssl=1",
+          "name": "BAC Water 10ml",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "10 ml"
+          }
+        ]
+      }
+    ]
+  },
+  "tesamorelin": {
+    "slug": "tesamorelin",
+    "name": "Tesamorelin",
+    "images": [
+      {
+        "id": 737,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Tesa-5mg.png?fit=1254%2C1254&ssl=1",
+        "name": "Tesa 5mg",
+        "alt": ""
+      }
+    ],
+    "id": 46,
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/tesamorelin/",
+    "type": "variable",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>Tesamorelin is a growth-hormone-releasing hormone (GHRH) analog studied in the growth-hormone category for its effect on stimulating natural GH production. Research has examined its influence on GH release and, notably, on the reduction of visceral adipose tissue in metabolic studies. This 5 mg vial provides a research-grade supply for investigators exploring the GH axis and body-composition pathways. It is supplied as a lyophilized powder for reconstitution with bacteriostatic water. Provided for laboratory research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "49.99",
+    "regular_price": "",
+    "sale_price": "",
+    "on_sale": false,
+    "stock_status": "instock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1391,
+        "name": "Growth Hormone",
+        "slug": "growth-hormone"
+      }
+    ],
+    "tags": [],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg",
+          "5 mg"
+        ],
+        "variation": true,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      573,
+      39,
+      604,
+      575,
+      42
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": "754"
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      },
+      {
+        "key": "_elementor_page_assets",
+        "value": []
+      }
+    ],
+    "variations": [
+      {
+        "id": 667,
+        "price": "49.99",
+        "regular_price": "49.99",
+        "sale_price": "",
+        "on_sale": false,
+        "stock_status": "outofstock",
+        "stock_quantity": null,
+        "image": {
+          "id": 737,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Tesa-5mg.png?fit=1254%2C1254&ssl=1",
+          "name": "Tesa 5mg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "5 mg"
+          }
+        ]
+      },
+      {
+        "id": 666,
+        "price": "64.99",
+        "regular_price": "64.99",
+        "sale_price": "",
+        "on_sale": false,
+        "stock_status": "instock",
+        "stock_quantity": null,
+        "image": {
+          "id": 738,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/Tesa-10mg.png?fit=1254%2C1254&ssl=1",
+          "name": "Tesa 10mg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "10 mg"
+          }
+        ]
+      }
+    ]
+  },
+  "bpc-157": {
+    "id": 38,
+    "name": "BPC-157",
+    "slug": "bpc-157",
+    "permalink": "https://kickbackai-pkjdo.wpcomstaging.com/product/bpc-157/",
+    "type": "variable",
+    "status": "publish",
+    "featured": false,
+    "description": "<p>BPC-157 is a synthetic peptide derived from a protective protein found in gastric juice, and one of the most widely studied compounds in the recovery and repair category. Research has explored its potential role in supporting soft-tissue healing, tendon and ligament repair, and gut-lining integrity. This 5 mg vial is the entry size in our BPC-157 lineup, a popular starting point for a new study protocol. It ships as a lyophilized powder ready for reconstitution with bacteriostatic water. Supplied strictly for laboratory and research use only, not for human consumption.</p>\n",
+    "short_description": "",
+    "sku": "",
+    "price": "34.99",
+    "regular_price": "",
+    "sale_price": "",
+    "on_sale": true,
+    "stock_status": "instock",
+    "stock_quantity": null,
+    "manage_stock": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "categories": [
+      {
+        "id": 1392,
+        "name": "Recovery & Repair",
+        "slug": "recovery-and-repair"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 701,
+        "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/BPC-157-5mg.png?fit=1254%2C1254&ssl=1",
+        "name": "BPC-157 5mg",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Dosage",
+        "options": [
+          "10 mg",
+          "20 mg",
+          "5 mg"
+        ],
+        "variation": true,
+        "visible": true
+      }
+    ],
+    "related_ids": [
+      24,
+      40,
+      583,
+      43,
+      45
+    ],
+    "meta_data": [
+      {
+        "key": "_created_via",
+        "value": "post-new"
+      },
+      {
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "key": "reddit_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "snapchat_for_woocommerce_product_catalog_item",
+        "value": "1"
+      },
+      {
+        "key": "_wpas_done_all",
+        "value": "1"
+      },
+      {
+        "key": "_elementor_global_class_usage_indexed",
+        "value": "1"
+      },
+      {
+        "key": "coa_url",
+        "value": "759"
+      },
+      {
+        "key": "_coa_url",
+        "value": "field_6a4c2feae2bc1"
+      }
+    ],
+    "variations": [
+      {
+        "id": 221,
+        "price": "34.99",
+        "regular_price": "54.99",
+        "sale_price": "34.99",
+        "on_sale": true,
+        "stock_status": "instock",
+        "stock_quantity": null,
+        "image": {
+          "id": 701,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/BPC-157-5mg.png?fit=1254%2C1254&ssl=1",
+          "name": "BPC-157 5mg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "5 mg"
+          }
+        ]
+      },
+      {
+        "id": 220,
+        "price": "74.99",
+        "regular_price": "94.99",
+        "sale_price": "74.99",
+        "on_sale": true,
+        "stock_status": "outofstock",
+        "stock_quantity": null,
+        "image": {
+          "id": 700,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/BPC-157-20mg.png?fit=1254%2C1254&ssl=1",
+          "name": "BPC 157 20mg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "20 mg"
+          }
+        ]
+      },
+      {
+        "id": 219,
+        "price": "49.99",
+        "regular_price": "69.99",
+        "sale_price": "49.99",
+        "on_sale": true,
+        "stock_status": "outofstock",
+        "stock_quantity": null,
+        "image": {
+          "id": 699,
+          "src": "https://i0.wp.com/kickbackai-pkjdo.wpcomstaging.com/wp-content/uploads/2026/07/BPC-157-10mg.png?fit=1254%2C1254&ssl=1",
+          "name": "BPC 157 10mg",
+          "alt": ""
+        },
+        "sku": "",
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Dosage",
+            "option": "10 mg"
+          }
+        ]
+      }
+    ]
+  }
+}
