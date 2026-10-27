@@ -7,6 +7,7 @@ import { Check, FileCheck2, FlaskConical, PackageCheck, ShieldCheck } from "luci
 import { AddToCartButton } from "@/components/cart/add-to-cart-button";
 import { QuantityStepper } from "@/components/ui/quantity-stepper";
 import { Spotlight } from "@/components/ui/spotlight";
+import { Tilt } from "@/components/ui/tilt";
 import { WishlistButton } from "@/components/wishlist/wishlist-button";
 import type { Product } from "@/lib/catalog";
 import { cn, discountPercent, formatPrice, sizeSlug } from "@/lib/utils";
@@ -57,19 +58,21 @@ export function ProductPurchase({ product, initialSize }: { product: Product; in
     <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
       {/* Gallery */}
       <div className="lg:sticky lg:top-24 lg:self-start">
-        <Spotlight className="overflow-hidden rounded-3xl border border-line bg-ink-900" size={520} intensity={18}>
-          <AnimatePresence mode="wait" initial={false}>
-            <motion.div key={variant.id} initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.98 }} transition={{ duration: 0.3 }}>
-              <ProductImage slug={product.slug} name={product.name} size={variant.label} priority sizes="(min-width: 1024px) 50vw, 100vw" />
-            </motion.div>
-          </AnimatePresence>
-          <div className="absolute top-4 left-4">
-            <StockBadge inStock={variant.inStock} />
-          </div>
-          {off ? (
-            <span className="absolute top-4 right-4 rounded-full bg-violet-500 px-2.5 py-1 font-mono text-[11px] font-medium text-white">−{off}%</span>
-          ) : null}
-        </Spotlight>
+        <Tilt rotationFactor={5}>
+          <Spotlight className="overflow-hidden rounded-3xl border border-line bg-ink-900" size={520} intensity={18}>
+            <AnimatePresence mode="wait" initial={false}>
+              <motion.div key={variant.id} initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.98 }} transition={{ duration: 0.3 }}>
+                <ProductImage slug={product.slug} name={product.name} size={variant.label} priority sizes="(min-width: 1024px) 50vw, 100vw" />
+              </motion.div>
+            </AnimatePresence>
+            <div className="absolute top-4 left-4">
+              <StockBadge inStock={variant.inStock} />
+            </div>
+            {off ? (
+              <span className="absolute top-4 right-4 rounded-full bg-violet-500 px-2.5 py-1 font-mono text-[11px] font-medium text-white">−{off}%</span>
+            ) : null}
+          </Spotlight>
+        </Tilt>
         {product.variants.length > 1 && (
           <div className="mt-3 grid grid-cols-4 gap-3 sm:grid-cols-5">
             {product.variants.map((v) => (

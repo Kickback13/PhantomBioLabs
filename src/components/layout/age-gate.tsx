@@ -1,3 +1,4 @@
+import { BorderBeam } from "@/components/ui/border-beam";
 import { GhostMark } from "@/components/brand/logo";
 import { site } from "@/lib/site";
 import { AgeGateActions } from "./age-gate-actions";
@@ -18,6 +19,7 @@ export function AgeGate() {
         className="relative w-full max-w-lg overflow-hidden rounded-2xl border border-line-strong bg-ink-900 p-6 shadow-[0_40px_120px_-20px_rgba(139,61,255,0.35)] sm:p-8"
       >
         <div aria-hidden="true" className="absolute -top-24 -right-24 size-64 rounded-full bg-violet-500/25 blur-3xl" />
+        <BorderBeam size={180} duration={9} />
         <div className="relative">
           <GhostMark className="size-9 text-violet-400" />
           <p className="eyebrow mt-6">Research use only · 21+</p>

@@ -6,6 +6,9 @@ import { AnimatedGrid } from "@/components/ui/animated-grid";
 import { Button } from "@/components/ui/button";
 import { NumberTicker } from "@/components/ui/number-ticker";
 import { Reveal } from "@/components/ui/reveal";
+import { ShimmerLink } from "@/components/ui/shimmer-link";
+import { TextReveal } from "@/components/ui/text-reveal";
+import { Tilt } from "@/components/ui/tilt";
 import { heroImage } from "@/lib/images";
 import { site } from "@/lib/site";
 
@@ -26,7 +29,9 @@ export function Hero() {
       <div className="container-page grid items-center gap-6 pt-6 pb-12 lg:min-h-[calc(100dvh-100px)] lg:grid-cols-[1.2fr_0.8fr] lg:gap-8 lg:py-16">
         {/* Visual first on phones, right column on desktop */}
         <div className="relative order-first mx-auto h-[260px] w-full max-w-[420px] sm:h-[420px] lg:order-last lg:h-[620px] lg:max-w-none">
-          <HeroVisual photo={photo} />
+          <Tilt className="h-full w-full" rotationFactor={10}>
+            <HeroVisual photo={photo} />
+          </Tilt>
         </div>
 
         <div className="relative">
@@ -36,24 +41,20 @@ export function Hero() {
               Independently third-party tested
             </p>
           </Reveal>
-          <Reveal delay={0.06}>
-            <h1 className="mt-5 text-[2.6rem] leading-[0.95] font-semibold tracking-[-0.045em] sm:text-6xl lg:text-[4.4rem] xl:text-[5rem]">
-              Research-grade peptides.
-              <br />
-              <span className="text-gradient-violet">Zero compromise.</span>
-            </h1>
-          </Reveal>
+          <TextReveal delay={0.1} className="mt-5 text-[2.6rem] leading-[0.95] font-semibold tracking-[-0.045em] sm:text-6xl lg:text-[4.4rem] xl:text-[5rem]">
+            Research-grade peptides.
+            <br />
+            <span className="text-gradient-violet">Zero compromise.</span>
+          </TextReveal>
           <Reveal delay={0.12}>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
               Every lot HPLC-tested to ≥99% purity by an independent lab, documented with a lot-specific Certificate of Analysis, and dispatched the same day.
             </p>
           </Reveal>
           <Reveal delay={0.18} className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button asChild size="lg">
-              <Link href="/shop">
-                Shop the catalog <ArrowRight />
-              </Link>
-            </Button>
+            <ShimmerLink href="/shop">
+              Shop the catalog <ArrowRight />
+            </ShimmerLink>
             <Button asChild size="lg" variant="outline">
               <Link href="/coa">
                 <FileCheck2 /> Browse COAs

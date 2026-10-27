@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { AnimatedGrid } from "@/components/ui/animated-grid";
+import { TextReveal } from "@/components/ui/text-reveal";
 import { cn } from "@/lib/utils";
 
 /** Standard top section for inner pages: eyebrow, big title, optional intro and actions. */
@@ -24,7 +25,7 @@ export function PageHeader({
           <span aria-hidden="true" className="size-1.5 rounded-full bg-violet-400 shadow-[0_0_8px_var(--violet-400)]" />
           {eyebrow}
         </p>
-        <h1 className="mt-4 max-w-4xl text-4xl leading-[0.98] font-semibold tracking-[-0.04em] sm:text-6xl">{title}</h1>
+        <TextReveal className="mt-4 max-w-4xl text-4xl leading-[0.98] font-semibold tracking-[-0.04em] sm:text-6xl">{title}</TextReveal>
         {description && <div className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted sm:text-base">{description}</div>}
         {children && <div className="mt-8">{children}</div>}
       </div>

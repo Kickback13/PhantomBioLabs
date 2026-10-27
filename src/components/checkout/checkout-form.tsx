@@ -8,6 +8,7 @@ import { placeOrder, type CheckoutState } from "@/app/checkout/actions";
 import { useCart } from "@/components/cart/cart-context";
 import { CheckField, Field, FormError, inputClass } from "@/components/forms/field";
 import { ProductImage } from "@/components/product/product-image";
+import { BorderBeam } from "@/components/ui/border-beam";
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase/client";
 import { site } from "@/lib/site";
@@ -187,7 +188,8 @@ export function CheckoutForm() {
           </Section>
         </div>
 
-        <aside className="h-fit space-y-5 rounded-3xl border border-line bg-surface p-5 sm:p-6 lg:sticky lg:top-24">
+        <aside className="relative h-fit space-y-5 rounded-3xl border border-line bg-surface p-5 sm:p-6 lg:sticky lg:top-24">
+          <BorderBeam size={200} duration={14} />
           <p className="eyebrow">Order summary</p>
           <ul className="space-y-4">
             {lines.map((l) => (

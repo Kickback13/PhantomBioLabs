@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
+import { BorderBeam } from "@/components/ui/border-beam";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
+import { Tilt } from "@/components/ui/tilt";
 
 export function CoaCallout() {
   return (
@@ -40,7 +42,9 @@ export function CoaCallout() {
         </div>
 
         <Reveal>
-          <CoaSample />
+          <Tilt rotationFactor={6}>
+            <CoaSample />
+          </Tilt>
         </Reveal>
       </div>
     </section>
@@ -65,6 +69,7 @@ function CoaSample() {
         </div>
         <span className="rounded-md border border-violet-600/40 px-2 py-1 font-mono text-[9px] tracking-[0.18em] text-violet-700 uppercase">Sample layout</span>
       </div>
+      <BorderBeam size={220} duration={10} borderWidth={2} colorFrom="var(--violet-400)" colorTo="var(--violet-700)" />
       <svg viewBox="0 0 400 120" className="mt-6 w-full" aria-label="Sample HPLC chromatogram">
         <line x1="0" y1="110" x2="400" y2="110" stroke="#c9c4d6" />
         {[80, 160, 240, 320].map((x) => (

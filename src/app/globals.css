@@ -77,6 +77,18 @@
   --animate-float: float 7s ease-in-out infinite;
   --animate-pulse-ring: pulse-ring 4s ease-in-out infinite;
   --animate-beam: beam 2.2s linear infinite;
+  --animate-shimmer-slide: shimmer-slide var(--speed) ease-in-out infinite alternate;
+  --animate-spin-around: spin-around calc(var(--speed) * 2) infinite linear;
+
+  @keyframes shimmer-slide {
+    to { transform: translate(calc(100cqw - 100%), 0); }
+  }
+  @keyframes spin-around {
+    0% { transform: translateZ(0) rotate(0); }
+    15%, 35% { transform: translateZ(0) rotate(90deg); }
+    65%, 85% { transform: translateZ(0) rotate(270deg); }
+    100% { transform: translateZ(0) rotate(360deg); }
+  }
 
   @keyframes marquee-x {
     from { transform: translateX(0); }
@@ -169,6 +181,55 @@
     background-clip: text;
     color: transparent;
   }
+  /* Border Beam (21st.dev, Magic UI). Only the border ring is painted; the light follows it. */
+  .border-beam {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: calc(var(--border-width) * 1px) solid transparent;
+    mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+  }
+  .border-beam::after {
+    content: "";
+    position: absolute;
+    display: none;
+    aspect-ratio: 1;
+    width: calc(var(--size) * 1px);
+    background: linear-gradient(to left, var(--color-from), var(--color-to), transparent);
+  }
+  @supports (offset-path: rect(0 auto auto 0 round 1px)) {
+    .border-beam::after {
+      display: block;
+      offset-anchor: calc(var(--anchor) * 1%) 50%;
+      offset-path: rect(0 auto auto 0 round calc(var(--size) * 1px));
+      animation: border-beam calc(var(--duration) * 1s) infinite linear;
+      animation-delay: var(--delay);
+    }
+  }
+  @keyframes border-beam {
+    to { offset-distance: 100%; }
+  }
+
+  /* Text Reveal (21st.dev). Each word rises out of its own clip while it sharpens from a blur. */
+  .tr-clip {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    padding: 0.08em 0.02em 0.14em;
+    margin: -0.08em -0.02em -0.14em;
+  }
+  .tr-word {
+    display: inline-block;
+    animation: tr-rise 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: var(--tr-delay, 0s);
+  }
+  @keyframes tr-rise {
+    from { transform: translateY(110%); filter: blur(10px); opacity: 0; }
+    to { transform: none; filter: none; opacity: 1; }
+  }
+
   .hairline-grid > * {
     border-color: var(--line);
   }
@@ -183,6 +244,9 @@ html:not([data-age-ok]) body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .border-beam::after {
+    display: none;
+  }
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
