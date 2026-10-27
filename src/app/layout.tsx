@@ -23,8 +23,8 @@ export const metadata: Metadata = {
     images: ogImage() ? [{ url: ogImage()!, width: 1200, height: 630, alt: site.name }] : undefined,
   },
   twitter: { card: "summary_large_image" },
-  // Keep preview deployments out of search results until launch.
-  robots: process.env.VERCEL_ENV === "production" ? undefined : { index: false, follow: false },
+  // Stay out of search results until launch day, when NEXT_PUBLIC_ALLOW_INDEXING=true is set in Vercel.
+  robots: process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true" ? undefined : { index: false, follow: false },
 };
 
 export const viewport: Viewport = {
