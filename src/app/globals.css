@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+/* Phantom Bio Labs design tokens. Dark only: one ink scale, one violet accent. */
+:root {
+  --ink-950: #060509;
+  --ink-900: #0b0a10;
+  --ink-850: #100e16;
+  --ink-800: #15121d;
+  --ink-700: #1e1a29;
+  --ink-600: #2a2537;
+  --ink-500: #3b354b;
+  --ink-400: #6c6580;
+  --ink-300: #9c95ae;
+  --ink-200: #c9c4d6;
+  --ink-100: #ece9f3;
+  --ink-50: #f7f5fb;
+
+  --violet-300: #c6a8ff;
+  --violet-400: #a97bff;
+  --violet-500: #8b3dff;
+  --violet-600: #7424f0;
+  --violet-700: #5a16c4;
+
+  --danger: #ff5c7a;
+
+  --background: var(--ink-950);
+  --foreground: var(--ink-50);
+  --muted: var(--ink-300);
+  --subtle: var(--ink-400);
+  --line: color-mix(in oklab, var(--ink-50) 9%, transparent);
+  --line-strong: color-mix(in oklab, var(--ink-50) 16%, transparent);
+  --surface: var(--ink-900);
+  --surface-2: var(--ink-850);
+  --accent: var(--violet-500);
+  --accent-text: var(--violet-300);
+  --accent-glow: color-mix(in oklab, var(--violet-500) 55%, transparent);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-accent: var(--accent);
+  --color-accent-text: var(--accent-text);
+  --color-danger: var(--danger);
+  --color-ink-950: var(--ink-950);
+  --color-ink-900: var(--ink-900);
+  --color-ink-850: var(--ink-850);
+  --color-ink-800: var(--ink-800);
+  --color-ink-700: var(--ink-700);
+  --color-ink-600: var(--ink-600);
+  --color-ink-500: var(--ink-500);
+  --color-ink-400: var(--ink-400);
+  --color-ink-300: var(--ink-300);
+  --color-ink-200: var(--ink-200);
+  --color-ink-100: var(--ink-100);
+  --color-ink-50: var(--ink-50);
+  --color-violet-300: var(--violet-300);
+  --color-violet-400: var(--violet-400);
+  --color-violet-500: var(--violet-500);
+  --color-violet-600: var(--violet-600);
+  --color-violet-700: var(--violet-700);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --radius-card: 14px;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --animate-marquee-x: marquee-x var(--marquee-duration, 30s) linear infinite;
+  --animate-marquee-y: marquee-y var(--marquee-duration, 30s) linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-pulse-ring: pulse-ring 4s ease-in-out infinite;
+
+  @keyframes marquee-x {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-100% / var(--marquee-copies, 2))); }
+  }
+  @keyframes marquee-y {
+    from { transform: translateY(0); }
+    to { transform: translateY(calc(-100% / var(--marquee-copies, 2))); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  @keyframes pulse-ring {
+    0%, 100% { opacity: 0.55; transform: scale(1); }
+    50% { opacity: 0.9; transform: scale(1.04); }
+  }
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    background: var(--background);
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--violet-500) 45%, transparent);
+    color: var(--ink-50);
+  }
+  :focus-visible {
+    outline: 2px solid var(--violet-400);
+    outline-offset: 2px;
+  }
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+}
+
+/* Page width and side gutters. A utility, so breakpoint variants like sm:container-page work. */
+@utility container-page {
+  width: 100%;
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  @media (min-width: 640px) {
+    padding-inline: 1.5rem;
+  }
+  @media (min-width: 1024px) {
+    padding-inline: 2.5rem;
+  }
+}
+
+@layer components {
+  /* Mono label used for eyebrows, specs and data. */
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    line-height: 1rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  /* Faint film grain over dark surfaces. */
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.06;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .text-gradient-violet {
+    background: linear-gradient(100deg, var(--ink-50) 0%, var(--violet-300) 45%, var(--violet-500) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .hairline-grid > * {
+    border-color: var(--line);
+  }
+}
+
+/* Age gate: visible until the inline script in <head> marks the visitor as confirmed. */
+html[data-age-ok] [data-age-gate] {
+  display: none;
+}
+html:not([data-age-ok]) body {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,1152 @@
+{
+  "generated_from": "archive/phantombiopeptides-com-2026-10-27/products.json",
+  "settings": {
+    "store_name": "Phantom Bio Labs",
+    "currency": "USD",
+    "free_shipping_threshold_cents": 12500,
+    "flat_shipping_cents": 999,
+    "support_whatsapp": "+1 559 360 6568",
+    "support_hours": "Mon–Fri, 9am–6pm ET"
+  },
+  "categories": [
+    {
+      "slug": "recovery-and-repair",
+      "name": "Recovery & Repair",
+      "description": "Peptides studied in preclinical models of cell migration, angiogenesis and extracellular-matrix signaling.",
+      "sort_order": 0
+    },
+    {
+      "slug": "growth-hormone",
+      "name": "Growth Hormone",
+      "description": "GHRH analogs, ghrelin-receptor agonists and growth factors used in GH/IGF-1 axis research.",
+      "sort_order": 1
+    },
+    {
+      "slug": "metabolic",
+      "name": "Metabolic",
+      "description": "Incretin, amylin and glucagon receptor agonists for metabolic-signaling research.",
+      "sort_order": 2
+    },
+    {
+      "slug": "cognitive",
+      "name": "Cognitive",
+      "description": "Neuropeptides and synthetic analogs studied in neurotrophic and neuroendocrine research.",
+      "sort_order": 3
+    },
+    {
+      "slug": "longevity",
+      "name": "Longevity",
+      "description": "Compounds used in research on telomerase activity, redox balance and immune signaling.",
+      "sort_order": 4
+    },
+    {
+      "slug": "cosmetic",
+      "name": "Cosmetic",
+      "description": "Peptides used in cosmetic-science and in-vitro dermal research.",
+      "sort_order": 5
+    },
+    {
+      "slug": "hormonal",
+      "name": "Hormonal",
+      "description": "Ligands for gonadotropin, kisspeptin and melanocortin receptor research.",
+      "sort_order": 6
+    },
+    {
+      "slug": "mitochondrial-and-energy",
+      "name": "Mitochondrial & Energy",
+      "description": "Peptides studied in mitochondrial membrane and cellular energy research.",
+      "sort_order": 7
+    },
+    {
+      "slug": "solvents-and-supplies",
+      "name": "Solvents & Supplies",
+      "description": "Reconstitution solvents and laboratory supplies.",
+      "sort_order": 8
+    }
+  ],
+  "products": [
+    {
+      "slug": "recon-water",
+      "legacy_slug": null,
+      "legacy_woo_id": 386,
+      "name": "BAC Water",
+      "category": "solvents-and-supplies",
+      "summary": "Reconstitution solvent",
+      "description": "Bacteriostatic water is sterile water containing 0.9% benzyl alcohol as a bacteriostatic preservative. It is a standard laboratory solvent for reconstituting lyophilized peptides, and the preservative allows a sealed vial to be accessed multiple times.",
+      "specs": {
+        "form": "Sterile liquid",
+        "purity": null
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 0,
+      "review_flags": [],
+      "previous_description_claims": "minor: 'single-project use' (kept facts, tightened wording)",
+      "variants": [
+        {
+          "label": "3 mL",
+          "sku": "PBL-RECONWATER-3ML",
+          "price_cents": 799,
+          "compare_at_cents": null,
+          "in_stock": true,
+          "sort_order": 0,
+          "legacy_woo_id": 684
+        },
+        {
+          "label": "10 mL",
+          "sku": "PBL-RECONWATER-10ML",
+          "price_cents": 1299,
+          "compare_at_cents": null,
+          "in_stock": false,
+          "sort_order": 1,
+          "legacy_woo_id": 669
+        }
+      ]
+    },
+    {
+      "slug": "bpc-157",
+      "legacy_slug": null,
+      "legacy_woo_id": 38,
+      "name": "BPC-157",
+      "category": "recovery-and-repair",
+      "summary": "Synthetic pentadecapeptide",
+      "description": "BPC-157 (Body Protection Compound-157) is a synthetic 15-amino-acid peptide whose sequence is derived from a protein fragment isolated from gastric juice. It is one of the most frequently cited peptides in preclinical literature, where it is studied in cell-culture and animal models of angiogenesis and growth-factor signaling.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": 1,
+      "sort_order": 1,
+      "review_flags": [],
+      "previous_description_claims": "soft-tissue healing, tendon and ligament repair, gut-lining integrity; 'starting point for a new study protocol'",
+      "variants": [
+        {
+          "label": "5 mg",
+          "sku": "PBL-BPC157-5MG",
+          "price_cents": 3499,
+          "compare_at_cents": 5499,
+          "in_stock": true,
+          "sort_order": 0,
+          "legacy_woo_id": 221
+        },
+        {
+          "label": "10 mg",
+          "sku": "PBL-BPC157-10MG",
+          "price_cents": 4999,
+          "compare_at_cents": 6999,
+          "in_stock": false,
+          "sort_order": 1,
+          "legacy_woo_id": 219
+        },
+        {
+          "label": "20 mg",
+          "sku": "PBL-BPC157-20MG",
+          "price_cents": 7499,
+          "compare_at_cents": 9499,
+          "in_stock": false,
+          "sort_order": 2,
+          "legacy_woo_id": 220
+        }
+      ]
+    },
+    {
+      "slug": "bpc-157-tb-500",
+      "legacy_slug": null,
+      "legacy_woo_id": 24,
+      "name": "BPC-157 + TB-500",
+      "category": "recovery-and-repair",
+      "summary": "Two-peptide research blend",
+      "description": "A co-formulated vial containing BPC-157 and TB-500, a synthetic fragment of Thymosin Beta-4. The two peptides are frequently examined side by side in preclinical models of cell migration, angiogenesis and extracellular-matrix signaling, and co-formulation provides a fixed ratio in a single vial.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": 3,
+      "sort_order": 2,
+      "review_flags": [
+        "Old size list included 5 mg, but only 10 mg and 20 mg had prices. Imported 10 mg and 20 mg only."
+      ],
+      "previous_description_claims": "systemic healing, flexibility, synergistic soft-tissue recovery",
+      "variants": [
+        {
+          "label": "10 mg",
+          "sku": "PBL-BPC157TB500-10MG",
+          "price_cents": 5999,
+          "compare_at_cents": 7999,
+          "in_stock": true,
+          "sort_order": 0,
+          "legacy_woo_id": 222
+        },
+        {
+          "label": "20 mg",
+          "sku": "PBL-BPC157TB500-20MG",
+          "price_cents": 9999,
+          "compare_at_cents": 11999,
+          "in_stock": false,
+          "sort_order": 1,
+          "legacy_woo_id": 223
+        }
+      ]
+    },
+    {
+      "slug": "cagrilintide",
+      "legacy_slug": null,
+      "legacy_woo_id": 569,
+      "name": "Cagrilintide",
+      "category": "metabolic",
+      "summary": "Long-acting amylin analog",
+      "description": "Cagrilintide is a long-acting, acylated analog of amylin, a pancreatic peptide hormone. It is studied as an agonist of amylin and calcitonin receptors in metabolic-signaling research, often alongside GLP-1 receptor agonists in preclinical models.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 3,
+      "review_flags": [],
+      "previous_description_claims": "appetite regulation, satiety, body-weight management",
+      "variants": [
+        {
+          "label": "5 mg",
+          "sku": "PBL-CAGRILINTIDE-5MG",
+          "price_cents": 8499,
+          "compare_at_cents": 10499,
+          "in_stock": false,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "cjc-1295-no-dac-ipamorelin",
+      "legacy_slug": "cjc-1295-no-dac-ipomerelin",
+      "legacy_woo_id": 39,
+      "name": "CJC-1295 (No DAC) + Ipamorelin",
+      "category": "growth-hormone",
+      "summary": "GHRH analog + ghrelin-receptor agonist",
+      "description": "A co-formulated vial of CJC-1295 without Drug Affinity Complex (also known as Modified GRF 1-29), a GHRH analog, and Ipamorelin, a selective ghrelin-receptor (GHS-R1a) agonist. The pairing is used in research on the GHRH and ghrelin receptor pathways that regulate pulsatile growth-hormone secretion in preclinical models.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 4,
+      "review_flags": [
+        "Name corrected from 'Ipomerelin' to 'Ipamorelin'. URL changed to /product/cjc-1295-no-dac-ipamorelin."
+      ],
+      "previous_description_claims": "'stronger, more sustained pulse of growth hormone'; 'saves preparation time'",
+      "variants": [
+        {
+          "label": "10 mg",
+          "sku": "PBL-CJC1295NODACIPAMORELIN-10MG",
+          "price_cents": 8499,
+          "compare_at_cents": 10499,
+          "in_stock": true,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "dsip",
+      "legacy_slug": null,
+      "legacy_woo_id": 571,
+      "name": "DSIP",
+      "category": "cognitive",
+      "summary": "Neuroendocrine nonapeptide",
+      "description": "DSIP (Delta Sleep-Inducing Peptide) is a naturally occurring nonapeptide first described in the 1970s. It is studied in neuroendocrine research, including its interactions with hypothalamic signaling and circadian regulation in animal models.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 5,
+      "review_flags": [],
+      "previous_description_claims": "deep sleep, stress response, recovery, cognitive-restorative pathways",
+      "variants": [
+        {
+          "label": "10 mg",
+          "sku": "PBL-DSIP-10MG",
+          "price_cents": 5999,
+          "compare_at_cents": 7999,
+          "in_stock": false,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "epithalon",
+      "legacy_slug": null,
+      "legacy_woo_id": 602,
+      "name": "Epithalon",
+      "category": "longevity",
+      "summary": "Synthetic tetrapeptide (AEDG)",
+      "description": "Epithalon (Ala-Glu-Asp-Gly), also spelled Epitalon, is a synthetic tetrapeptide modeled on epithalamin, a peptide extract of the pineal gland. It is studied in cell-culture research on telomerase activity and in models of pineal and circadian signaling.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 6,
+      "review_flags": [],
+      "previous_description_claims": "cellular aging, longevity and cellular-health positioning",
+      "variants": [
+        {
+          "label": "10 mg",
+          "sku": "PBL-EPITHALON-10MG",
+          "price_cents": 4999,
+          "compare_at_cents": 6999,
+          "in_stock": false,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "ghk-cu",
+      "legacy_slug": null,
+      "legacy_woo_id": 508,
+      "name": "GHK-Cu",
+      "category": "cosmetic",
+      "summary": "Copper tripeptide complex",
+      "description": "GHK-Cu is a copper(II) complex of the naturally occurring tripeptide glycyl-L-histidyl-L-lysine. It is studied in in-vitro fibroblast and extracellular-matrix research, including collagen and glycosaminoglycan synthesis. The copper complex gives the powder its characteristic blue color.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": 4,
+      "sort_order": 7,
+      "review_flags": [],
+      "previous_description_claims": "skin remodeling, wound healing, hair-follicle support, 'topical formulations'",
+      "variants": [
+        {
+          "label": "50 mg",
+          "sku": "PBL-GHKCU-50MG",
+          "price_cents": 3999,
+          "compare_at_cents": 5999,
+          "in_stock": true,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "ghrp-2",
+      "legacy_slug": null,
+      "legacy_woo_id": 573,
+      "name": "GHRP-2",
+      "category": "growth-hormone",
+      "summary": "Ghrelin-receptor agonist",
+      "description": "GHRP-2 (Pralmorelin) is a synthetic hexapeptide agonist of the ghrelin receptor (GHS-R1a). It is used as a reference compound in research on growth-hormone secretagogue signaling and the ghrelin pathway.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 8,
+      "review_flags": [],
+      "previous_description_claims": "appetite signaling, 'metabolic effects'",
+      "variants": [
+        {
+          "label": "10 mg",
+          "sku": "PBL-GHRP2-10MG",
+          "price_cents": 5499,
+          "compare_at_cents": 7499,
+          "in_stock": false,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "ghrp-6",
+      "legacy_slug": null,
+      "legacy_woo_id": 575,
+      "name": "GHRP-6",
+      "category": "growth-hormone",
+      "summary": "Ghrelin-receptor agonist",
+      "description": "GHRP-6 is a synthetic hexapeptide and one of the earliest characterized growth-hormone secretagogues. It acts on the ghrelin receptor (GHS-R1a) and is used in research on secretagogue signaling and ghrelin-receptor pharmacology.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 9,
+      "review_flags": [],
+      "previous_description_claims": "hunger regulation, 'pronounced effect on appetite'",
+      "variants": [
+        {
+          "label": "10 mg",
+          "sku": "PBL-GHRP6-10MG",
+          "price_cents": 5499,
+          "compare_at_cents": 7499,
+          "in_stock": false,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "glow",
+      "legacy_slug": null,
+      "legacy_woo_id": 40,
+      "name": "GLOW",
+      "category": "recovery-and-repair",
+      "summary": "Three-peptide research blend",
+      "description": "GLOW is a multi-peptide research blend containing BPC-157, TB-500 and GHK-Cu in a single vial. It is intended for preclinical studies that examine the three compounds together, such as models of cell migration and extracellular-matrix signaling.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": 5,
+      "sort_order": 10,
+      "review_flags": [
+        "Price is $99.00. Every other price ends in .99. Please confirm."
+      ],
+      "previous_description_claims": "tissue repair, skin quality, 'overall regeneration'",
+      "variants": [
+        {
+          "label": "70 mg",
+          "sku": "PBL-GLOW-70MG",
+          "price_cents": 9900,
+          "compare_at_cents": null,
+          "in_stock": true,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "glp-3-rt",
+      "legacy_slug": null,
+      "legacy_woo_id": 41,
+      "name": "GLP-3 (Rt)",
+      "category": "metabolic",
+      "summary": "GLP-1 / GIP / glucagon receptor agonist",
+      "description": "Retatrutide is a synthetic single-molecule agonist of three receptors: GLP-1, GIP and glucagon. It is studied in metabolic-signaling research on incretin and glucagon receptor pathways.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 11,
+      "review_flags": [
+        "Name 'GLP-3 (Rt)' kept as-is for your review. The compound is retatrutide.",
+        "No sale on 5 mg (regular price = sale price), so no strikethrough is shown."
+      ],
+      "previous_description_claims": "appetite regulation, blood-sugar control, body-weight management",
+      "variants": [
+        {
+          "label": "5 mg",
+          "sku": "PBL-GLP3RT-5MG",
+          "price_cents": 4999,
+          "compare_at_cents": null,
+          "in_stock": true,
+          "sort_order": 0,
+          "legacy_woo_id": 218
+        },
+        {
+          "label": "10 mg",
+          "sku": "PBL-GLP3RT-10MG",
+          "price_cents": 6999,
+          "compare_at_cents": 8999,
+          "in_stock": true,
+          "sort_order": 1,
+          "legacy_woo_id": 215
+        },
+        {
+          "label": "20 mg",
+          "sku": "PBL-GLP3RT-20MG",
+          "price_cents": 10999,
+          "compare_at_cents": 12999,
+          "in_stock": true,
+          "sort_order": 2,
+          "legacy_woo_id": 216
+        },
+        {
+          "label": "40 mg",
+          "sku": "PBL-GLP3RT-40MG",
+          "price_cents": 15999,
+          "compare_at_cents": 17999,
+          "in_stock": false,
+          "sort_order": 3,
+          "legacy_woo_id": 217
+        }
+      ]
+    },
+    {
+      "slug": "glutathione",
+      "legacy_slug": null,
+      "legacy_woo_id": 577,
+      "name": "Glutathione",
+      "category": "longevity",
+      "summary": "Endogenous tripeptide thiol",
+      "description": "Glutathione (γ-L-glutamyl-L-cysteinylglycine) is an endogenous tripeptide thiol. It is widely used in research on cellular redox balance, oxidative-stress models and enzymatic conjugation pathways.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 12,
+      "review_flags": [],
+      "previous_description_claims": "'master antioxidant', detoxification, longevity",
+      "variants": [
+        {
+          "label": "1500 mg",
+          "sku": "PBL-GLUTATHIONE-1500MG",
+          "price_cents": 7499,
+          "compare_at_cents": null,
+          "in_stock": false,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "hcg",
+      "legacy_slug": null,
+      "legacy_woo_id": 579,
+      "name": "HCG",
+      "category": "hormonal",
+      "summary": "LH/hCG receptor glycoprotein hormone",
+      "description": "Human chorionic gonadotropin (hCG) is a glycoprotein hormone composed of alpha and beta subunits that acts on the LH/hCG receptor (LHCGR). It is used in reproductive endocrinology research, including studies of gonadotropin receptor signaling and steroidogenesis in vitro.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 13,
+      "review_flags": [],
+      "previous_description_claims": "testosterone, fertility, 'endogenous hormone production'",
+      "variants": [
+        {
+          "label": "5000 IU",
+          "sku": "PBL-HCG-5000IU",
+          "price_cents": 5299,
+          "compare_at_cents": null,
+          "in_stock": false,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "igf-1-lr3",
+      "legacy_slug": null,
+      "legacy_woo_id": 42,
+      "name": "IGF-1 LR3",
+      "category": "growth-hormone",
+      "summary": "Long-acting IGF-1 analog",
+      "description": "IGF-1 LR3 (Long R3 IGF-1) is an 83-amino-acid analog of insulin-like growth factor 1 with an arginine substitution at position 3 and a 13-amino-acid N-terminal extension, which reduces binding to IGF-binding proteins. It is widely used as a cell-culture growth-factor supplement and in research on IGF-1 receptor signaling.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 14,
+      "review_flags": [],
+      "previous_description_claims": "muscle-tissue development",
+      "variants": [
+        {
+          "label": "1 mg",
+          "sku": "PBL-IGF1LR3-1MG",
+          "price_cents": 8499,
+          "compare_at_cents": null,
+          "in_stock": true,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "ipamorelin",
+      "legacy_slug": null,
+      "legacy_woo_id": 604,
+      "name": "Ipamorelin",
+      "category": "growth-hormone",
+      "summary": "Selective ghrelin-receptor agonist",
+      "description": "Ipamorelin is a synthetic pentapeptide and selective agonist of the ghrelin receptor (GHS-R1a). Its receptor selectivity makes it a common reference compound in research on growth-hormone secretagogue signaling.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 15,
+      "review_flags": [],
+      "previous_description_claims": "'beginning a protocol'",
+      "variants": [
+        {
+          "label": "5 mg",
+          "sku": "PBL-IPAMORELIN-5MG",
+          "price_cents": 3499,
+          "compare_at_cents": null,
+          "in_stock": false,
+          "sort_order": 0,
+          "legacy_woo_id": 606
+        },
+        {
+          "label": "10 mg",
+          "sku": "PBL-IPAMORELIN-10MG",
+          "price_cents": 5499,
+          "compare_at_cents": null,
+          "in_stock": false,
+          "sort_order": 1,
+          "legacy_woo_id": 605
+        }
+      ]
+    },
+    {
+      "slug": "kisspeptin",
+      "legacy_slug": null,
+      "legacy_woo_id": 581,
+      "name": "Kisspeptin",
+      "category": "hormonal",
+      "summary": "KISS1 receptor ligand",
+      "description": "Kisspeptin is a peptide ligand of the KISS1 receptor (GPR54), encoded by the KISS1 gene. It is studied in reproductive neuroendocrinology research on hypothalamic GnRH signaling and the hypothalamic-pituitary-gonadal axis.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 16,
+      "review_flags": [],
+      "previous_description_claims": "fertility, puberty, sex hormones",
+      "variants": [
+        {
+          "label": "10 mg",
+          "sku": "PBL-KISSPEPTIN-10MG",
+          "price_cents": 7499,
+          "compare_at_cents": 9499,
+          "in_stock": false,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "klow",
+      "legacy_slug": null,
+      "legacy_woo_id": 43,
+      "name": "KLOW",
+      "category": "recovery-and-repair",
+      "summary": "Four-peptide research blend",
+      "description": "KLOW is a multi-peptide research blend containing KPV, GHK-Cu, BPC-157 and TB-500 in a single vial. It is intended for preclinical studies that examine the four compounds together, including models of inflammatory signaling, cell migration and extracellular-matrix activity.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": 6,
+      "sort_order": 17,
+      "review_flags": [
+        "Price is $109.00. Every other price ends in .99. Please confirm."
+      ],
+      "previous_description_claims": "tissue healing, inflammation modulation, skin quality, systemic recovery",
+      "variants": [
+        {
+          "label": "80 mg",
+          "sku": "PBL-KLOW-80MG",
+          "price_cents": 10900,
+          "compare_at_cents": null,
+          "in_stock": true,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "kpv",
+      "legacy_slug": "kpv-2",
+      "legacy_woo_id": 583,
+      "name": "KPV",
+      "category": "recovery-and-repair",
+      "summary": "α-MSH C-terminal tripeptide",
+      "description": "KPV (Lys-Pro-Val) is a tripeptide corresponding to the C-terminal sequence of alpha-melanocyte-stimulating hormone (α-MSH). It is studied in cell-culture and animal models of inflammatory signaling, including NF-κB pathway activity.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 18,
+      "review_flags": [
+        "URL changed from /product/kpv-2 to /product/kpv.",
+        "Old store had no size listed. Set to 10 mg from the old description and photo. Please confirm."
+      ],
+      "previous_description_claims": "anti-inflammatory properties, gut health, tissue recovery",
+      "variants": [
+        {
+          "label": "10 mg",
+          "sku": "PBL-KPV-10MG",
+          "price_cents": 4499,
+          "compare_at_cents": null,
+          "in_stock": true,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "mots-c",
+      "legacy_slug": null,
+      "legacy_woo_id": 44,
+      "name": "MOTS-c",
+      "category": "mitochondrial-and-energy",
+      "summary": "Mitochondrial-derived peptide",
+      "description": "MOTS-c is a 16-amino-acid peptide encoded within the mitochondrial 12S rRNA gene. It is studied in research on mitochondrial-nuclear signaling, AMPK activation and cellular energy metabolism.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": 7,
+      "sort_order": 19,
+      "review_flags": [],
+      "previous_description_claims": "insulin sensitivity, exercise capacity, metabolic health",
+      "variants": [
+        {
+          "label": "10 mg",
+          "sku": "PBL-MOTSC-10MG",
+          "price_cents": 4999,
+          "compare_at_cents": 6999,
+          "in_stock": true,
+          "sort_order": 0,
+          "legacy_woo_id": 213
+        },
+        {
+          "label": "40 mg",
+          "sku": "PBL-MOTSC-40MG",
+          "price_cents": 10999,
+          "compare_at_cents": 12999,
+          "in_stock": false,
+          "sort_order": 1,
+          "legacy_woo_id": 214
+        }
+      ]
+    },
+    {
+      "slug": "mt-2-melanotan-ii",
+      "legacy_slug": null,
+      "legacy_woo_id": 585,
+      "name": "MT-2 (Melanotan II)",
+      "category": "cosmetic",
+      "summary": "Melanocortin receptor agonist",
+      "description": "Melanotan II (MT-2) is a synthetic cyclic heptapeptide analog of alpha-melanocyte-stimulating hormone (α-MSH) and a non-selective melanocortin receptor agonist. It is used in research on melanocortin receptor signaling, including MC1R-mediated melanogenesis in vitro.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 20,
+      "review_flags": [],
+      "previous_description_claims": "skin pigmentation, appetite, libido",
+      "variants": [
+        {
+          "label": "10 mg",
+          "sku": "PBL-MT2-10MG",
+          "price_cents": 5999,
+          "compare_at_cents": 7999,
+          "in_stock": false,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "pinealon",
+      "legacy_slug": null,
+      "legacy_woo_id": 587,
+      "name": "Pinealon",
+      "category": "cognitive",
+      "summary": "Synthetic tripeptide (EDR)",
+      "description": "Pinealon (Glu-Asp-Arg) is a synthetic tripeptide. It is studied in cell-culture and animal models of neuronal oxidative stress and gene-expression regulation.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 21,
+      "review_flags": [],
+      "previous_description_claims": "neuroprotection, 'brain-supporting properties', cognition, brain health",
+      "variants": [
+        {
+          "label": "10 mg",
+          "sku": "PBL-PINEALON-10MG",
+          "price_cents": 7999,
+          "compare_at_cents": 9999,
+          "in_stock": false,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "pt-141",
+      "legacy_slug": null,
+      "legacy_woo_id": 589,
+      "name": "PT-141",
+      "category": "hormonal",
+      "summary": "Melanocortin MC3R / MC4R agonist",
+      "description": "PT-141 (Bremelanotide) is a synthetic cyclic heptapeptide melanocortin receptor agonist and an active metabolite of Melanotan II. It is studied in research on central melanocortin (MC3R/MC4R) signaling.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 22,
+      "review_flags": [],
+      "previous_description_claims": "libido, sexual response, sexual health",
+      "variants": [
+        {
+          "label": "10 mg",
+          "sku": "PBL-PT141-10MG",
+          "price_cents": 6999,
+          "compare_at_cents": 8999,
+          "in_stock": false,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "selank",
+      "legacy_slug": null,
+      "legacy_woo_id": 591,
+      "name": "Selank",
+      "category": "cognitive",
+      "summary": "Tuftsin-analog heptapeptide",
+      "description": "Selank is a synthetic heptapeptide analog of tuftsin, an endogenous immunomodulatory peptide, extended with a Pro-Gly-Pro sequence for stability. It is studied in animal models of GABAergic signaling and brain-derived neurotrophic factor (BDNF) expression.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 23,
+      "review_flags": [],
+      "previous_description_claims": "anti-anxiety, mood, stress resilience, cognitive performance",
+      "variants": [
+        {
+          "label": "5 mg",
+          "sku": "PBL-SELANK-5MG",
+          "price_cents": 4499,
+          "compare_at_cents": 6499,
+          "in_stock": true,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "semaglutide-glp-1",
+      "legacy_slug": null,
+      "legacy_woo_id": 594,
+      "name": "Semaglutide (GLP-1)",
+      "category": "metabolic",
+      "summary": "GLP-1 receptor agonist",
+      "description": "Semaglutide is a synthetic, acylated analog of glucagon-like peptide-1 (GLP-1) and a GLP-1 receptor agonist. It is one of the most frequently studied compounds in research on incretin receptor signaling.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 24,
+      "review_flags": [
+        "No sale on 10 mg (regular price = sale price), so no strikethrough is shown."
+      ],
+      "previous_description_claims": "appetite regulation, blood-sugar control, body-weight management",
+      "variants": [
+        {
+          "label": "5 mg",
+          "sku": "PBL-SEMAGLUTIDE-5MG",
+          "price_cents": 3999,
+          "compare_at_cents": 5999,
+          "in_stock": true,
+          "sort_order": 0,
+          "legacy_woo_id": 677
+        },
+        {
+          "label": "10 mg",
+          "sku": "PBL-SEMAGLUTIDE-10MG",
+          "price_cents": 5999,
+          "compare_at_cents": null,
+          "in_stock": true,
+          "sort_order": 1,
+          "legacy_woo_id": 676
+        }
+      ]
+    },
+    {
+      "slug": "semax",
+      "legacy_slug": null,
+      "legacy_woo_id": 660,
+      "name": "Semax",
+      "category": "cognitive",
+      "summary": "ACTH(4-10) analog heptapeptide",
+      "description": "Semax is a synthetic heptapeptide analog of the ACTH(4-10) fragment, extended with a Pro-Gly-Pro sequence. It is studied in animal models of neurotrophic signaling, including BDNF expression.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": 8,
+      "sort_order": 25,
+      "review_flags": [
+        "No sale on 10 mg (regular price = sale price), so no strikethrough is shown."
+      ],
+      "previous_description_claims": "focus, memory, cognitive enhancement, neuroprotection",
+      "variants": [
+        {
+          "label": "5 mg",
+          "sku": "PBL-SEMAX-5MG",
+          "price_cents": 3499,
+          "compare_at_cents": 5499,
+          "in_stock": true,
+          "sort_order": 0,
+          "legacy_woo_id": 664
+        },
+        {
+          "label": "10 mg",
+          "sku": "PBL-SEMAX-10MG",
+          "price_cents": 4999,
+          "compare_at_cents": null,
+          "in_stock": false,
+          "sort_order": 1,
+          "legacy_woo_id": 663
+        }
+      ]
+    },
+    {
+      "slug": "snap-8",
+      "legacy_slug": null,
+      "legacy_woo_id": 596,
+      "name": "Snap-8",
+      "category": "cosmetic",
+      "summary": "SNAP-25-derived octapeptide",
+      "description": "SNAP-8 (Acetyl Glutamyl Heptapeptide-3) is a synthetic octapeptide modeled on the N-terminal end of the SNAP-25 protein. It is studied in cosmetic-science and in-vitro research on SNARE complex formation.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 26,
+      "review_flags": [],
+      "previous_description_claims": "smoothing expression lines, wrinkles, skincare",
+      "variants": [
+        {
+          "label": "10 mg",
+          "sku": "PBL-SNAP8-10MG",
+          "price_cents": 8999,
+          "compare_at_cents": 10999,
+          "in_stock": false,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "ss-31",
+      "legacy_slug": null,
+      "legacy_woo_id": 598,
+      "name": "SS-31",
+      "category": "mitochondrial-and-energy",
+      "summary": "Mitochondria-targeting tetrapeptide",
+      "description": "SS-31 (Elamipretide) is a synthetic, cell-permeable tetrapeptide that localizes to the inner mitochondrial membrane, where it interacts with cardiolipin. It is studied in research on mitochondrial membrane structure, electron transport and reactive oxygen species.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 27,
+      "review_flags": [],
+      "previous_description_claims": "'supporting mitochondrial function', preserving energy production, mitochondrial health",
+      "variants": [
+        {
+          "label": "10 mg",
+          "sku": "PBL-SS31-10MG",
+          "price_cents": 5499,
+          "compare_at_cents": 7499,
+          "in_stock": false,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "tb-500",
+      "legacy_slug": null,
+      "legacy_woo_id": 45,
+      "name": "TB-500",
+      "category": "recovery-and-repair",
+      "summary": "Thymosin Beta-4 fragment",
+      "description": "TB-500 is a synthetic peptide based on the active region of Thymosin Beta-4, an actin-sequestering protein. It is studied in preclinical research on actin dynamics, cell migration and angiogenesis.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": 2,
+      "sort_order": 28,
+      "review_flags": [],
+      "previous_description_claims": "tissue healing, flexibility, reducing inflammation 'across the body'",
+      "variants": [
+        {
+          "label": "5 mg",
+          "sku": "PBL-TB500-5MG",
+          "price_cents": 3499,
+          "compare_at_cents": null,
+          "in_stock": true,
+          "sort_order": 0,
+          "legacy_woo_id": 212
+        },
+        {
+          "label": "10 mg",
+          "sku": "PBL-TB500-10MG",
+          "price_cents": 4999,
+          "compare_at_cents": null,
+          "in_stock": false,
+          "sort_order": 1,
+          "legacy_woo_id": 211
+        }
+      ]
+    },
+    {
+      "slug": "tesamorelin",
+      "legacy_slug": null,
+      "legacy_woo_id": 46,
+      "name": "Tesamorelin",
+      "category": "growth-hormone",
+      "summary": "GHRH analog",
+      "description": "Tesamorelin is a synthetic analog of growth-hormone-releasing hormone (GHRH) comprising the 44 amino acids of human GHRH with an N-terminal trans-3-hexenoyl modification. It is studied in research on GHRH receptor signaling and the GH/IGF-1 axis.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 29,
+      "review_flags": [],
+      "previous_description_claims": "reduction of visceral fat, body composition",
+      "variants": [
+        {
+          "label": "5 mg",
+          "sku": "PBL-TESAMORELIN-5MG",
+          "price_cents": 4999,
+          "compare_at_cents": null,
+          "in_stock": false,
+          "sort_order": 0,
+          "legacy_woo_id": 667
+        },
+        {
+          "label": "10 mg",
+          "sku": "PBL-TESAMORELIN-10MG",
+          "price_cents": 6499,
+          "compare_at_cents": null,
+          "in_stock": true,
+          "sort_order": 1,
+          "legacy_woo_id": 666
+        }
+      ]
+    },
+    {
+      "slug": "thymosin-alpha-1",
+      "legacy_slug": null,
+      "legacy_woo_id": 600,
+      "name": "Thymosin Alpha-1",
+      "category": "longevity",
+      "summary": "Thymic immunomodulatory peptide",
+      "description": "Thymosin Alpha-1 is a 28-amino-acid acetylated peptide originally isolated from thymus tissue. It is studied in immunology research on T-cell maturation and toll-like receptor signaling.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 30,
+      "review_flags": [],
+      "previous_description_claims": "supporting immune function, resilience against infection, aging",
+      "variants": [
+        {
+          "label": "10 mg",
+          "sku": "PBL-THYMOSINALPHA1-10MG",
+          "price_cents": 5999,
+          "compare_at_cents": 7999,
+          "in_stock": false,
+          "sort_order": 0,
+          "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "tirzepatide",
+      "legacy_slug": null,
+      "legacy_woo_id": 47,
+      "name": "Tirzepatide (GLP-2)",
+      "category": "metabolic",
+      "summary": "GIP / GLP-1 receptor agonist",
+      "description": "Tirzepatide is a synthetic single-molecule agonist of the GIP and GLP-1 receptors. It is studied in research on dual incretin receptor signaling.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 31,
+      "review_flags": [
+        "The '(GLP-2)' in the name is wrong: tirzepatide is a GIP/GLP-1 agonist. Name kept as-is until you decide."
+      ],
+      "previous_description_claims": "appetite, glucose regulation, body-weight management",
+      "variants": [
+        {
+          "label": "5 mg",
+          "sku": "PBL-TIRZEPATIDE-5MG",
+          "price_cents": 4499,
+          "compare_at_cents": 6499,
+          "in_stock": false,
+          "sort_order": 0,
+          "legacy_woo_id": 208
+        },
+        {
+          "label": "10 mg",
+          "sku": "PBL-TIRZEPATIDE-10MG",
+          "price_cents": 6499,
+          "compare_at_cents": 8499,
+          "in_stock": true,
+          "sort_order": 1,
+          "legacy_woo_id": 206
+        },
+        {
+          "label": "20 mg",
+          "sku": "PBL-TIRZEPATIDE-20MG",
+          "price_cents": 9999,
+          "compare_at_cents": 11999,
+          "in_stock": false,
+          "sort_order": 2,
+          "legacy_woo_id": 207
+        }
+      ]
+    }
+  ]
+}
