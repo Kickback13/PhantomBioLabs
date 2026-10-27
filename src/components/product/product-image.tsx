@@ -14,7 +14,9 @@ export function ProductImage({
   priority = false,
   sizes = "(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 80vw",
   className,
+  showTag = true,
 }: {
+  showTag?: boolean;
   slug: string;
   name: string;
   size?: string | null;
@@ -44,9 +46,9 @@ export function ProductImage({
           <div className="absolute inset-0 flex items-center justify-center py-[9%]">
             <VialArt id={`v-${slug}-${size ? sizeSlug(size) : "main"}`} name={name} size={size ?? undefined} glow={false} />
           </div>
-          <span className="pointer-events-none absolute bottom-2.5 left-3 font-mono text-[9px] tracking-[0.2em] text-ink-500">
-            PLACEHOLDER
-          </span>
+          {showTag && (
+            <span className="pointer-events-none absolute bottom-2.5 left-3 font-mono text-[9px] tracking-[0.2em] text-ink-500">PLACEHOLDER</span>
+          )}
         </>
       )}
     </div>

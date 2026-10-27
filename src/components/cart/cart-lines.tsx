@@ -20,7 +20,7 @@ export function CartLines({ onNavigate }: { onNavigate?: () => void }) {
             className="w-20 shrink-0 overflow-hidden rounded-xl border border-line bg-ink-850"
             aria-label={`${line.name} ${line.label}`}
           >
-            <ProductImage slug={line.slug} name={line.name} size={line.label} sizes="80px" />
+            <ProductImage slug={line.slug} name={line.name} size={line.label} sizes="80px" showTag={false} />
           </Link>
           <div className="flex min-w-0 flex-1 flex-col">
             <div className="flex items-start justify-between gap-3">
