@@ -30,7 +30,10 @@ export function SettingsForm({ settings }: { settings: AdminSettings }) {
           </Field>
         </div>
       </Card>
-      <Card title="Support contact" description="Saved for the contact details shown to customers.">
+      <Card
+        title="Support contact"
+        description="Saved here for reference. The number and hours on the storefront are set in the site code (src/lib/site.ts), so changing them here does not update the site yet."
+      >
         <div className="grid gap-5 sm:grid-cols-2">
           <Field label="WhatsApp number" htmlFor="whatsapp" error={errors.support_whatsapp}>
             <Input id="whatsapp" name="support_whatsapp" value={whatsapp} onChange={(e) => setWhatsapp(e.target.value)} placeholder="+1 559 360 6568" />
