@@ -6,7 +6,6 @@ export const site = {
   tagline: "Research-grade peptides. Zero compromise.",
   description:
     "Research-grade peptides, independently HPLC-tested to ≥99% purity with a lot-specific Certificate of Analysis in every box. For laboratory research use only.",
-  testingLab: "ISL Labs",
   contact: {
     whatsapp: "+1 559 360 6568",
     whatsappHref: "https://wa.me/15593606568",

@@ -1,14 +1,13 @@
 import { FileCheck2, PackageCheck, ShieldCheck } from "lucide-react";
 import { Spotlight } from "@/components/ui/spotlight";
 import { Reveal } from "@/components/ui/reveal";
-import { site } from "@/lib/site";
 import { SectionHeading } from "./section-heading";
 
 const pillars = [
   {
     icon: ShieldCheck,
     title: "≥99% purity, every lot",
-    body: `HPLC-tested by ${site.testingLab} before release. If a lot misses spec, we replace it or refund it.`,
+    body: "HPLC-tested by an independent third-party lab before release. If a lot misses spec, we replace it or refund it.",
   },
   {
     icon: FileCheck2,
@@ -25,7 +24,7 @@ const pillars = [
 const steps = [
   { title: "Synthesis", body: "Solid-phase synthesis at a certified partner facility, traced to raw-material origin." },
   { title: "Purification", body: "Reverse-phase HPLC to ≥99% purity, with retention data archived per lot." },
-  { title: "Verification", body: `${site.testingLab} independently confirms identity, mass and purity.` },
+  { title: "Verification", body: "An independent third-party lab confirms identity, mass and purity." },
   { title: "Lyophilization", body: "Freeze-dried, sealed and checked for fill uniformity." },
   { title: "Dispatch", body: "Packed discreetly and shipped the same day when ordered before 2pm ET." },
 ];

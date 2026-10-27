@@ -62,7 +62,7 @@ export type Database = {
           created_at: string
           file_path: string
           id: string
-          lab_name: string
+          lab_name: string | null
           lot_number: string
           product_id: string
           published: boolean
@@ -75,7 +75,7 @@ export type Database = {
           created_at?: string
           file_path: string
           id?: string
-          lab_name?: string
+          lab_name?: string | null
           lot_number: string
           product_id: string
           published?: boolean
@@ -88,7 +88,7 @@ export type Database = {
           created_at?: string
           file_path?: string
           id?: string
-          lab_name?: string
+          lab_name?: string | null
           lot_number?: string
           product_id?: string
           published?: boolean

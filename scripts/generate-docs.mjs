@@ -80,14 +80,17 @@ writeFileSync("IMAGE_SPEC.md", spec);
 
 let review = `# Content review
 
-Everything that needs your eyes before launch. Nothing here is final; edit products in the admin
-area once it's built (step 6), or tell me and I'll change it.
+What was reviewed before launch and what was decided. Edit products any time in the admin
+area (/admin).
 
-## 1. Product flags (${catalog.products.filter((p) => p.review_flags.length).length} products)
+## 1. Product decisions (resolved 27 Oct 2026)
 
-| Product | Flag |
+You approved the catalog as imported, with these changes and checks. Prices, the KPV size and
+the shipping settings stay as they are.
+
+| Product | Change or check |
 | --- | --- |
-${catalog.products.flatMap((p) => p.review_flags.map((f) => `| ${p.name} | ${f} |`)).join("\n")}
+${catalog.products.flatMap((p) => p.resolved_flags.map((f) => `| ${p.name} | ${f} |`)).join("\n")}
 
 ## 2. Descriptions rewritten for compliance (all ${catalog.products.length})
 
@@ -100,28 +103,23 @@ and protocol wording were also removed, since one description now covers every s
 | --- | --- |
 ${catalog.products.map((p) => `| ${p.name} | ${p.previous_description_claims} |`).join("\n")}
 
-## 3. Copy to confirm
+## 3. Copy decisions
 
-These claims come from the old site. Keep them only if they're true today.
-
-- **ISL Labs** is named as the independent testing lab on the home page, the COA section and the age gate.
-- "Identity confirmed by mass spectrometry" on the COA section (the old About page said COAs include mass-spec data).
-- "U.S.-based fulfilment" in the comparison table.
-- "Solid-phase synthesis at a certified partner facility" in the process steps.
-- "If a lot misses spec, we replace it or refund it" and "Damaged shipments are reshipped at our cost".
-- The old site also claimed "10,000+ orders shipped", "99.4% average purity" and a "4.9★ researcher rating". I left these out. Send me real numbers if you want them back.
+- **Testing lab:** you use more than one lab, so the site now says "independent third-party lab" and never names one. Each COA can still record its lab in the admin area.
+- Approved as written: mass-spectrometry identity check, U.S.-based fulfilment, certified partner facility, replace-or-refund and reship-at-our-cost promises.
+- Left out: the old site's "10,000+ orders shipped", "99.4% average purity" and "4.9★ researcher rating". Send real numbers if you want them back.
 
 ## 4. Conflicts in the old copy (fixed, please confirm)
 
 - **Shipping method.** The old FAQ said "insulated containers with gel packs, overnight or 2-day". The old shipping page said "USPS Priority or UPS Ground, with 2-day and overnight options". The new FAQ uses the shipping-page version.
 - **Payment methods.** The old FAQ listed cards, ACH and crypto. Until a processor is chosen, the FAQ says "Available payment methods are shown at checkout".
 
-## 5. Settings to confirm
+## 5. Settings
 
 | Setting | Current value | Where it's used |
 | --- | --- | --- |
 | Free U.S. shipping threshold | ${money(catalog.settings.free_shipping_threshold_cents)} | Announcement bar, comparison table, checkout |
-| Flat shipping under the threshold | ${money(catalog.settings.flat_shipping_cents)} (placeholder, not from the old site) | Checkout |
+| Flat shipping under the threshold | ${money(catalog.settings.flat_shipping_cents)} | Checkout |
 | Brand name | ${catalog.settings.store_name} | Everywhere |
 `;
 writeFileSync("CONTENT_REVIEW.md", review);

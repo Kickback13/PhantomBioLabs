@@ -145,3 +145,66 @@ export async function getStoreSettings(): Promise<StoreSettings> {
     flatShippingCents: Number(map.get("flat_shipping_cents") ?? 999),
   };
 }
+
+export const COAS_TAG = "coas";
+
+export type Coa = {
+  id: string;
+  productSlug: string;
+  productName: string;
+  variantLabel: string | null;
+  lotNumber: string;
+  testedOn: string | null;
+  purityPercent: number | null;
+  labName: string | null;
+  fileUrl: string;
+};
+
+/** Published certificates of analysis, newest first. PDFs live in the public "coas" storage bucket. */
+export async function getCoas(): Promise<Coa[]> {
+  "use cache";
+  cacheLife("hours");
+  cacheTag(CATALOG_TAG, COAS_TAG);
+  const supabase = createPublicClient();
+  const { data, error } = await supabase
+    .from("coas")
+    .select("id, lot_number, tested_on, purity_percent, lab_name, file_path, created_at, product:products(slug, name), variant:product_variants(label)")
+    .eq("published", true)
+    .order("tested_on", { ascending: false, nullsFirst: false })
+    .order("created_at", { ascending: false });
+  if (error) throw new Error(`Could not load COAs: ${error.message}`);
+  type Row = {
+    id: string;
+    lot_number: string;
+    tested_on: string | null;
+    purity_percent: number | null;
+    lab_name: string | null;
+    file_path: string;
+    product: { slug: string; name: string } | null;
+    variant: { label: string } | null;
+  };
+  return ((data ?? []) as unknown as Row[])
+    .filter((r) => r.product)
+    .map((r) => ({
+      id: r.id,
+      productSlug: r.product!.slug,
+      productName: r.product!.name,
+      variantLabel: r.variant?.label ?? null,
+      lotNumber: r.lot_number,
+      testedOn: r.tested_on,
+      purityPercent: r.purity_percent,
+      labName: r.lab_name,
+      fileUrl: supabase.storage.from("coas").getPublicUrl(r.file_path).data.publicUrl,
+    }));
+}
+
+/** Finds a product by its current slug, or by an old slug that should redirect. */
+export async function findProductBySlug(slug: string): Promise<{ product: Product | null; redirectTo: string | null }> {
+  "use cache";
+  cacheLife("hours");
+  cacheTag(CATALOG_TAG);
+  const product = await getProduct(slug);
+  if (product) return { product, redirectTo: null };
+  const { data } = await createPublicClient().from("products").select("slug").eq("legacy_slug", slug).eq("status", "active").maybeSingle();
+  return { product: null, redirectTo: data?.slug ?? null };
+}

@@ -2,7 +2,6 @@ import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
-import { site } from "@/lib/site";
 
 export function CoaCallout() {
   return (
@@ -21,7 +20,7 @@ export function CoaCallout() {
             <span className="text-muted">On the record.</span>
           </h2>
           <p className="mt-5 max-w-lg text-[15px] leading-relaxed text-muted">
-            The COA in your box is issued by {site.testingLab}, not written by us. It&apos;s tied to the lot number on your vial and published in the COA library so you can check it before you order.
+            The COA in your box is issued by an independent third-party lab, not written by us. It&apos;s tied to the lot number on your vial and published in the COA library so you can check it before you order.
           </p>
           <ul className="mt-6 space-y-2.5 text-[14.5px]">
             {["Identity confirmed by mass spectrometry", "Purity measured by HPLC", "Lot number matched to your order"].map((t) => (
@@ -55,7 +54,7 @@ function CoaSample() {
     ["Lot number", "PBL-XXXX-XX"],
     ["Method", "RP-HPLC · ESI-MS"],
     ["Specification", "≥ 99.0%"],
-    ["Laboratory", site.testingLab],
+    ["Laboratory", "Independent third party"],
   ];
   return (
     <div className="relative mx-auto max-w-lg rotate-[1.5deg] rounded-2xl border border-line-strong bg-ink-50 p-6 text-ink-950 shadow-[0_50px_120px_-30px_rgba(139,61,255,0.45)] sm:p-8">

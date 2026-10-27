@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowUpRight, ShoppingBag } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { AddToCartButton } from "@/components/cart/add-to-cart-button";
 import { useState } from "react";
 import { Spotlight } from "@/components/ui/spotlight";
 import { Button } from "@/components/ui/button";
@@ -93,17 +94,13 @@ export function ProductCard({ product, priority = false, className }: { product:
                 <span className="text-sm text-subtle tabular-nums line-through">{formatPrice(variant.compareAtCents)}</span>
               ) : null}
             </p>
-            <Button asChild size="sm" variant={variant.inStock ? "primary" : "outline"} className="relative z-10">
-              <Link href={href} aria-label={variant.inStock ? `Add ${product.name} ${variant.label} to cart` : `View ${product.name}`}>
-                {variant.inStock ? (
-                  <>
-                    <ShoppingBag /> Add
-                  </>
-                ) : (
-                  "View"
-                )}
-              </Link>
-            </Button>
+            {variant.inStock ? (
+              <AddToCartButton product={product} variant={variant} />
+            ) : (
+              <Button asChild size="sm" variant="outline" className="relative z-10">
+                <Link href={href}>View</Link>
+              </Button>
+            )}
           </div>
         </div>
       </article>

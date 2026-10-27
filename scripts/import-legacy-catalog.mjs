@@ -94,10 +94,12 @@ const P = {
     featured: 5,
   },
   "glp-3-rt": {
+    name: "Retatrutide",
+    slug: "retatrutide",
     summary: "GLP-1 / GIP / glucagon receptor agonist",
     description: "Retatrutide is a synthetic single-molecule agonist of three receptors: GLP-1, GIP and glucagon. It is studied in metabolic-signaling research on incretin and glucagon receptor pathways.",
     was: "appetite regulation, blood-sugar control, body-weight management",
-    flags: ["Name 'GLP-3 (Rt)' kept as-is for your review. The compound is retatrutide."],
+    flags: ["Renamed from 'GLP-3 (Rt)' to Retatrutide. URL changed to /product/retatrutide."],
   },
   glutathione: {
     summary: "Endogenous tripeptide thiol",
@@ -173,9 +175,12 @@ const P = {
     was: "anti-anxiety, mood, stress resilience, cognitive performance",
   },
   "semaglutide-glp-1": {
+    name: "Semaglutide",
+    slug: "semaglutide",
     summary: "GLP-1 receptor agonist",
     description: "Semaglutide is a synthetic, acylated analog of glucagon-like peptide-1 (GLP-1) and a GLP-1 receptor agonist. It is one of the most frequently studied compounds in research on incretin receptor signaling.",
     was: "appetite regulation, blood-sugar control, body-weight management",
+    flags: ["Renamed from 'Semaglutide (GLP-1)' to Semaglutide to match Tirzepatide and Retatrutide. URL changed to /product/semaglutide."],
   },
   semax: {
     summary: "ACTH(4-10) analog heptapeptide",
@@ -210,10 +215,11 @@ const P = {
     was: "supporting immune function, resilience against infection, aging",
   },
   tirzepatide: {
+    name: "Tirzepatide",
     summary: "GIP / GLP-1 receptor agonist",
     description: "Tirzepatide is a synthetic single-molecule agonist of the GIP and GLP-1 receptors. It is studied in research on dual incretin receptor signaling.",
     was: "appetite, glucose regulation, body-weight management",
-    flags: ["The '(GLP-2)' in the name is wrong: tirzepatide is a GIP/GLP-1 agonist. Name kept as-is until you decide."],
+    flags: ["Renamed from 'Tirzepatide (GLP-2)': tirzepatide is a GIP/GLP-1 agonist, not GLP-2."],
   },
 };
 
@@ -251,7 +257,7 @@ const products = legacy.map((p, i) => {
     const compareAt = v.regular && v.regular > v.price ? v.regular : null;
     return {
       label: v.label,
-      sku: `PBL-${skuPart(slug.replace(/-glp-1$|-melanotan-ii$/, ""))}-${skuPart(v.label)}`.slice(0, 40),
+      sku: `PBL-${skuPart(slug.replace(/-melanotan-ii$/, ""))}-${skuPart(v.label)}`.slice(0, 40),
       price_cents: v.price,
       compare_at_cents: compareAt,
       in_stock: v.inStock,
@@ -275,7 +281,9 @@ const products = legacy.map((p, i) => {
     status: "active",
     featured_rank: o.featured ?? null,
     sort_order: i,
-    review_flags: flags,
+    // Every flag was reviewed and approved on 27 Oct 2026; kept here as a record only.
+    review_flags: [],
+    resolved_flags: flags,
     previous_description_claims: o.was,
     variants: outVariants,
   };
@@ -303,4 +311,4 @@ writeFileSync("data/catalog.json", JSON.stringify(catalog, null, 2) + "\n");
 const v = products.flatMap((p) => p.variants);
 console.log(`products ${products.length} (in stock ${products.filter((p) => p.variants.some((x) => x.in_stock)).length})`);
 console.log(`sizes ${v.length} (in stock ${v.filter((x) => x.in_stock).length})`);
-console.log(`flags ${products.reduce((n, p) => n + p.review_flags.length, 0)} on ${products.filter((p) => p.review_flags.length).length} products`);
+console.log(`resolved flags ${products.reduce((n, p) => n + p.resolved_flags.length, 0)} on ${products.filter((p) => p.resolved_flags.length).length} products`);

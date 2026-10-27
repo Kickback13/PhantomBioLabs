@@ -5,7 +5,7 @@ export const faq: FaqItem[] = [
   {
     topic: "Quality",
     q: "Are your peptides tested for purity?",
-    a: "Yes. Every lot is tested by HPLC at ISL Labs, an independent laboratory, to a minimum of 99% purity before release. A lot-specific Certificate of Analysis ships with every order, and published COAs are in the COA library.",
+    a: "Yes. Every lot is tested by HPLC at an independent third-party laboratory to a minimum of 99% purity before release. A lot-specific Certificate of Analysis ships with every order, and published COAs are in the COA library.",
   },
   {
     topic: "Compliance",

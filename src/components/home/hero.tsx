@@ -33,7 +33,7 @@ export function Hero() {
           <Reveal>
             <p className="inline-flex items-center gap-2 rounded-full border border-violet-400/30 bg-violet-500/10 px-3 py-1 font-mono text-[10.5px] tracking-[0.16em] text-violet-200 uppercase">
               <span className="size-1.5 rounded-full bg-violet-400 shadow-[0_0_8px_var(--violet-400)]" />
-              Independently verified by {site.testingLab}
+              Independently third-party tested
             </p>
           </Reveal>
           <Reveal delay={0.06}>

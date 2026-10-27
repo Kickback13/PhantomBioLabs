@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Search, ShoppingBag, UserRound } from "lucide-react";
+import { Search, UserRound } from "lucide-react";
+import { CartButton } from "@/components/cart/cart-button";
 import { Logo } from "@/components/brand/logo";
 import { mainNav } from "@/lib/site";
 import { MobileMenu } from "./mobile-menu";
@@ -32,10 +33,7 @@ export function SiteHeader() {
           <Link href="/account" aria-label="Your account" className="hidden size-10 place-items-center rounded-xl text-muted transition-colors hover:bg-white/5 hover:text-foreground sm:grid">
             <UserRound className="size-[18px]" />
           </Link>
-          <Link href="/cart" aria-label="Cart" className="relative grid size-10 place-items-center rounded-xl text-foreground transition-colors hover:bg-white/5">
-            <ShoppingBag className="size-[18px]" />
-            <span className="absolute top-1.5 right-1.5 grid size-4 place-items-center rounded-full bg-violet-500 font-mono text-[9px] text-white">0</span>
-          </Link>
+          <CartButton />
         </div>
       </div>
     </header>

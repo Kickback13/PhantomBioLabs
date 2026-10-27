@@ -25,7 +25,7 @@ export async function SiteFooter() {
         <div className="max-w-sm">
           <Logo />
           <p className="mt-5 text-sm leading-relaxed text-muted">
-            Research-grade peptides, independently HPLC-tested by {site.testingLab}, with a lot-specific Certificate of Analysis in every box.
+            Research-grade peptides, independently HPLC-tested by a third-party lab, with a lot-specific Certificate of Analysis in every box.
           </p>
           <div className="mt-6 text-sm">
             <a href={site.contact.whatsappHref} className="text-foreground hover:text-violet-300">

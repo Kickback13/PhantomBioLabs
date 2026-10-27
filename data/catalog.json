@@ -81,6 +81,7 @@
       "featured_rank": null,
       "sort_order": 0,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "minor: 'single-project use' (kept facts, tightened wording)",
       "variants": [
         {
@@ -119,6 +120,7 @@
       "featured_rank": 1,
       "sort_order": 1,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "soft-tissue healing, tendon and ligament repair, gut-lining integrity; 'starting point for a new study protocol'",
       "variants": [
         {
@@ -165,7 +167,8 @@
       "status": "active",
       "featured_rank": 3,
       "sort_order": 2,
-      "review_flags": [
+      "review_flags": [],
+      "resolved_flags": [
         "Old size list included 5 mg, but only 10 mg and 20 mg had prices. Imported 10 mg and 20 mg only."
       ],
       "previous_description_claims": "systemic healing, flexibility, synergistic soft-tissue recovery",
@@ -206,6 +209,7 @@
       "featured_rank": null,
       "sort_order": 3,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "appetite regulation, satiety, body-weight management",
       "variants": [
         {
@@ -234,7 +238,8 @@
       "status": "active",
       "featured_rank": null,
       "sort_order": 4,
-      "review_flags": [
+      "review_flags": [],
+      "resolved_flags": [
         "Name corrected from 'Ipomerelin' to 'Ipamorelin'. URL changed to /product/cjc-1295-no-dac-ipamorelin."
       ],
       "previous_description_claims": "'stronger, more sustained pulse of growth hormone'; 'saves preparation time'",
@@ -266,6 +271,7 @@
       "featured_rank": null,
       "sort_order": 5,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "deep sleep, stress response, recovery, cognitive-restorative pathways",
       "variants": [
         {
@@ -295,6 +301,7 @@
       "featured_rank": null,
       "sort_order": 6,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "cellular aging, longevity and cellular-health positioning",
       "variants": [
         {
@@ -324,6 +331,7 @@
       "featured_rank": 4,
       "sort_order": 7,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "skin remodeling, wound healing, hair-follicle support, 'topical formulations'",
       "variants": [
         {
@@ -353,6 +361,7 @@
       "featured_rank": null,
       "sort_order": 8,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "appetite signaling, 'metabolic effects'",
       "variants": [
         {
@@ -382,6 +391,7 @@
       "featured_rank": null,
       "sort_order": 9,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "hunger regulation, 'pronounced effect on appetite'",
       "variants": [
         {
@@ -410,7 +420,8 @@
       "status": "active",
       "featured_rank": 5,
       "sort_order": 10,
-      "review_flags": [
+      "review_flags": [],
+      "resolved_flags": [
         "Price is $99.00. Every other price ends in .99. Please confirm."
       ],
       "previous_description_claims": "tissue repair, skin quality, 'overall regeneration'",
@@ -423,65 +434,6 @@
           "in_stock": true,
           "sort_order": 0,
           "legacy_woo_id": null
-        }
-      ]
-    },
-    {
-      "slug": "glp-3-rt",
-      "legacy_slug": null,
-      "legacy_woo_id": 41,
-      "name": "GLP-3 (Rt)",
-      "category": "metabolic",
-      "summary": "GLP-1 / GIP / glucagon receptor agonist",
-      "description": "Retatrutide is a synthetic single-molecule agonist of three receptors: GLP-1, GIP and glucagon. It is studied in metabolic-signaling research on incretin and glucagon receptor pathways.",
-      "specs": {
-        "form": "Lyophilized powder",
-        "purity": "≥99% (HPLC)"
-      },
-      "status": "active",
-      "featured_rank": null,
-      "sort_order": 11,
-      "review_flags": [
-        "Name 'GLP-3 (Rt)' kept as-is for your review. The compound is retatrutide.",
-        "No sale on 5 mg (regular price = sale price), so no strikethrough is shown."
-      ],
-      "previous_description_claims": "appetite regulation, blood-sugar control, body-weight management",
-      "variants": [
-        {
-          "label": "5 mg",
-          "sku": "PBL-GLP3RT-5MG",
-          "price_cents": 4999,
-          "compare_at_cents": null,
-          "in_stock": true,
-          "sort_order": 0,
-          "legacy_woo_id": 218
-        },
-        {
-          "label": "10 mg",
-          "sku": "PBL-GLP3RT-10MG",
-          "price_cents": 6999,
-          "compare_at_cents": 8999,
-          "in_stock": true,
-          "sort_order": 1,
-          "legacy_woo_id": 215
-        },
-        {
-          "label": "20 mg",
-          "sku": "PBL-GLP3RT-20MG",
-          "price_cents": 10999,
-          "compare_at_cents": 12999,
-          "in_stock": true,
-          "sort_order": 2,
-          "legacy_woo_id": 216
-        },
-        {
-          "label": "40 mg",
-          "sku": "PBL-GLP3RT-40MG",
-          "price_cents": 15999,
-          "compare_at_cents": 17999,
-          "in_stock": false,
-          "sort_order": 3,
-          "legacy_woo_id": 217
         }
       ]
     },
@@ -499,8 +451,9 @@
       },
       "status": "active",
       "featured_rank": null,
-      "sort_order": 12,
+      "sort_order": 11,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "'master antioxidant', detoxification, longevity",
       "variants": [
         {
@@ -528,8 +481,9 @@
       },
       "status": "active",
       "featured_rank": null,
-      "sort_order": 13,
+      "sort_order": 12,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "testosterone, fertility, 'endogenous hormone production'",
       "variants": [
         {
@@ -557,8 +511,9 @@
       },
       "status": "active",
       "featured_rank": null,
-      "sort_order": 14,
+      "sort_order": 13,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "muscle-tissue development",
       "variants": [
         {
@@ -586,8 +541,9 @@
       },
       "status": "active",
       "featured_rank": null,
-      "sort_order": 15,
+      "sort_order": 14,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "'beginning a protocol'",
       "variants": [
         {
@@ -624,8 +580,9 @@
       },
       "status": "active",
       "featured_rank": null,
-      "sort_order": 16,
+      "sort_order": 15,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "fertility, puberty, sex hormones",
       "variants": [
         {
@@ -653,8 +610,9 @@
       },
       "status": "active",
       "featured_rank": 6,
-      "sort_order": 17,
-      "review_flags": [
+      "sort_order": 16,
+      "review_flags": [],
+      "resolved_flags": [
         "Price is $109.00. Every other price ends in .99. Please confirm."
       ],
       "previous_description_claims": "tissue healing, inflammation modulation, skin quality, systemic recovery",
@@ -684,8 +642,9 @@
       },
       "status": "active",
       "featured_rank": null,
-      "sort_order": 18,
-      "review_flags": [
+      "sort_order": 17,
+      "review_flags": [],
+      "resolved_flags": [
         "URL changed from /product/kpv-2 to /product/kpv.",
         "Old store had no size listed. Set to 10 mg from the old description and photo. Please confirm."
       ],
@@ -716,8 +675,9 @@
       },
       "status": "active",
       "featured_rank": 7,
-      "sort_order": 19,
+      "sort_order": 18,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "insulin sensitivity, exercise capacity, metabolic health",
       "variants": [
         {
@@ -754,8 +714,9 @@
       },
       "status": "active",
       "featured_rank": null,
-      "sort_order": 20,
+      "sort_order": 19,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "skin pigmentation, appetite, libido",
       "variants": [
         {
@@ -783,8 +744,9 @@
       },
       "status": "active",
       "featured_rank": null,
-      "sort_order": 21,
+      "sort_order": 20,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "neuroprotection, 'brain-supporting properties', cognition, brain health",
       "variants": [
         {
@@ -812,8 +774,9 @@
       },
       "status": "active",
       "featured_rank": null,
-      "sort_order": 22,
+      "sort_order": 21,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "libido, sexual response, sexual health",
       "variants": [
         {
@@ -824,6 +787,66 @@
           "in_stock": false,
           "sort_order": 0,
           "legacy_woo_id": null
+        }
+      ]
+    },
+    {
+      "slug": "retatrutide",
+      "legacy_slug": "glp-3-rt",
+      "legacy_woo_id": 41,
+      "name": "Retatrutide",
+      "category": "metabolic",
+      "summary": "GLP-1 / GIP / glucagon receptor agonist",
+      "description": "Retatrutide is a synthetic single-molecule agonist of three receptors: GLP-1, GIP and glucagon. It is studied in metabolic-signaling research on incretin and glucagon receptor pathways.",
+      "specs": {
+        "form": "Lyophilized powder",
+        "purity": "≥99% (HPLC)"
+      },
+      "status": "active",
+      "featured_rank": null,
+      "sort_order": 22,
+      "review_flags": [],
+      "resolved_flags": [
+        "Renamed from 'GLP-3 (Rt)' to Retatrutide. URL changed to /product/retatrutide.",
+        "No sale on 5 mg (regular price = sale price), so no strikethrough is shown."
+      ],
+      "previous_description_claims": "appetite regulation, blood-sugar control, body-weight management",
+      "variants": [
+        {
+          "label": "5 mg",
+          "sku": "PBL-RETATRUTIDE-5MG",
+          "price_cents": 4999,
+          "compare_at_cents": null,
+          "in_stock": true,
+          "sort_order": 0,
+          "legacy_woo_id": 218
+        },
+        {
+          "label": "10 mg",
+          "sku": "PBL-RETATRUTIDE-10MG",
+          "price_cents": 6999,
+          "compare_at_cents": 8999,
+          "in_stock": true,
+          "sort_order": 1,
+          "legacy_woo_id": 215
+        },
+        {
+          "label": "20 mg",
+          "sku": "PBL-RETATRUTIDE-20MG",
+          "price_cents": 10999,
+          "compare_at_cents": 12999,
+          "in_stock": true,
+          "sort_order": 2,
+          "legacy_woo_id": 216
+        },
+        {
+          "label": "40 mg",
+          "sku": "PBL-RETATRUTIDE-40MG",
+          "price_cents": 15999,
+          "compare_at_cents": 17999,
+          "in_stock": false,
+          "sort_order": 3,
+          "legacy_woo_id": 217
         }
       ]
     },
@@ -843,6 +866,7 @@
       "featured_rank": null,
       "sort_order": 23,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "anti-anxiety, mood, stress resilience, cognitive performance",
       "variants": [
         {
@@ -857,10 +881,10 @@
       ]
     },
     {
-      "slug": "semaglutide-glp-1",
-      "legacy_slug": null,
+      "slug": "semaglutide",
+      "legacy_slug": "semaglutide-glp-1",
       "legacy_woo_id": 594,
-      "name": "Semaglutide (GLP-1)",
+      "name": "Semaglutide",
       "category": "metabolic",
       "summary": "GLP-1 receptor agonist",
       "description": "Semaglutide is a synthetic, acylated analog of glucagon-like peptide-1 (GLP-1) and a GLP-1 receptor agonist. It is one of the most frequently studied compounds in research on incretin receptor signaling.",
@@ -871,7 +895,9 @@
       "status": "active",
       "featured_rank": null,
       "sort_order": 24,
-      "review_flags": [
+      "review_flags": [],
+      "resolved_flags": [
+        "Renamed from 'Semaglutide (GLP-1)' to Semaglutide to match Tirzepatide and Retatrutide. URL changed to /product/semaglutide.",
         "No sale on 10 mg (regular price = sale price), so no strikethrough is shown."
       ],
       "previous_description_claims": "appetite regulation, blood-sugar control, body-weight management",
@@ -911,7 +937,8 @@
       "status": "active",
       "featured_rank": 8,
       "sort_order": 25,
-      "review_flags": [
+      "review_flags": [],
+      "resolved_flags": [
         "No sale on 10 mg (regular price = sale price), so no strikethrough is shown."
       ],
       "previous_description_claims": "focus, memory, cognitive enhancement, neuroprotection",
@@ -952,6 +979,7 @@
       "featured_rank": null,
       "sort_order": 26,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "smoothing expression lines, wrinkles, skincare",
       "variants": [
         {
@@ -981,6 +1009,7 @@
       "featured_rank": null,
       "sort_order": 27,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "'supporting mitochondrial function', preserving energy production, mitochondrial health",
       "variants": [
         {
@@ -1010,6 +1039,7 @@
       "featured_rank": 2,
       "sort_order": 28,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "tissue healing, flexibility, reducing inflammation 'across the body'",
       "variants": [
         {
@@ -1048,6 +1078,7 @@
       "featured_rank": null,
       "sort_order": 29,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "reduction of visceral fat, body composition",
       "variants": [
         {
@@ -1086,6 +1117,7 @@
       "featured_rank": null,
       "sort_order": 30,
       "review_flags": [],
+      "resolved_flags": [],
       "previous_description_claims": "supporting immune function, resilience against infection, aging",
       "variants": [
         {
@@ -1103,7 +1135,7 @@
       "slug": "tirzepatide",
       "legacy_slug": null,
       "legacy_woo_id": 47,
-      "name": "Tirzepatide (GLP-2)",
+      "name": "Tirzepatide",
       "category": "metabolic",
       "summary": "GIP / GLP-1 receptor agonist",
       "description": "Tirzepatide is a synthetic single-molecule agonist of the GIP and GLP-1 receptors. It is studied in research on dual incretin receptor signaling.",
@@ -1114,8 +1146,9 @@
       "status": "active",
       "featured_rank": null,
       "sort_order": 31,
-      "review_flags": [
-        "The '(GLP-2)' in the name is wrong: tirzepatide is a GIP/GLP-1 agonist. Name kept as-is until you decide."
+      "review_flags": [],
+      "resolved_flags": [
+        "Renamed from 'Tirzepatide (GLP-2)': tirzepatide is a GIP/GLP-1 agonist, not GLP-2."
       ],
       "previous_description_claims": "appetite, glucose regulation, body-weight management",
       "variants": [

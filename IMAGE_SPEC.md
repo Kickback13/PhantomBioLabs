@@ -55,38 +55,38 @@ Optional: `public/images/products/<slug>/main.webp` is used for any size without
 | `public/images/products/bpc-157/5mg.webp` | BPC-157 · 5 mg | In stock |
 | `public/images/products/bpc-157/10mg.webp` | BPC-157 · 10 mg | Out of stock |
 | `public/images/products/bpc-157/20mg.webp` | BPC-157 · 20 mg | Out of stock |
-| `public/images/products/bpc-157-tb-500/10mg.webp` | BPC-157 + TB-500 · 10 mg | In stock · name or size under review |
-| `public/images/products/bpc-157-tb-500/20mg.webp` | BPC-157 + TB-500 · 20 mg | Out of stock · name or size under review |
+| `public/images/products/bpc-157-tb-500/10mg.webp` | BPC-157 + TB-500 · 10 mg | In stock |
+| `public/images/products/bpc-157-tb-500/20mg.webp` | BPC-157 + TB-500 · 20 mg | Out of stock |
 | `public/images/products/cagrilintide/5mg.webp` | Cagrilintide · 5 mg | Out of stock |
-| `public/images/products/cjc-1295-no-dac-ipamorelin/10mg.webp` | CJC-1295 (No DAC) + Ipamorelin · 10 mg | In stock · name or size under review |
+| `public/images/products/cjc-1295-no-dac-ipamorelin/10mg.webp` | CJC-1295 (No DAC) + Ipamorelin · 10 mg | In stock |
 | `public/images/products/dsip/10mg.webp` | DSIP · 10 mg | Out of stock |
 | `public/images/products/epithalon/10mg.webp` | Epithalon · 10 mg | Out of stock |
 | `public/images/products/ghk-cu/50mg.webp` | GHK-Cu · 50 mg | In stock |
 | `public/images/products/ghrp-2/10mg.webp` | GHRP-2 · 10 mg | Out of stock |
 | `public/images/products/ghrp-6/10mg.webp` | GHRP-6 · 10 mg | Out of stock |
-| `public/images/products/glow/70mg.webp` | GLOW · 70 mg | In stock · name or size under review |
-| `public/images/products/glp-3-rt/5mg.webp` | GLP-3 (Rt) · 5 mg | In stock · name or size under review |
-| `public/images/products/glp-3-rt/10mg.webp` | GLP-3 (Rt) · 10 mg | In stock · name or size under review |
-| `public/images/products/glp-3-rt/20mg.webp` | GLP-3 (Rt) · 20 mg | In stock · name or size under review |
-| `public/images/products/glp-3-rt/40mg.webp` | GLP-3 (Rt) · 40 mg | Out of stock · name or size under review |
+| `public/images/products/glow/70mg.webp` | GLOW · 70 mg | In stock |
 | `public/images/products/glutathione/1500mg.webp` | Glutathione · 1500 mg | Out of stock |
 | `public/images/products/hcg/5000iu.webp` | HCG · 5000 IU | Out of stock |
 | `public/images/products/igf-1-lr3/1mg.webp` | IGF-1 LR3 · 1 mg | In stock |
 | `public/images/products/ipamorelin/5mg.webp` | Ipamorelin · 5 mg | Out of stock |
 | `public/images/products/ipamorelin/10mg.webp` | Ipamorelin · 10 mg | Out of stock |
 | `public/images/products/kisspeptin/10mg.webp` | Kisspeptin · 10 mg | Out of stock |
-| `public/images/products/klow/80mg.webp` | KLOW · 80 mg | In stock · name or size under review |
-| `public/images/products/kpv/10mg.webp` | KPV · 10 mg | In stock · name or size under review |
+| `public/images/products/klow/80mg.webp` | KLOW · 80 mg | In stock |
+| `public/images/products/kpv/10mg.webp` | KPV · 10 mg | In stock |
 | `public/images/products/mots-c/10mg.webp` | MOTS-c · 10 mg | In stock |
 | `public/images/products/mots-c/40mg.webp` | MOTS-c · 40 mg | Out of stock |
 | `public/images/products/mt-2-melanotan-ii/10mg.webp` | MT-2 (Melanotan II) · 10 mg | Out of stock |
 | `public/images/products/pinealon/10mg.webp` | Pinealon · 10 mg | Out of stock |
 | `public/images/products/pt-141/10mg.webp` | PT-141 · 10 mg | Out of stock |
+| `public/images/products/retatrutide/5mg.webp` | Retatrutide · 5 mg | In stock |
+| `public/images/products/retatrutide/10mg.webp` | Retatrutide · 10 mg | In stock |
+| `public/images/products/retatrutide/20mg.webp` | Retatrutide · 20 mg | In stock |
+| `public/images/products/retatrutide/40mg.webp` | Retatrutide · 40 mg | Out of stock |
 | `public/images/products/selank/5mg.webp` | Selank · 5 mg | In stock |
-| `public/images/products/semaglutide-glp-1/5mg.webp` | Semaglutide (GLP-1) · 5 mg | In stock · name or size under review |
-| `public/images/products/semaglutide-glp-1/10mg.webp` | Semaglutide (GLP-1) · 10 mg | In stock · name or size under review |
-| `public/images/products/semax/5mg.webp` | Semax · 5 mg | In stock · name or size under review |
-| `public/images/products/semax/10mg.webp` | Semax · 10 mg | Out of stock · name or size under review |
+| `public/images/products/semaglutide/5mg.webp` | Semaglutide · 5 mg | In stock |
+| `public/images/products/semaglutide/10mg.webp` | Semaglutide · 10 mg | In stock |
+| `public/images/products/semax/5mg.webp` | Semax · 5 mg | In stock |
+| `public/images/products/semax/10mg.webp` | Semax · 10 mg | Out of stock |
 | `public/images/products/snap-8/10mg.webp` | Snap-8 · 10 mg | Out of stock |
 | `public/images/products/ss-31/10mg.webp` | SS-31 · 10 mg | Out of stock |
 | `public/images/products/tb-500/5mg.webp` | TB-500 · 5 mg | In stock |
@@ -94,9 +94,9 @@ Optional: `public/images/products/<slug>/main.webp` is used for any size without
 | `public/images/products/tesamorelin/5mg.webp` | Tesamorelin · 5 mg | Out of stock |
 | `public/images/products/tesamorelin/10mg.webp` | Tesamorelin · 10 mg | In stock |
 | `public/images/products/thymosin-alpha-1/10mg.webp` | Thymosin Alpha-1 · 10 mg | Out of stock |
-| `public/images/products/tirzepatide/5mg.webp` | Tirzepatide (GLP-2) · 5 mg | Out of stock · name or size under review |
-| `public/images/products/tirzepatide/10mg.webp` | Tirzepatide (GLP-2) · 10 mg | In stock · name or size under review |
-| `public/images/products/tirzepatide/20mg.webp` | Tirzepatide (GLP-2) · 20 mg | Out of stock · name or size under review |
+| `public/images/products/tirzepatide/5mg.webp` | Tirzepatide · 5 mg | Out of stock |
+| `public/images/products/tirzepatide/10mg.webp` | Tirzepatide · 10 mg | In stock |
+| `public/images/products/tirzepatide/20mg.webp` | Tirzepatide · 20 mg | Out of stock |
 
 ## 5. Later pages (not needed for the home page sign-off)
 

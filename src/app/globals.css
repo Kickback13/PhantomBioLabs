@@ -76,6 +76,7 @@
   --animate-marquee-y: marquee-y var(--marquee-duration, 30s) linear infinite;
   --animate-float: float 7s ease-in-out infinite;
   --animate-pulse-ring: pulse-ring 4s ease-in-out infinite;
+  --animate-beam: beam 2.2s linear infinite;
 
   @keyframes marquee-x {
     from { transform: translateX(0); }
@@ -88,6 +89,10 @@
   @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
+  }
+  @keyframes beam {
+    from { background-position: -40% 0; }
+    to { background-position: 140% 0; }
   }
   @keyframes pulse-ring {
     0%, 100% { opacity: 0.55; transform: scale(1); }
