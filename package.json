@@ -11,7 +11,9 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "catalog:import": "node scripts/import-legacy-catalog.mjs",
-    "catalog:seed-sql": "node scripts/generate-seed-sql.mjs"
+    "catalog:seed-sql": "node scripts/generate-seed-sql.mjs",
+    "seo:audit": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/seo-audit.ts crawl",
+    "seo:redirects": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/seo-audit.ts redirects"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.5.0",
