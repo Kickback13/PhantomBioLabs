@@ -1,15 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowUpRight, FileCheck2, FileText, SearchX } from "lucide-react";
-import { AnimatePresence, motion } from "motion/react";
+import { ArrowUpRight, FileCheck2, SearchX } from "lucide-react";
 import { useMemo, useState, type ReactNode } from "react";
 import { BeamSearch } from "@/components/ui/beam-search";
 import { ChipGroup } from "@/components/ui/chip-group";
-import { Spotlight } from "@/components/ui/spotlight";
 import type { Coa } from "@/lib/catalog";
-
-const dateFormat = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
+import { coaPath, formatTestedOn } from "@/lib/coa";
 
 export function CoaLibrary({ coas }: { coas: Coa[] }) {
   const [query, setQuery] = useState("");
@@ -48,48 +45,49 @@ export function CoaLibrary({ coas }: { coas: Coa[] }) {
       </p>
 
       {filtered.length ? (
-        <motion.ul layout className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-          <AnimatePresence initial={false}>
-            {filtered.map((c) => (
-              <motion.li
-                key={c.id}
-                layout
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.98 }}
-                transition={{ duration: 0.25 }}
-              >
-                <Spotlight className="flex h-full flex-col rounded-[var(--radius-card)] border border-line bg-surface p-5">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="min-w-0">
-                      <Link href={`/product/${c.productSlug}`} className="text-lg font-semibold tracking-tight hover:text-violet-300">
-                        {c.productName}
-                      </Link>
-                      {c.variantLabel && <p className="mt-0.5 font-mono text-[11px] tracking-wide text-muted">{c.variantLabel}</p>}
-                    </div>
-                    <span className="grid size-10 shrink-0 place-items-center rounded-xl border border-violet-400/30 bg-violet-500/10 text-violet-300">
-                      <FileText className="size-4" />
-                    </span>
-                  </div>
-                  <dl className="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
-                    <Field label="Lot" value={c.lotNumber} mono />
-                    <Field label="Purity" value={c.purityPercent !== null ? `${c.purityPercent.toFixed(2)}%` : "See PDF"} mono />
-                    <Field label="Tested" value={c.testedOn ? dateFormat.format(new Date(`${c.testedOn}T00:00:00Z`)) : "See PDF"} />
-                    <Field label="Laboratory" value={c.labName ?? "Third-party lab"} />
-                  </dl>
-                  <a
-                    href={c.fileUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-6 inline-flex items-center gap-1.5 self-start rounded-lg border border-line-strong px-3 py-2 text-sm font-medium transition-colors hover:border-violet-400/60 hover:bg-violet-500/10"
-                  >
-                    View PDF <ArrowUpRight className="size-4" />
-                  </a>
-                </Spotlight>
-              </motion.li>
-            ))}
-          </AnimatePresence>
-        </motion.ul>
+        <div className="mt-4 overflow-x-auto rounded-[var(--radius-card)] border border-line">
+          <table className="w-full min-w-[720px] text-left text-sm">
+            <caption className="sr-only">Published certificates of analysis</caption>
+            <thead>
+              <tr className="border-b border-line bg-surface font-mono text-[10.5px] tracking-[0.14em] text-muted uppercase">
+                <th scope="col" className="p-4 font-normal">Compound</th>
+                <th scope="col" className="p-4 font-normal">Size</th>
+                <th scope="col" className="p-4 font-normal">Lot</th>
+                <th scope="col" className="p-4 font-normal">Tested</th>
+                <th scope="col" className="p-4 font-normal">Purity</th>
+                <th scope="col" className="p-4 font-normal">Laboratory</th>
+                <th scope="col" className="p-4 font-normal">
+                  <span className="sr-only">Links</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {filtered.map((c) => (
+                <tr key={c.id} className="border-b border-line last:border-0">
+                  <th scope="row" className="p-4 font-medium">
+                    <Link href={`/product/${c.productSlug}`} className="hover:text-violet-300">
+                      {c.productName}
+                    </Link>
+                  </th>
+                  <td className="p-4 font-mono text-[13px] text-muted">{c.variantLabel ?? "All sizes"}</td>
+                  <td className="p-4 font-mono text-[13px]">
+                    <Link href={coaPath(c)} className="text-violet-300 hover:underline">
+                      {c.lotNumber}
+                    </Link>
+                  </td>
+                  <td className="p-4">{formatTestedOn(c.testedOn) ?? "See PDF"}</td>
+                  <td className="p-4 font-mono text-[13px]">{c.purityPercent !== null ? `${c.purityPercent.toFixed(2)}%` : "See PDF"}</td>
+                  <td className="p-4">{c.labName ?? "Third-party lab"}</td>
+                  <td className="p-4 text-right whitespace-nowrap">
+                    <a href={c.fileUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-medium hover:text-violet-300">
+                      PDF <ArrowUpRight aria-hidden="true" className="size-3.5" />
+                    </a>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       ) : (
         <div className="mt-6 flex flex-col items-center rounded-[var(--radius-card)] border border-dashed border-line-strong px-6 py-16 text-center">
           <SearchX className="size-6 text-violet-300" />
@@ -97,15 +95,6 @@ export function CoaLibrary({ coas }: { coas: Coa[] }) {
           <p className="mt-1 text-sm text-muted">Try a compound name or the lot number printed on your vial.</p>
         </div>
       )}
-    </div>
-  );
-}
-
-function Field({ label, value, mono = false }: { label: string; value: string; mono?: boolean }) {
-  return (
-    <div className="min-w-0">
-      <dt className="eyebrow !text-[10px]">{label}</dt>
-      <dd className={mono ? "mt-1 truncate font-mono text-[13px]" : "mt-1 truncate"}>{value}</dd>
     </div>
   );
 }
