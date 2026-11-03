@@ -2,13 +2,14 @@ import { Check, Minus } from "lucide-react";
 import { getStoreSettings } from "@/lib/catalog";
 import { formatPrice } from "@/lib/utils";
 import { SectionHeading } from "./section-heading";
+import { site } from "@/lib/site";
 
 export async function Comparison() {
   const { freeShippingThresholdCents } = await getStoreSettings();
   const rows: [string, string][] = [
     ["Independent third-party COA for every lot", "Varies"],
     ["≥99% purity specification", "Varies"],
-    ["Same-day dispatch before 2pm ET", "Rare"],
+    [`Same-day dispatch before ${site.dispatch.cutoff}`, "Rare"],
     ["U.S.-based fulfilment", "Sometimes"],
     [`Free U.S. shipping over ${formatPrice(freeShippingThresholdCents).replace(".00", "")}`, "Rare"],
     ["Age and research-use verification", "Weak"],
@@ -24,7 +25,7 @@ export async function Comparison() {
                 <span className="sr-only">Feature</span>
               </th>
               <th scope="col" className="w-28 bg-violet-500/10 p-4 text-center font-semibold sm:w-44 sm:p-5">
-                Phantom
+                Phantom Bio Labs
               </th>
               <th scope="col" className="w-24 p-4 text-center font-normal text-muted sm:w-40 sm:p-5">
                 Typical supplier
@@ -38,7 +39,8 @@ export async function Comparison() {
                   {feature}
                 </th>
                 <td className="bg-violet-500/[0.06] p-4 text-center sm:p-5">
-                  <Check className="mx-auto size-4 text-violet-300" aria-label="Yes" />
+                  <Check className="mx-auto size-4 text-violet-300" aria-hidden="true" />
+                  <span className="sr-only">Yes</span>
                 </td>
                 <td className="p-4 text-center text-muted sm:p-5">
                   <span className="inline-flex items-center gap-1.5">

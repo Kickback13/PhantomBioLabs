@@ -2,6 +2,7 @@ import { FileCheck2, PackageCheck, ShieldCheck } from "lucide-react";
 import { Spotlight } from "@/components/ui/spotlight";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "./section-heading";
+import { site } from "@/lib/site";
 
 const pillars = [
   {
@@ -17,7 +18,7 @@ const pillars = [
   {
     icon: PackageCheck,
     title: "Same-day, discreet dispatch",
-    body: "Orders before 2pm ET ship the same business day in unmarked packaging. Damaged shipments are reshipped at our cost.",
+    body: `Orders before ${site.dispatch.cutoff} ship the same business day in unmarked packaging. Damaged shipments are reshipped at our cost.`,
   },
 ];
 
@@ -26,7 +27,7 @@ const steps = [
   { title: "Purification", body: "Reverse-phase HPLC to ≥99% purity, with retention data archived per lot." },
   { title: "Verification", body: "An independent third-party lab confirms identity, mass and purity." },
   { title: "Lyophilization", body: "Freeze-dried, sealed and checked for fill uniformity." },
-  { title: "Dispatch", body: "Packed discreetly and shipped the same day when ordered before 2pm ET." },
+  { title: "Dispatch", body: `Packed discreetly and shipped the same day when ordered before ${site.dispatch.cutoff}.` },
 ];
 
 export function PhantomStandard() {

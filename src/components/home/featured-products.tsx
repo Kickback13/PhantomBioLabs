@@ -4,6 +4,7 @@ import { ProductCard } from "@/components/product/product-card";
 import { Button } from "@/components/ui/button";
 import { getFeaturedProducts, getProducts } from "@/lib/catalog";
 import { SectionHeading } from "./section-heading";
+import { site } from "@/lib/site";
 
 export async function FeaturedProducts() {
   const [featured, all] = await Promise.all([getFeaturedProducts(8), getProducts()]);
@@ -14,7 +15,7 @@ export async function FeaturedProducts() {
           index="02"
           eyebrow="In stock now"
           title="Ready to ship today."
-          description="Lot-verified compounds in stock and dispatched the same day when ordered before 2pm ET."
+          description={`Lot-verified compounds in stock and dispatched the same day when ordered before ${site.dispatch.cutoff}.`}
           action={
             <Button asChild variant="outline">
               <Link href="/shop">

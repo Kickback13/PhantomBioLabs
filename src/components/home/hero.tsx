@@ -15,7 +15,7 @@ import { site } from "@/lib/site";
 const stats = [
   { value: <><NumberTicker value={99} />%+</>, label: "Purity, every lot" },
   { value: "HPLC", label: "Third-party tested" },
-  { value: "Same day", label: "Dispatch before 2pm ET" },
+  { value: "Same day", label: `Dispatch before ${site.dispatch.cutoff}` },
   { value: "Discreet", label: "Unmarked packaging" },
 ];
 

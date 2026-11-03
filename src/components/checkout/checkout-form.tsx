@@ -143,7 +143,7 @@ export function CheckoutForm() {
                 <input type="radio" name="shipping_method" value="standard" defaultChecked className="accent-[var(--violet-500)]" />
                 <span>
                   <span className="block text-sm font-medium">Standard</span>
-                  <span className="block text-xs text-muted">USPS Priority or UPS Ground · ships same day before 2pm ET</span>
+                  <span className="block text-xs text-muted">USPS Priority or UPS Ground · ships same day before {site.dispatch.cutoff}</span>
                 </span>
               </span>
               <span className="text-sm tabular-nums">{shipping ? formatPrice(shipping) : "Free"}</span>

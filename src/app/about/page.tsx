@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { NumberTicker } from "@/components/ui/number-ticker";
 import { Reveal } from "@/components/ui/reveal";
 import { Spotlight } from "@/components/ui/spotlight";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About",
@@ -28,14 +29,14 @@ const commitments = [
   {
     icon: PackageCheck,
     title: "Same-day fulfilment",
-    body: "Orders placed before 2pm ET ship the same business day in discreet, unmarked packaging, tracked from our door to your bench.",
+    body: `Orders placed before ${site.dispatch.cutoff} ship the same business day in discreet, unmarked packaging, tracked from our door to your bench.`,
   },
 ];
 
 const stats = [
   { value: <><NumberTicker value={99} />%+</>, label: "Purity specification, every lot" },
   { value: "Every lot", label: "Third-party tested before release" },
-  { value: "Same day", label: "Dispatch for orders before 2pm ET" },
+  { value: "Same day", label: `Dispatch for orders before ${site.dispatch.cutoff}` },
   { value: "21+", label: "Qualified researchers only" },
 ];
 

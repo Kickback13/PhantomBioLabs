@@ -195,7 +195,7 @@ function Shipping({ thresholdCents }: { thresholdCents: number }) {
   return (
     <div className="grid max-w-3xl gap-4 text-[15px] leading-relaxed text-ink-200 sm:grid-cols-2">
       {[
-        ["Dispatch", "Orders placed before 2pm ET on business days ship the same day. Later orders ship the next business day."],
+        ["Dispatch", `Orders placed before ${site.dispatch.cutoff} on business days ship the same day. Later orders ship the next business day.`],
         ["Carriers", "Domestic orders ship by USPS Priority or UPS Ground in discreet, unmarked packaging."],
         ["Free shipping", `Orders over ${formatPrice(thresholdCents).replace(".00", "")} ship free within the United States.`],
         ["Handling", "Lyophilized peptides are typically stable sealed at 2–8°C. Storage notes are on each COA."],

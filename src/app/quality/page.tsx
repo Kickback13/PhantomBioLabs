@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
 import { ScrollTimeline, type TimelineEntry } from "@/components/ui/scroll-timeline";
 import { Spotlight } from "@/components/ui/spotlight";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Quality & Testing",
@@ -82,8 +83,8 @@ const process: TimelineEntry[] = [
     label: "Checkpoint 05",
     content: (
       <StepBody
-        text="Orders placed before 2pm ET ship the same business day in discreet, unmarked packaging, with the lot-specific COA in the box and tracking on every shipment."
-        points={["Same-day dispatch before 2pm ET", "Discreet, unmarked packaging", "COA in every box", "Tracked delivery"]}
+        text={`Orders placed before ${site.dispatch.cutoff} ship the same business day in discreet, unmarked packaging, with the lot-specific COA in the box and tracking on every shipment.`}
+        points={[`Same-day dispatch before ${site.dispatch.cutoff}`, "Discreet, unmarked packaging", "COA in every box", "Tracked delivery"]}
       />
     ),
   },

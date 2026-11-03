@@ -14,6 +14,7 @@ import { cn, discountPercent, formatPrice, sizeSlug } from "@/lib/utils";
 import { MAX_LINE_QUANTITY } from "@/components/cart/cart-context";
 import { ProductImage } from "./product-image";
 import { StockBadge } from "./stock-badge";
+import { site } from "@/lib/site";
 
 /** Reads ?size= from the URL. Rendered inside <Suspense>; the fallback is ProductPurchase with the default size. */
 export function ProductPurchaseFromUrl({ product }: { product: Product }) {
@@ -158,7 +159,7 @@ export function ProductPurchase({ product, initialSize }: { product: Product; in
           {[
             { icon: ShieldCheck, text: "≥99% purity, HPLC-tested by an independent lab" },
             { icon: FileCheck2, text: "Lot-specific COA in every box" },
-            { icon: PackageCheck, text: "Same-day dispatch before 2pm ET" },
+            { icon: PackageCheck, text: `Same-day dispatch before ${site.dispatch.cutoff}` },
             { icon: Check, text: "Discreet, unmarked packaging" },
           ].map(({ icon: Icon, text }) => (
             <li key={text} className="flex items-start gap-3">

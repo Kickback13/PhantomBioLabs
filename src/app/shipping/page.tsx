@@ -26,7 +26,7 @@ export default async function ShippingPage() {
   const { freeShippingThresholdCents, flatShippingCents } = await getStoreSettings();
   const threshold = formatPrice(freeShippingThresholdCents).replace(".00", "");
   const highlights = [
-    { icon: Clock, title: "Before 2pm ET", body: "Ships the same business day" },
+    { icon: Clock, title: `Before ${site.dispatch.cutoff}`, body: "Ships the same business day" },
     { icon: Truck, title: `Free over ${threshold}`, body: "U.S. orders, standard shipping" },
     { icon: PackageCheck, title: "Discreet", body: "Unmarked, sealed packaging" },
   ];
@@ -50,7 +50,7 @@ export default async function ShippingPage() {
       <div className="h-6" />
       <ProseSection id="dispatch" index={1} title="Dispatch times">
         <p>
-          Orders placed and paid before 2pm ET on a business day are dispatched the same day. Orders placed after 2pm, or on weekends and U.S. holidays, ship the next business day.
+          Orders placed and paid before {site.dispatch.cutoff} on a business day are dispatched the same day. Orders placed after that time, or on weekends and U.S. holidays, ship the next business day.
         </p>
       </ProseSection>
       <ProseSection id="carriers" index={2} title="Carriers and tracking">

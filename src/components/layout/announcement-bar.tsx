@@ -1,13 +1,14 @@
 import { Marquee } from "@/components/ui/marquee";
 import { getStoreSettings } from "@/lib/catalog";
 import { formatPrice } from "@/lib/utils";
+import { site } from "@/lib/site";
 
 export async function AnnouncementBar() {
   const { freeShippingThresholdCents } = await getStoreSettings();
   const items = [
     `Free U.S. shipping over ${formatPrice(freeShippingThresholdCents).replace(".00", "")}`,
     "Third-party HPLC tested",
-    "Same-day dispatch before 2pm ET",
+    `Same-day dispatch before ${site.dispatch.cutoff}`,
     "Lot-specific COA in every box",
     "Discreet, unmarked packaging",
     "For laboratory research use only",

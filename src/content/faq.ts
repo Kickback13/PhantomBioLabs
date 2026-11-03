@@ -1,3 +1,5 @@
+import { hours } from "@/lib/site";
+
 // Shared by the home page preview and the FAQ page. Answers come from the old site, tightened.
 export type FaqItem = { topic: "Orders" | "Shipping" | "Quality" | "Compliance" | "Handling"; q: string; a: string };
 
@@ -15,7 +17,7 @@ export const faq: FaqItem[] = [
   {
     topic: "Shipping",
     q: "How are orders shipped?",
-    a: "Orders placed before 2pm ET on business days ship the same day; later orders ship the next business day. Domestic orders go by USPS Priority or UPS Ground, with 2-day and overnight options at checkout, in discreet, unmarked packaging.",
+    a: `Orders placed before ${hours.shipCutoff} on business days ship the same day; later orders ship the next business day. Domestic orders go by USPS Priority or UPS Ground, with 2-day and overnight options at checkout, in discreet, unmarked packaging.`,
   },
   {
     topic: "Orders",
