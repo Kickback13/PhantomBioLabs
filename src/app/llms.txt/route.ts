@@ -1,3 +1,4 @@
+import { guides, isGuideReady } from "@/content/guides";
 import { getCategories } from "@/lib/catalog";
 import { absoluteUrl } from "@/lib/seo";
 import { site } from "@/lib/site";
@@ -5,6 +6,7 @@ import { site } from "@/lib/site";
 // Short markdown summary for AI assistants and answer engines (https://llmstxt.org).
 export async function GET() {
   const categories = await getCategories();
+  const ready = guides.filter(isGuideReady);
   const body = `# ${site.name}
 
 > ${site.description}
@@ -24,7 +26,7 @@ ${categories.map((c) => `- [${c.name}](${absoluteUrl(`/category/${c.slug}`)})${c
 - [Quality & testing](${absoluteUrl("/quality")}): how lots are tested and documented
 - [Research use policy](${absoluteUrl("/research-use")})
 
-## Support
+${ready.length ? `## Guides and research\n\n${ready.map((g) => `- [${g.title}](${absoluteUrl(g.path)}): ${g.description}`).join("\n")}\n\n` : ""}## Support
 
 - [FAQ](${absoluteUrl("/faq")})
 - [Shipping & returns](${absoluteUrl("/shipping")})

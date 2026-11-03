@@ -2,6 +2,7 @@ import Link from "next/link";
 import { cacheLife } from "next/cache";
 import { FlaskConical } from "lucide-react";
 import { Logo } from "@/components/brand/logo";
+import { guides, isGuideVisible } from "@/content/guides";
 import { getCategories } from "@/lib/catalog";
 import { footerNav, site } from "@/lib/site";
 
@@ -36,7 +37,12 @@ export async function SiteFooter() {
         </div>
         <FooterColumn title="Shop" links={[{ href: "/shop", label: "All products" }, ...categories.map((c) => ({ href: `/category/${c.slug}`, label: c.name }))]} />
         {Object.entries(footerNav).map(([title, links]) => (
-          <FooterColumn key={title} title={title} links={links} />
+          <FooterColumn
+            key={title}
+            title={title}
+            // Finished guides join the Support column (unfinished ones only show on previews).
+            links={title === "Support" ? [...links, ...guides.filter(isGuideVisible).map((g) => ({ href: g.path, label: g.title }))] : links}
+          />
         ))}
       </div>
       <div className="border-t border-line">

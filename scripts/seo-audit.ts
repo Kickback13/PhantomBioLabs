@@ -174,7 +174,8 @@ async function crawl() {
 
     for (const img of html.match(/<img\b[^>]*>/gi) ?? []) if (!/\balt="/i.test(img)) fail(url, `<img> without alt: ${img.slice(0, 120)}`);
     if (/XXXX/.test(html)) fail(url, 'contains "XXXX"');
-    if (/\{\{SEO_DESK_BRIEF/.test(html)) fail(url, "contains an unfilled {{SEO_DESK_BRIEF}} placeholder");
+    // Placeholders are visible on previews by design and hidden in production.
+    if (expectIndexable && /\{\{SEO_DESK_BRIEF/.test(html)) fail(url, "contains an unfilled {{SEO_DESK_BRIEF}} placeholder");
     if (/Phantom Bio Peptides/i.test(html)) fail(url, 'contains "Phantom Bio Peptides"');
     console.log(`  checked  ${url.replace(CANONICAL_ORIGIN, "") || "/"}  [${[...(schemaTypes.get(url) ?? [])].join(", ")}]`);
   }
