@@ -1,16 +1,23 @@
 import type { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
 import { Suspense } from "react";
-import { FileText } from "lucide-react";
+import Link from "next/link";
+import { BookOpen, FileText, FlaskConical } from "lucide-react";
+import { Citations } from "@/components/content/guide-layout";
 import { ProductPurchase, ProductPurchaseFromUrl } from "@/components/product/product-purchase";
-import { ProductTabs } from "@/components/product/product-tabs";
 import { Breadcrumbs } from "@/components/seo/breadcrumbs";
+import { DeskBrief } from "@/components/seo/desk-brief";
 import { JsonLd } from "@/components/seo/json-ld";
 import { ProductGrid } from "@/components/shop/product-grid";
 import { findProductBySlug, getCoas, getProducts, getStoreSettings, type Coa, type Product } from "@/lib/catalog";
 import { pageMetadata, productTitle } from "@/lib/seo";
 import { site } from "@/lib/site";
-import { productSchema } from "@/lib/structured-data";
+import { faqSchema, productSchema } from "@/lib/structured-data";
+import { getGuide, isGuideVisible } from "@/content/guides";
+import { coaPath, formatTestedOn } from "@/lib/coa";
+import { compoundFacts, type CompoundFacts } from "@/lib/compound-facts";
+
+const LAB_HANDLING_GUIDE = "/guides/lab-handling-reconstitution-storage";
 import { formatPrice } from "@/lib/utils";
 
 const isSupply = (product: Product) => product.category?.slug === "solvents-and-supplies";
@@ -59,12 +66,15 @@ async function ProductView({ params }: Pick<PageProps<"/product/[slug]">, "param
 
   const [products, coas, settings] = await Promise.all([getProducts(), getCoas(), getStoreSettings()]);
   const productCoas = coas.filter((c) => c.productSlug === product.slug);
+  const facts = compoundFacts(product.slug);
+  const handling = getGuide(LAB_HANDLING_GUIDE);
   const sameCategory = products.filter((p) => p.id !== product.id && p.category?.slug === product.category?.slug);
   const related = [...sameCategory.filter((p) => p.inStock), ...sameCategory.filter((p) => !p.inStock), ...products.filter((p) => p.id !== product.id && p.inStock && !sameCategory.includes(p))].slice(0, 4);
 
   return (
     <>
       <JsonLd data={productSchema(product, settings, productCoas)} />
+      {facts.faq.length > 0 && <JsonLd data={faqSchema(facts.faq)} />}
       <div className="container-page pt-6 pb-16 sm:pt-8">
         <Breadcrumbs
           className="mb-6"
@@ -76,22 +86,67 @@ async function ProductView({ params }: Pick<PageProps<"/product/[slug]">, "param
           ]}
         />
 
+        {/* 1. H1 and variant picker */}
         <Suspense fallback={<ProductPurchase product={product} />}>
           <ProductPurchaseFromUrl product={product} />
         </Suspense>
 
-        <div className="mt-16 sm:mt-20">
-          <ProductTabs
-            tabs={[
-              { id: "description", label: "Description", content: <Description product={product} /> },
-              { id: "specs", label: "Specifications", content: <Specs product={product} /> },
-              { id: "coa", label: `COA${productCoas.length ? ` (${productCoas.length})` : ""}`, content: <CoaList coas={productCoas} /> },
-              { id: "shipping", label: "Shipping", content: <Shipping thresholdCents={settings.freeShippingThresholdCents} /> },
-            ]}
-          />
+        <div className="mt-16 grid gap-14 sm:mt-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+          <div className="min-w-0 space-y-14">
+            {/* 2. Key facts, 3. COA link */}
+            <Section id="key-facts" eyebrow="Specifications" title="Key facts">
+              <KeyFacts product={product} facts={facts} coa={productCoas[0] ?? null} />
+              <CoaLinks coas={productCoas} />
+            </Section>
+
+            {/* 4. Research overview: catalog description, desk copy, citations from data */}
+            <Section id="research-overview" eyebrow="Research" title="Research overview">
+              <div className="max-w-2xl space-y-4 text-[15px] leading-relaxed text-ink-200">
+                <p>{product.description}</p>
+              </div>
+              <DeskBrief brief={`Research overview for ${product.name}: "studied in [model] research" wording only, each statement cited (PubMed/DOI in data/compound-facts.json). No human or animal use, benefit or dosing.`} />
+              <Citations citations={facts.citations} />
+            </Section>
+
+            {/* 7. Short FAQ from data */}
+            {facts.faq.length > 0 && (
+              <Section id="faq" eyebrow="FAQ" title={`${product.name} questions`}>
+                <div className="divide-y divide-line border-y border-line">
+                  {facts.faq.map((item) => (
+                    <details key={item.q} className="group py-1 [&_summary::-webkit-details-marker]:hidden">
+                      <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-4 font-medium">{item.q}</summary>
+                      <p className="pb-5 text-[14.5px] leading-relaxed text-muted">{item.a}</p>
+                    </details>
+                  ))}
+                </div>
+              </Section>
+            )}
+          </div>
+
+          <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
+            {/* 5. Lab handling link (only once the guide is live) */}
+            {isGuideVisible(handling) && (
+              <Link href={handling.path} className="group flex gap-4 rounded-2xl border border-line bg-surface p-5 transition-colors hover:border-violet-400/50">
+                <BookOpen aria-hidden="true" className="mt-0.5 size-5 shrink-0 text-violet-300" />
+                <span>
+                  <span className="block font-medium group-hover:text-violet-200">{handling.title}</span>
+                  <span className="mt-1 block text-sm text-muted">In-vitro concentration math, solvents, and storage of lyophilized research peptides.</span>
+                </span>
+              </Link>
+            )}
+            {/* 6. RUO disclaimer */}
+            <div className="flex gap-3 rounded-2xl border border-violet-400/25 bg-violet-500/[0.06] p-5">
+              <FlaskConical aria-hidden="true" className="mt-0.5 size-4 shrink-0 text-violet-300" />
+              <p className="text-[13px] leading-relaxed text-ink-200">
+                {site.compliance.ruo} Buyers are responsible for complying with the laws of their jurisdiction.
+              </p>
+            </div>
+            <ShippingNote thresholdCents={settings.freeShippingThresholdCents} />
+          </aside>
         </div>
       </div>
 
+      {/* 8. Related compounds */}
       {related.length > 0 && (
         <section className="border-t border-line bg-ink-900/40 py-16 sm:py-20">
           <div className="container-page">
@@ -107,64 +162,56 @@ async function ProductView({ params }: Pick<PageProps<"/product/[slug]">, "param
   );
 }
 
-function Description({ product }: { product: Product }) {
+function Section({ id, eyebrow, title, children }: { id: string; eyebrow: string; title: string; children: React.ReactNode }) {
   return (
-    <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
-      <div className="max-w-2xl space-y-4 text-[15px] leading-relaxed text-ink-200">
-        <p>{product.description}</p>
-        <p className="text-muted">
-          Supplied for in-vitro laboratory research and analytical use only. Not for human or animal use, and not for therapeutic, diagnostic or veterinary
-          purposes. Buyers are responsible for complying with the laws of their jurisdiction.
-        </p>
-      </div>
-      <div className="rounded-2xl border border-line bg-surface p-5">
-        <p className="eyebrow">Available sizes</p>
-        <ul className="mt-3 divide-y divide-line text-sm">
-          {product.variants.map((v) => (
-            <li key={v.id} className="flex items-center justify-between py-2.5">
-              <span className="font-mono">{v.label}</span>
-              <span className="flex items-center gap-3">
-                <span className="tabular-nums">{formatPrice(v.priceCents)}</span>
-                <span className={v.inStock ? "font-mono text-[10px] text-violet-300 uppercase" : "font-mono text-[10px] text-subtle uppercase"}>
-                  {v.inStock ? "In stock" : "Out"}
-                </span>
-              </span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
+    <section aria-labelledby={id} className="scroll-mt-28">
+      <p className="eyebrow">{eyebrow}</p>
+      <h2 id={id} className="mt-2 text-2xl font-semibold tracking-[-0.03em] sm:text-3xl">
+        {title}
+      </h2>
+      <div className="mt-6">{children}</div>
+    </section>
   );
 }
 
-function Specs({ product }: { product: Product }) {
-  const rows: [string, string][] = [
+/** Every value comes from the catalog, data/compound-facts.json or the latest published COA. Empty rows are hidden. */
+function KeyFacts({ product, facts, coa }: { product: Product; facts: CompoundFacts; coa: Coa | null }) {
+  const rows: [string, string | null | undefined][] = [
     ["Compound", product.name],
-    ["Classification", product.summary ?? "—"],
-    ["Research area", product.category?.name ?? "—"],
-    ["Form", product.specs.form ?? "—"],
-    ["Purity specification", product.specs.purity ?? "—"],
-    ["Testing", "HPLC by an independent third-party lab, every lot"],
+    ["Sequence", facts.sequence],
+    ["Molecular formula", facts.molecularFormula],
+    ["Molecular weight", facts.molecularWeight],
+    ["CAS number", facts.cas],
+    ["Salt form", facts.saltForm],
+    ["Format", product.specs.form],
     ["Sizes", product.variants.map((v) => v.label).join(", ")],
-    ["SKUs", product.variants.map((v) => v.sku).filter(Boolean).join(", ") || "—"],
-    ["Intended use", "In-vitro laboratory research only"],
+    ["Purity specification", product.specs.purity],
+    ["Test method", isSupply(product) ? null : "HPLC by an independent third-party lab, every lot"],
+    ["Current lot", coa?.lotNumber],
+    ["Lot purity", coa?.purityPercent != null ? `${coa.purityPercent.toFixed(2)}%` : null],
+    ["Laboratory", coa?.labName],
+    ["Test date", formatTestedOn(coa?.testedOn ?? null)],
+    ["Storage", facts.storage],
+    ["SKUs", product.variants.map((v) => v.sku).filter(Boolean).join(", ") || null],
   ];
   return (
-    <dl className="max-w-3xl divide-y divide-line overflow-hidden rounded-2xl border border-line">
-      {rows.map(([k, v]) => (
-        <div key={k} className="grid gap-1 px-5 py-3.5 sm:grid-cols-[220px_1fr] sm:gap-6">
-          <dt className="font-mono text-[11px] tracking-[0.14em] text-muted uppercase sm:pt-0.5">{k}</dt>
-          <dd className="text-sm">{v}</dd>
-        </div>
-      ))}
+    <dl className="divide-y divide-line overflow-hidden rounded-2xl border border-line">
+      {rows
+        .filter((r): r is [string, string] => Boolean(r[1]))
+        .map(([k, v]) => (
+          <div key={k} className="grid gap-1 px-5 py-3.5 sm:grid-cols-[200px_1fr] sm:gap-6">
+            <dt className="font-mono text-[11px] tracking-[0.14em] text-muted uppercase sm:pt-0.5">{k}</dt>
+            <dd className="text-sm break-words">{v}</dd>
+          </div>
+        ))}
     </dl>
   );
 }
 
-function CoaList({ coas }: { coas: Coa[] }) {
+function CoaLinks({ coas }: { coas: Coa[] }) {
   if (!coas.length) {
     return (
-      <div className="max-w-2xl rounded-2xl border border-dashed border-line-strong p-6">
+      <div className="mt-5 rounded-2xl border border-dashed border-line-strong p-5">
         <p className="font-medium">Certificates for current lots are being published.</p>
         <p className="mt-2 text-sm leading-relaxed text-muted">
           A lot-specific Certificate of Analysis ships in every box. To see the COA for a specific lot before ordering, message us on{" "}
@@ -176,47 +223,40 @@ function CoaList({ coas }: { coas: Coa[] }) {
       </div>
     );
   }
+  const [latest, ...older] = coas;
   return (
-    <ul className="grid max-w-3xl gap-3">
-      {coas.map((c) => (
-        <li key={c.id} className="flex flex-wrap items-center gap-4 rounded-2xl border border-line bg-surface p-4">
-          <div className="grid size-10 place-items-center rounded-xl bg-violet-500/10 text-violet-300">
-            <FileText className="size-5" />
-          </div>
-          <div className="min-w-0 flex-1">
-            <p className="font-medium">
-              Lot {c.lotNumber}
-              {c.variantLabel ? <span className="ml-2 font-mono text-xs text-muted">{c.variantLabel}</span> : null}
-            </p>
-            <p className="mt-0.5 text-xs text-muted">
-              {[c.testedOn && `Tested ${new Date(c.testedOn + "T00:00:00").toLocaleDateString("en-US", { dateStyle: "medium" })}`, c.purityPercent && `${c.purityPercent}% purity`, c.labName]
-                .filter(Boolean)
-                .join(" · ")}
-            </p>
-          </div>
-          <a href={c.fileUrl} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-line-strong px-3 py-1.5 text-sm hover:border-violet-400/60">
-            View PDF
-          </a>
-        </li>
-      ))}
-    </ul>
+    <div className="mt-5">
+      <Link href={coaPath(latest)} className="inline-flex items-center gap-2 rounded-xl border border-line-strong px-4 py-2.5 text-sm font-medium hover:border-violet-400/60 hover:bg-violet-500/10">
+        <FileText aria-hidden="true" className="size-4 text-violet-300" /> View this lot&apos;s COA (lot {latest.lotNumber})
+      </Link>
+      {older.length > 0 && (
+        <p className="mt-3 text-sm text-muted">
+          Earlier lots:{" "}
+          {older.map((c, i) => (
+            <span key={c.id}>
+              {i > 0 && ", "}
+              <Link href={coaPath(c)} className="text-violet-300 hover:underline">
+                {c.lotNumber}
+              </Link>
+            </span>
+          ))}
+        </p>
+      )}
+    </div>
   );
 }
 
-function Shipping({ thresholdCents }: { thresholdCents: number }) {
+function ShippingNote({ thresholdCents }: { thresholdCents: number }) {
   return (
-    <div className="grid max-w-3xl gap-4 text-[15px] leading-relaxed text-ink-200 sm:grid-cols-2">
-      {[
-        ["Dispatch", `Orders placed before ${site.dispatch.cutoff} on business days ship the same day. Later orders ship the next business day.`],
-        ["Carriers", "Domestic orders ship by USPS Priority or UPS Ground in discreet, unmarked packaging."],
-        ["Free shipping", `Orders over ${formatPrice(thresholdCents).replace(".00", "")} ship free within the United States.`],
-        ["Handling", "Lyophilized peptides are typically stable sealed at 2–8°C. Storage notes are on each COA."],
-      ].map(([title, body]) => (
-        <div key={title} className="rounded-2xl border border-line bg-surface p-5">
-          <p className="eyebrow">{title}</p>
-          <p className="mt-2 text-sm text-ink-200">{body}</p>
-        </div>
-      ))}
+    <div className="rounded-2xl border border-line bg-surface p-5 text-sm leading-relaxed text-ink-200">
+      <p className="eyebrow">Shipping</p>
+      <p className="mt-2">
+        Orders placed before {site.dispatch.cutoff} on business days ship the same day by USPS Priority or UPS Ground, in discreet packaging. Free U.S. shipping over{" "}
+        {formatPrice(thresholdCents).replace(".00", "")}.{" "}
+        <Link href="/shipping" className="text-violet-300 hover:underline">
+          Shipping &amp; returns
+        </Link>
+      </p>
     </div>
   );
 }
