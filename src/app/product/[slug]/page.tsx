@@ -1,14 +1,28 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound, permanentRedirect } from "next/navigation";
 import { Suspense } from "react";
-import { ChevronRight, FileText } from "lucide-react";
+import { FileText } from "lucide-react";
 import { ProductPurchase, ProductPurchaseFromUrl } from "@/components/product/product-purchase";
 import { ProductTabs } from "@/components/product/product-tabs";
+import { Breadcrumbs } from "@/components/seo/breadcrumbs";
+import { JsonLd } from "@/components/seo/json-ld";
 import { ProductGrid } from "@/components/shop/product-grid";
 import { findProductBySlug, getCoas, getProducts, getStoreSettings, type Coa, type Product } from "@/lib/catalog";
+import { pageMetadata, productTitle } from "@/lib/seo";
 import { site } from "@/lib/site";
+import { productSchema } from "@/lib/structured-data";
 import { formatPrice } from "@/lib/utils";
+
+const isSupply = (product: Product) => product.category?.slug === "solvents-and-supplies";
+
+/** "{Compound} research peptide, third-party HPLC tested with lot-specific COA. For laboratory research use only." */
+function productDescription(product: Product) {
+  if (isSupply(product)) {
+    return `${product.name}: ${(product.summary ?? "laboratory supply").toLowerCase()} for lyophilized research peptides. For laboratory research use only.`;
+  }
+  // TODO(SEO-DESK/KEANU): add "to ≥99%" and "Same-day dispatch" once both are confirmed for current stock.
+  return `${product.name} research peptide, third-party HPLC tested with lot-specific COA. For laboratory research use only.`;
+}
 
 export async function generateStaticParams() {
   const products = await getProducts();
@@ -19,11 +33,14 @@ export async function generateMetadata({ params }: PageProps<"/product/[slug]">)
   const { slug } = await params;
   const { product } = await findProductBySlug(slug);
   if (!product) return {};
-  return {
-    title: product.name,
-    description: `${product.name}: ${product.summary ?? "research compound"}. ≥99% HPLC purity, lot-specific COA. ${site.compliance.short}`,
-    alternates: { canonical: `/product/${product.slug}` },
-  };
+  const coas = (await getCoas()).filter((c) => c.productSlug === product.slug);
+  return pageMetadata({
+    title: productTitle(product.name, { isSupply: isSupply(product), coaPurity99: coas.some((c) => (c.purityPercent ?? 0) >= 99) }),
+    description: productDescription(product),
+    path: `/product/${product.slug}`,
+    image: `/og/product/${product.slug}`,
+    imageAlt: `${product.name}, ${site.name}`,
+  });
 }
 
 export default function ProductPage(props: PageProps<"/product/[slug]">) {
@@ -47,22 +64,17 @@ async function ProductView({ params }: Pick<PageProps<"/product/[slug]">, "param
 
   return (
     <>
+      <JsonLd data={productSchema(product, settings, productCoas)} />
       <div className="container-page pt-6 pb-16 sm:pt-8">
-        <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap items-center gap-1.5 text-[13px] text-muted">
-          <Link href="/shop" className="hover:text-foreground">
-            Shop
-          </Link>
-          {product.category && (
-            <>
-              <ChevronRight className="size-3.5 text-subtle" />
-              <Link href={`/category/${product.category.slug}`} className="hover:text-foreground">
-                {product.category.name}
-              </Link>
-            </>
-          )}
-          <ChevronRight className="size-3.5 text-subtle" />
-          <span className="text-foreground">{product.name}</span>
-        </nav>
+        <Breadcrumbs
+          className="mb-6"
+          crumbs={[
+            { name: "Home", path: "/" },
+            { name: "Shop", path: "/shop" },
+            ...(product.category ? [{ name: product.category.name, path: `/category/${product.category.slug}` }] : []),
+            { name: product.name, path: `/product/${product.slug}` },
+          ]}
+        />
 
         <Suspense fallback={<ProductPurchase product={product} />}>
           <ProductPurchaseFromUrl product={product} />

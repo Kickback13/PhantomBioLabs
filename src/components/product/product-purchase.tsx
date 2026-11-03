@@ -29,6 +29,7 @@ export function ProductPurchase({ product, initialSize }: { product: Product; in
   const [quantity, setQuantity] = useState(1);
   const variant = product.variants.find((v) => v.id === variantId) ?? fallback;
   const off = discountPercent(variant.priceCents, variant.compareAtCents);
+  const supply = product.category?.slug === "solvents-and-supplies";
 
   // Sticky buy bar on phones once the main button scrolls away.
   const buyRef = useRef<HTMLDivElement>(null);
@@ -63,7 +64,7 @@ export function ProductPurchase({ product, initialSize }: { product: Product; in
           <Spotlight className="overflow-hidden rounded-3xl border border-line bg-ink-900" size={520} intensity={18}>
             <AnimatePresence mode="wait" initial={false}>
               <motion.div key={variant.id} initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.98 }} transition={{ duration: 0.3 }}>
-                <ProductImage slug={product.slug} name={product.name} size={variant.label} priority sizes="(min-width: 1024px) 50vw, 100vw" />
+                <ProductImage slug={product.slug} name={product.name} size={variant.label} supply={supply} priority sizes="(min-width: 1024px) 50vw, 100vw" />
               </motion.div>
             </AnimatePresence>
             <div className="absolute top-4 left-4">
@@ -87,7 +88,7 @@ export function ProductPurchase({ product, initialSize }: { product: Product; in
                   v.id === variant.id ? "border-violet-400" : "border-line hover:border-line-strong",
                 )}
               >
-                <ProductImage slug={product.slug} name={product.name} size={v.label} sizes="120px" showTag={false} />
+                <ProductImage slug={product.slug} name={product.name} size={v.label} supply={supply} sizes="120px" showTag={false} />
               </button>
             ))}
           </div>
@@ -172,8 +173,7 @@ export function ProductPurchase({ product, initialSize }: { product: Product; in
         <div className="mt-6 flex gap-3 rounded-xl border border-violet-400/25 bg-violet-500/[0.06] p-4">
           <FlaskConical className="mt-0.5 size-4 shrink-0 text-violet-300" />
           <p className="text-[13px] leading-relaxed text-ink-200">
-            <span className="font-semibold text-foreground">For laboratory research use only. Not for human consumption.</span> Not for use in humans or
-            animals, and not intended to diagnose, treat, cure or prevent any disease. Sold to qualified researchers aged 21+.
+            <span className="font-semibold text-foreground">{site.compliance.ruo}</span> Sold to qualified researchers aged 21+.
           </p>
         </div>
       </div>

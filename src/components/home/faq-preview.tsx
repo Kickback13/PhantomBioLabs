@@ -1,13 +1,16 @@
 import Link from "next/link";
 import { ArrowRight, Plus } from "lucide-react";
+import { JsonLd } from "@/components/seo/json-ld";
 import { Button } from "@/components/ui/button";
 import { faq } from "@/content/faq";
 import { site } from "@/lib/site";
+import { faqSchema } from "@/lib/structured-data";
 
 export function FaqPreview() {
   const items = faq.slice(0, 5);
   return (
     <section className="container-page grid gap-12 py-20 sm:py-28 lg:grid-cols-[0.8fr_1.2fr]">
+      <JsonLd data={faqSchema(items)} />
       <div>
         <p className="eyebrow flex items-center gap-3">
           <span className="text-violet-400">06</span>
