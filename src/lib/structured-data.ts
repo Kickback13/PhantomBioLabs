@@ -2,7 +2,7 @@
 // visible page copy. Nothing here may be invented (no ratings, reviews, lots or lab names).
 import type { Coa, Product, StoreSettings } from "./catalog";
 import { productImage } from "./images";
-import { absoluteUrl } from "./seo";
+import { absoluteUrl, defaultOgImage } from "./seo";
 import { SITE_ORIGIN, site } from "./site";
 
 type Thing = { "@type": string | string[]; "@id"?: string; [key: string]: unknown };
@@ -143,5 +143,50 @@ export function productSchema(product: Product, settings: StoreSettings, coas: C
       hasMerchantReturnPolicy: returnPolicy(),
       shippingDetails: shippingDetails(v.priceCents, settings),
     })),
+  };
+}
+
+/** Article schema for guides and research hubs. Author and reviewer are added only when named. */
+export function articleSchema(page: { path: string; title: string; description: string; updated: string; author: string | null; reviewer: string | null }): JsonLdNode {
+  const url = absoluteUrl(page.path);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${url}#article`,
+    headline: page.title,
+    description: page.description,
+    url,
+    mainEntityOfPage: url,
+    dateModified: page.updated,
+    image: absoluteUrl(defaultOgImage()),
+    author: page.author ? { "@type": "Person", name: page.author } : { "@type": "Organization", "@id": ORG_ID, name: site.name },
+    reviewedBy: page.reviewer ? { "@type": "Person", name: page.reviewer } : undefined,
+    publisher: { "@type": "Organization", "@id": ORG_ID, name: site.name, logo: { "@type": "ImageObject", url: absoluteUrl("/icon.svg") } },
+  };
+}
+
+/**
+ * One certificate of analysis as a Dataset: the lab's measured results for one lot. Values come
+ * from the COA table only; fields without data are left out.
+ */
+export function coaDatasetSchema(coa: Coa, path: string): JsonLdNode {
+  const url = absoluteUrl(path);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "@id": `${url}#dataset`,
+    name: `Certificate of Analysis: ${coa.productName}${coa.variantLabel ? ` ${coa.variantLabel}` : ""}, lot ${coa.lotNumber}`,
+    description: `Third-party laboratory test results for ${coa.productName} lot ${coa.lotNumber}, supplied by ${site.name}. ${site.compliance.short}`,
+    url,
+    identifier: coa.lotNumber,
+    dateCreated: coa.testedOn ?? undefined,
+    dateModified: coa.updatedAt,
+    creator: coa.labName ? { "@type": "Organization", name: coa.labName } : undefined,
+    publisher: { "@type": "Organization", "@id": ORG_ID, name: site.name },
+    isAccessibleForFree: true,
+    about: { "@type": "Product", "@id": `${absoluteUrl(`/product/${coa.productSlug}`)}#product`, name: coa.productName },
+    variableMeasured:
+      coa.purityPercent !== null ? [{ "@type": "PropertyValue", name: "Purity (HPLC)", value: coa.purityPercent, unitText: "%" }] : undefined,
+    distribution: [{ "@type": "DataDownload", encodingFormat: "application/pdf", contentUrl: coa.fileUrl }],
   };
 }
