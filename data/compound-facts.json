@@ -1,0 +1,323 @@
+{
+  "_readme": "Per-compound reference data for the product page Key Facts table, citations and FAQ. Fill a value ONLY from a verified source (supplier spec sheet, COA, PubChem/CAS record). Leave null when unknown; empty values are hidden on the site. citations: [{\"title\": \"...\", \"url\": \"https://pubmed.ncbi.nlm.nih.gov/... or https://doi.org/...\", \"source\": \"Journal, year\"}]. faq: [{\"q\": \"...\", \"a\": \"...\"}] (research-use wording only, no dosing or human-use claims). TODO(SEO-DESK/KEANU): real data needed.",
+  "recon-water": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "bpc-157": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "bpc-157-tb-500": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "cagrilintide": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "cjc-1295-no-dac-ipamorelin": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "dsip": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "epithalon": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "ghk-cu": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "ghrp-2": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "ghrp-6": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "glow": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "glutathione": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "hcg": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "igf-1-lr3": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "ipamorelin": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "kisspeptin": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "klow": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "kpv": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "mots-c": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "mt-2-melanotan-ii": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "pinealon": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "pt-141": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "retatrutide": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "selank": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "semaglutide": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "semax": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "snap-8": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "ss-31": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "tb-500": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "tesamorelin": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "thymosin-alpha-1": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  },
+  "tirzepatide": {
+    "sequence": null,
+    "molecularFormula": null,
+    "molecularWeight": null,
+    "cas": null,
+    "saltForm": null,
+    "storage": null,
+    "citations": [],
+    "faq": []
+  }
+}
