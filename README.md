@@ -48,6 +48,20 @@ live catalog. Behind a corporate or sandbox proxy, run it with `NODE_USE_ENV_PRO
 - **UI**: several components are adapted from [21st.dev](https://21st.dev) (spotlight cards,
   marquee, animated grid, number ticker); each file credits its source.
 
+## SEO and launch
+
+- **Indexing** is off until `NEXT_PUBLIC_ALLOW_INDEXING=true` is set for Vercel Production. It
+  controls robots.txt, the robots meta tag and whether `{{SEO_DESK_BRIEF}}` placeholders show.
+- **Metadata** for every public page comes from `pageMetadata()` in `src/lib/seo.ts`; schema.org
+  builders are in `src/lib/structured-data.ts`. Hours, the dispatch cutoff, phone and legal name
+  live in `src/lib/site.ts`.
+- **Guides and research hubs** are in `src/content/guides.ts`; per-compound facts, citations and
+  FAQs in `data/compound-facts.json`. Unfinished pages stay noindex, out of the sitemap, and 404
+  in production.
+- **Checks**: `npm run seo:audit` (sitemap crawl) and `npm run seo:redirects` (the 46 old URLs in
+  `docs/old-sitemap.xml`). Add `-- --base http://localhost:3000` to run them against a local build.
+- **Domain cutover** steps: [`docs/cutover-checklist.md`](docs/cutover-checklist.md).
+
 ## Compliance rules for anyone editing copy
 
 This is a research-use-only store. Product copy describes what a compound is and what research
