@@ -6,11 +6,14 @@ import { WhatsAppCta } from "@/components/content/whatsapp-cta";
 import { PageHeader } from "@/components/layout/page-header";
 import { Button } from "@/components/ui/button";
 import { getCoas } from "@/lib/catalog";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "COA Library",
-  description: "Certificates of Analysis for Phantom Bio Labs research compounds: independent HPLC purity and mass-spec identity results, matched to each lot number.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "COA Library: Certificates of Analysis",
+  description:
+    "Certificates of Analysis for Phantom Bio Labs research peptides: independent HPLC purity and mass-spec identity results, matched to each lot number.",
+  path: "/coa",
+});
 
 export default async function CoaPage() {
   const coas = await getCoas();

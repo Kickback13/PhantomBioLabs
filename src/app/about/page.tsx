@@ -9,11 +9,14 @@ import { NumberTicker } from "@/components/ui/number-ticker";
 import { Reveal } from "@/components/ui/reveal";
 import { Spotlight } from "@/components/ui/spotlight";
 import { site } from "@/lib/site";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "About",
-  description: "Phantom Bio Labs supplies research-grade peptides, independently tested to a ≥99% purity specification, with a Certificate of Analysis in every box.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "About Us",
+  description:
+    "Phantom Bio Labs supplies research-grade peptides, independently tested to a ≥99% purity specification, with a Certificate of Analysis in every box.",
+  path: "/about",
+});
 
 const commitments = [
   {

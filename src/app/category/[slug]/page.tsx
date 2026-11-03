@@ -4,10 +4,32 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { PageHeader } from "@/components/layout/page-header";
+import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { ProductGrid } from "@/components/shop/product-grid";
-import { getCategories, getProducts } from "@/lib/catalog";
+import { getCategories, getProducts, type Category, type Product } from "@/lib/catalog";
 import { categoryImage } from "@/lib/images";
+import { DESCRIPTION_MAX, pageMetadata } from "@/lib/seo";
 import { cn } from "@/lib/utils";
+
+const SUPPLIES = "solvents-and-supplies";
+
+/** "{Category} Research Peptides"; the supplies category isn't peptides, so it gets its own title. */
+function categoryTitle(category: Category) {
+  return category.slug === SUPPLIES ? "Lab Solvents & Supplies" : `${category.name} Research Peptides`;
+}
+
+/** Names the category's compounds, dropping names until it fits in 155 characters. */
+function categoryDescription(category: Category, products: Product[]) {
+  const names = products.filter((p) => p.category?.slug === category.slug).map((p) => p.name);
+  const lead = category.slug === SUPPLIES ? "Laboratory solvents and supplies" : `${category.name} research peptides`;
+  const tail = category.slug === SUPPLIES ? "For laboratory research use only." : "Third-party HPLC tested, lot-specific COA. For laboratory research use only.";
+  for (let n = Math.min(names.length, 4); n > 0; n--) {
+    const list = names.slice(0, n).join(", ") + (names.length > n ? " and more" : "");
+    const text = `${lead}: ${list}. ${tail}`;
+    if (text.length <= DESCRIPTION_MAX) return text;
+  }
+  return `${lead}. ${tail}`;
+}
 
 export async function generateStaticParams() {
   const categories = await getCategories();
@@ -16,12 +38,10 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps<"/category/[slug]">): Promise<Metadata> {
   const { slug } = await params;
-  const category = (await getCategories()).find((c) => c.slug === slug);
+  const [categories, products] = await Promise.all([getCategories(), getProducts()]);
+  const category = categories.find((c) => c.slug === slug);
   if (!category) return {};
-  return {
-    title: `${category.name} research peptides`,
-    description: `${category.description ?? ""} Lot-verified, ≥99% HPLC purity. For laboratory research use only.`.trim(),
-  };
+  return pageMetadata({ title: categoryTitle(category), description: categoryDescription(category, products), path: `/category/${category.slug}` });
 }
 
 export default function CategoryPage(props: PageProps<"/category/[slug]">) {
@@ -44,9 +64,18 @@ async function CategoryView({ params }: Pick<PageProps<"/category/[slug]">, "par
 
   return (
     <>
+      <div className="container-page pt-6">
+        <Breadcrumbs
+          crumbs={[
+            { name: "Home", path: "/" },
+            { name: "Shop", path: "/shop" },
+            { name: category.name, path: `/category/${category.slug}` },
+          ]}
+        />
+      </div>
       <PageHeader
         eyebrow={`Research area · ${String(categories.indexOf(category) + 1).padStart(2, "0")}`}
-        title={category.name}
+        title={categoryTitle(category)}
         description={category.description}
       >
         <p className="font-mono text-[11px] tracking-[0.14em] text-muted uppercase">

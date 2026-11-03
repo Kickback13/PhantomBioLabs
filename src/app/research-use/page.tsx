@@ -3,11 +3,14 @@ import { FlaskConical } from "lucide-react";
 import { PolicyLayout } from "@/components/content/policy-layout";
 import { ProseSection } from "@/components/layout/prose";
 import { site } from "@/lib/site";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Research Use Policy",
-  description: "Phantom Bio Labs products are sold only to qualified researchers aged 21+ for in-vitro laboratory research. Read the full research use policy.",
-};
+  description:
+    "Phantom Bio Labs products are sold only to qualified researchers aged 21+ for in-vitro laboratory research. Read the full research use policy.",
+  path: "/research-use",
+});
 
 const sections = [
   { id: "intended-use", title: "Intended use" },

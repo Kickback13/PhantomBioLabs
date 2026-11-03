@@ -17,11 +17,13 @@ export const SITE_ORIGIN = "https://www.phantombiopeptides.com";
 
 export const site = {
   name: "Phantom Bio Labs",
+  /** Legal entity behind the brand. Use only where a legal name belongs (copyright, terms, schema). */
+  legalName: "Phantom Labs Bio LLC",
   shortName: "Phantom",
   url: SITE_ORIGIN,
   tagline: "Research-grade peptides. Zero compromise.",
   description:
-    "Research-grade peptides, independently HPLC-tested to ≥99% purity with a lot-specific Certificate of Analysis in every box. For laboratory research use only.",
+    "Research peptides independently HPLC-tested to ≥99% purity, with a lot-specific Certificate of Analysis in every box. For laboratory research use only.",
   contact: {
     whatsapp: "+1 559 360 6568",
     /** E.164 form of the same number, for schema.org. */

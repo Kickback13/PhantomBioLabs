@@ -8,11 +8,14 @@ import { Reveal } from "@/components/ui/reveal";
 import { Spotlight } from "@/components/ui/spotlight";
 import { faq } from "@/content/faq";
 import { site } from "@/lib/site";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contact",
-  description: `Questions about a compound, a lot or an order? Message Phantom Bio Labs on WhatsApp at ${site.contact.whatsapp}, ${site.contact.hours}.`,
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Contact Us",
+  description:
+    `Questions about a compound, a lot or an order? Message Phantom Bio Labs on WhatsApp at ${site.contact.whatsapp}, ${site.contact.hours}.`,
+  path: "/contact",
+});
 
 const cards = [
   {

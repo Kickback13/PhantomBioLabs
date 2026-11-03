@@ -12,6 +12,8 @@ export type Category = {
   name: string;
   description: string | null;
   productCount: number;
+  /** Latest change to the category or any of its live products (ISO timestamp). */
+  updatedAt: string;
 };
 
 export type Variant = {
@@ -34,6 +36,8 @@ export type Product = {
   category: { slug: string; name: string } | null;
   variants: Variant[];
   inStock: boolean;
+  /** ISO timestamp of the last edit to the product row. */
+  updatedAt: string;
 };
 
 export type StoreSettings = {
@@ -42,7 +46,7 @@ export type StoreSettings = {
 };
 
 const PRODUCT_SELECT =
-  "id, slug, name, summary, description, specs, featured_rank, sort_order, category:categories(slug, name), variants:product_variants(id, label, sku, price_cents, compare_at_cents, in_stock, sort_order)";
+  "id, slug, name, summary, description, specs, featured_rank, sort_order, updated_at, category:categories(slug, name), variants:product_variants(id, label, sku, price_cents, compare_at_cents, in_stock, sort_order)";
 
 type ProductRow = {
   id: string;
@@ -53,6 +57,7 @@ type ProductRow = {
   specs: unknown;
   featured_rank: number | null;
   sort_order: number;
+  updated_at: string;
   category: { slug: string; name: string } | null;
   variants: {
     id: string;
@@ -87,6 +92,7 @@ function toProduct(row: ProductRow): Product {
     category: row.category,
     variants,
     inStock: variants.some((v) => v.inStock),
+    updatedAt: row.updated_at,
   };
 }
 
@@ -123,14 +129,18 @@ export async function getCategories(): Promise<Category[]> {
   cacheTag(CATALOG_TAG);
   const supabase = createPublicClient();
   const [{ data: categories, error }, products] = await Promise.all([
-    supabase.from("categories").select("id, slug, name, description").order("sort_order"),
+    supabase.from("categories").select("id, slug, name, description, updated_at").order("sort_order"),
     getProducts(),
   ]);
   if (error) throw new Error(`Could not load categories: ${error.message}`);
-  return (categories ?? []).map((c) => ({
-    ...c,
-    productCount: products.filter((p) => p.category?.slug === c.slug).length,
-  }));
+  return (categories ?? []).map(({ updated_at, ...c }) => {
+    const items = products.filter((p) => p.category?.slug === c.slug);
+    return {
+      ...c,
+      productCount: items.length,
+      updatedAt: [updated_at, ...items.map((p) => p.updatedAt)].sort().at(-1)!,
+    };
+  });
 }
 
 export async function getStoreSettings(): Promise<StoreSettings> {
@@ -158,6 +168,7 @@ export type Coa = {
   purityPercent: number | null;
   labName: string | null;
   fileUrl: string;
+  updatedAt: string;
 };
 
 /** Published certificates of analysis, newest first. PDFs live in the public "coas" storage bucket. */
@@ -168,7 +179,7 @@ export async function getCoas(): Promise<Coa[]> {
   const supabase = createPublicClient();
   const { data, error } = await supabase
     .from("coas")
-    .select("id, lot_number, tested_on, purity_percent, lab_name, file_path, created_at, product:products(slug, name), variant:product_variants(label)")
+    .select("id, lot_number, tested_on, purity_percent, lab_name, file_path, created_at, updated_at, product:products(slug, name), variant:product_variants(label)")
     .eq("published", true)
     .order("tested_on", { ascending: false, nullsFirst: false })
     .order("created_at", { ascending: false });
@@ -180,6 +191,7 @@ export async function getCoas(): Promise<Coa[]> {
     purity_percent: number | null;
     lab_name: string | null;
     file_path: string;
+    updated_at: string;
     product: { slug: string; name: string } | null;
     variant: { label: string } | null;
   };
@@ -195,6 +207,7 @@ export async function getCoas(): Promise<Coa[]> {
       purityPercent: r.purity_percent,
       labName: r.lab_name,
       fileUrl: supabase.storage.from("coas").getPublicUrl(r.file_path).data.publicUrl,
+      updatedAt: r.updated_at,
     }));
 }
 

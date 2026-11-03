@@ -5,11 +5,14 @@ import { ProseSection } from "@/components/layout/prose";
 import { getStoreSettings } from "@/lib/catalog";
 import { site } from "@/lib/site";
 import { formatPrice } from "@/lib/utils";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Shipping & Returns",
-  description: "Dispatch times, carriers, free U.S. shipping, international delivery, damaged shipments and returns at Phantom Bio Labs.",
-};
+  description:
+    "Dispatch times, carriers, free U.S. shipping, international delivery, damaged shipments and returns at Phantom Bio Labs.",
+  path: "/shipping",
+});
 
 const sections = [
   { id: "dispatch", title: "Dispatch times" },

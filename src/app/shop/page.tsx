@@ -4,11 +4,14 @@ import { PageHeader } from "@/components/layout/page-header";
 import { ProductGrid } from "@/components/shop/product-grid";
 import { ShopBrowser } from "@/components/shop/shop-browser";
 import { getCategories, getProducts } from "@/lib/catalog";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Shop research peptides",
-  description: "Browse every lot-verified research compound by research area. HPLC-tested to ≥99% purity. For laboratory research use only.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Shop All Research Peptides",
+  description:
+    "Browse every Phantom Bio Labs research peptide by research area. Third-party HPLC tested, lot-specific COA. For laboratory research use only.",
+  path: "/shop",
+});
 
 export default async function ShopPage() {
   const [products, categories] = await Promise.all([getProducts(), getCategories()]);

@@ -8,11 +8,14 @@ import { Reveal } from "@/components/ui/reveal";
 import { ScrollTimeline, type TimelineEntry } from "@/components/ui/scroll-timeline";
 import { Spotlight } from "@/components/ui/spotlight";
 import { site } from "@/lib/site";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Quality & Testing",
-  description: "How every Phantom Bio Labs lot is synthesized, purified, independently verified by HPLC and mass spectrometry, and documented with a lot-specific Certificate of Analysis.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Quality & Third-Party Testing",
+  description:
+    "How every Phantom Bio Labs lot is synthesized, purified, independently verified by HPLC and mass spectrometry, and documented with a lot-specific COA.",
+  path: "/quality",
+});
 
 const specs = [
   { icon: Gauge, label: "Purity", value: "≥ 99.0%", note: "Reverse-phase HPLC, every lot" },
