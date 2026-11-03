@@ -27,3 +27,9 @@ export function heroImage() {
 export function ogImage() {
   return find("/images/og/og-default");
 }
+
+/** "{Compound} {size} lyophilized research peptide vial, Phantom Bio Labs". Solvents aren't lyophilized. */
+export function productImageAlt(name: string, size?: string | null, { supply = false }: { supply?: boolean } = {}) {
+  const what = supply ? "laboratory solvent vial" : "lyophilized research peptide vial";
+  return `${name}${size ? ` ${size}` : ""} ${what}, Phantom Bio Labs`;
+}

@@ -1,7 +1,8 @@
 "use client";
 
 // Adapted from 21st.dev "Animated Grid" by rmahammad: a CSS-only drifting grid with an accent
-// glow. No canvas and no JS animation loop; stops for reduced motion.
+// glow. No canvas and no JS animation loop; stops for reduced motion. The drift moves the layer with
+// transform (compositor only) instead of background-position, so it never repaints on the main thread.
 import { useId, type HTMLAttributes } from "react";
 import { cn } from "@/lib/utils";
 
@@ -28,7 +29,7 @@ export function AnimatedGrid({
   const major = size * 4;
 
   const css = `
-.${cls}::before, .${cls}::after { content: ""; position: absolute; inset: -${major}px; }
+.${cls}::before, .${cls}::after { content: ""; position: absolute; inset: -${major}px; will-change: transform; }
 .${cls}::before {
   background-image: linear-gradient(to right, ${color} 1px, transparent 1px), linear-gradient(to bottom, ${color} 1px, transparent 1px);
   background-size: ${size}px ${size}px;
@@ -46,7 +47,7 @@ export function AnimatedGrid({
   background: radial-gradient(40% 45% at 62% 42%, color-mix(in oklab, ${accent} 30%, transparent), transparent 70%);
   animation: ${cls}-pulse 10s ease-in-out infinite;
 }
-@keyframes ${cls}-drift { from { background-position: 0 0, 0 0; } to { background-position: ${major}px ${major}px, ${major}px ${major}px; } }
+@keyframes ${cls}-drift { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(${major}px, ${major}px, 0); } }
 @keyframes ${cls}-pulse { 0%, 100% { transform: scale(1); opacity: .75; } 50% { transform: scale(1.1); opacity: 1; } }
 @media (prefers-reduced-motion: reduce) { .${cls}::before, .${cls}::after, .${cls} > .${cls}-glow { animation: none; } }
 @media (forced-colors: active) { .${cls}::before, .${cls}::after, .${cls} > .${cls}-glow { display: none; } }`.trim();

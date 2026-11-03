@@ -4,12 +4,16 @@ import { BorderBeam } from "@/components/ui/border-beam";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
 import { Tilt } from "@/components/ui/tilt";
+import { getCoas, type Coa } from "@/lib/catalog";
+import { cn } from "@/lib/utils";
 
-export function CoaCallout() {
+export async function CoaCallout() {
+  // TODO(SEO-DESK/KEANU): real data needed. Until a COA is published in /admin/coas, no sample card is shown.
+  const latest = (await getCoas())[0] ?? null;
   return (
     <section className="relative overflow-hidden border-y border-line bg-ink-900/40">
       <div aria-hidden="true" className="absolute -top-40 -left-40 size-[520px] rounded-full bg-violet-600/15 blur-[120px]" />
-      <div className="container-page relative grid items-center gap-12 py-20 sm:py-28 lg:grid-cols-2">
+      <div className={cn("container-page relative grid items-center gap-12 py-20 sm:py-28", latest && "lg:grid-cols-2")}>
         <div>
           <p className="eyebrow flex items-center gap-3">
             <span className="text-violet-400">04</span>
@@ -41,59 +45,51 @@ export function CoaCallout() {
           </Button>
         </div>
 
-        <Reveal>
-          <Tilt rotationFactor={6}>
-            <CoaSample />
-          </Tilt>
-        </Reveal>
+        {latest && (
+          <Reveal>
+            <Tilt rotationFactor={6}>
+              <LatestCoa coa={latest} />
+            </Tilt>
+          </Reveal>
+        )}
       </div>
     </section>
   );
 }
 
-/** Illustrative COA layout. Real certificates are uploaded per lot in the admin area. */
-function CoaSample() {
-  const rows: [string, string][] = [
-    ["Compound", "—"],
-    ["Lot number", "PBL-XXXX-XX"],
-    ["Method", "RP-HPLC · ESI-MS"],
-    ["Specification", "≥ 99.0%"],
-    ["Laboratory", "Independent third party"],
+const dateFormat = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
+
+/** The most recent published certificate, with its real values only. */
+function LatestCoa({ coa }: { coa: Coa }) {
+  const rows: [string, string | null][] = [
+    ["Compound", coa.variantLabel ? `${coa.productName} · ${coa.variantLabel}` : coa.productName],
+    ["Lot number", coa.lotNumber],
+    ["Tested", coa.testedOn ? dateFormat.format(new Date(`${coa.testedOn}T00:00:00Z`)) : null],
+    ["Purity (HPLC)", coa.purityPercent !== null ? `${coa.purityPercent.toFixed(2)}%` : null],
+    ["Laboratory", coa.labName],
   ];
   return (
     <div className="relative mx-auto max-w-lg rotate-[1.5deg] rounded-2xl border border-line-strong bg-ink-50 p-6 text-ink-950 shadow-[0_50px_120px_-30px_rgba(139,61,255,0.45)] sm:p-8">
       <div className="flex items-start justify-between">
         <div>
           <p className="font-mono text-[10px] tracking-[0.2em] text-ink-500 uppercase">Certificate of Analysis</p>
-          <p className="mt-1 text-xl font-semibold tracking-tight">Phantom Bio Labs</p>
+          <p className="mt-1 text-xl font-semibold tracking-tight">Latest published lot</p>
         </div>
-        <span className="rounded-md border border-violet-600/40 px-2 py-1 font-mono text-[9px] tracking-[0.18em] text-violet-700 uppercase">Sample layout</span>
       </div>
       <BorderBeam size={220} duration={10} borderWidth={2} colorFrom="var(--violet-400)" colorTo="var(--violet-700)" />
-      <svg viewBox="0 0 400 120" className="mt-6 w-full" aria-label="Sample HPLC chromatogram">
-        <line x1="0" y1="110" x2="400" y2="110" stroke="#c9c4d6" />
-        {[80, 160, 240, 320].map((x) => (
-          <line key={x} x1={x} y1="10" x2={x} y2="110" stroke="#ece9f3" />
-        ))}
-        <path
-          d="M0 108 L60 107 L90 106 L110 104 L130 107 L180 106 L196 100 L204 60 L210 14 L216 58 L224 100 L240 106 L300 107 L318 103 L326 106 L400 107"
-          fill="none"
-          stroke="#7424f0"
-          strokeWidth="2"
-          strokeLinejoin="round"
-        />
-        <text x="222" y="22" fontSize="10" fontFamily="var(--font-geist-mono), monospace" fill="#5a16c4">
-          main peak
-        </text>
-      </svg>
       <dl className="mt-5 divide-y divide-ink-200 text-sm">
-        {rows.map(([k, v]) => (
-          <div key={k} className="flex justify-between py-2">
-            <dt className="text-ink-500">{k}</dt>
-            <dd className="font-mono text-[13px]">{v}</dd>
-          </div>
-        ))}
+        {rows
+          .filter((r): r is [string, string] => Boolean(r[1]))
+          .map(([k, v]) => (
+            <div key={k} className="flex justify-between gap-4 py-2">
+              <dt className="text-ink-500">{k}</dt>
+              <dd className="text-right font-mono text-[13px]">{v}</dd>
+            </div>
+          ))}
       </dl>
+      <a href={coa.fileUrl} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex text-sm font-medium text-violet-700 hover:underline">
+        View the PDF
+      </a>
     </div>
   );
 }

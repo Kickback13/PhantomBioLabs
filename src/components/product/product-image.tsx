@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { VialArt } from "@/components/brand/vial-art";
-import { productImage } from "@/lib/images";
+import { productImage, productImageAlt } from "@/lib/images";
 import { cn, sizeSlug } from "@/lib/utils";
 
 /**
@@ -15,8 +15,11 @@ export function ProductImage({
   sizes = "(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 80vw",
   className,
   showTag = true,
+  supply = false,
 }: {
   showTag?: boolean;
+  /** Solvents and supplies get different alt text. */
+  supply?: boolean;
   slug: string;
   name: string;
   size?: string | null;
@@ -25,6 +28,7 @@ export function ProductImage({
   className?: string;
 }) {
   const src = productImage(slug, size);
+  const alt = productImageAlt(name, size, { supply });
   return (
     <div className={cn("relative aspect-square w-full overflow-hidden", className)}>
       <div
@@ -34,7 +38,7 @@ export function ProductImage({
       {src ? (
         <Image
           src={src}
-          alt={`${name}${size ? ` ${size}` : ""}`}
+          alt={alt}
           fill
           sizes={sizes}
           loading={priority ? "eager" : "lazy"}
@@ -44,7 +48,7 @@ export function ProductImage({
       ) : (
         <>
           <div className="absolute inset-0 flex items-center justify-center py-[9%]">
-            <VialArt id={`v-${slug}-${size ? sizeSlug(size) : "main"}`} name={name} size={size ?? undefined} glow={false} />
+            <VialArt id={`v-${slug}-${size ? sizeSlug(size) : "main"}`} name={name} size={size ?? undefined} glow={false} label={alt} />
           </div>
           {showTag && (
             <span className="pointer-events-none absolute bottom-2.5 left-3 font-mono text-[9px] tracking-[0.2em] text-ink-500">PLACEHOLDER</span>

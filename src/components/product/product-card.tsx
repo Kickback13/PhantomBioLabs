@@ -33,6 +33,7 @@ export function ProductCard({ product, priority = false, className }: { product:
             slug={product.slug}
             name={product.name}
             size={variant.label}
+            supply={product.category?.slug === "solvents-and-supplies"}
             priority={priority}
             className="transition-transform duration-700 ease-[var(--ease-out-expo)] group-hover/spotlight:scale-[1.04]"
           />

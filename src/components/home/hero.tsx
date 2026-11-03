@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import { NumberTicker } from "@/components/ui/number-ticker";
 import { Reveal } from "@/components/ui/reveal";
 import { ShimmerLink } from "@/components/ui/shimmer-link";
-import { TextReveal } from "@/components/ui/text-reveal";
 import { Tilt } from "@/components/ui/tilt";
 import { heroImage } from "@/lib/images";
 import { site } from "@/lib/site";
@@ -41,16 +40,14 @@ export function Hero() {
               Independently third-party tested
             </p>
           </Reveal>
-          <TextReveal delay={0.1} className="mt-5 text-[2.6rem] leading-[0.95] font-semibold tracking-[-0.045em] sm:text-6xl lg:text-[4.4rem] xl:text-[5rem]">
-            Research-grade peptides.
-            <br />
-            <span className="text-gradient-violet">Zero compromise.</span>
-          </TextReveal>
-          <Reveal delay={0.12}>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-              Every lot HPLC-tested to ≥99% purity by an independent lab, documented with a lot-specific Certificate of Analysis, and dispatched the same day.
-            </p>
-          </Reveal>
+          {/* The H1 and intro are the likely LCP elements, so they render without any entrance animation. */}
+          <h1 className="mt-5 text-[2.4rem] leading-[0.98] font-semibold tracking-[-0.045em] sm:text-6xl lg:text-[4.1rem] xl:text-[4.6rem]">
+            Research Peptides, <span className="text-gradient-violet">Third-Party Tested to ≥99% Purity</span>
+          </h1>
+          <p className="mt-4 font-mono text-[11px] tracking-[0.18em] text-violet-200 uppercase">Zero compromise.</p>
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
+            Every lot HPLC-tested to ≥99% purity by an independent lab, documented with a lot-specific Certificate of Analysis, and dispatched the same day.
+          </p>
           <Reveal delay={0.18} className="mt-8 flex flex-col gap-3 sm:flex-row">
             <ShimmerLink href="/shop">
               Shop the catalog <ArrowRight />

@@ -10,7 +10,10 @@ export function VialArt({
   className,
   glow = true,
   id,
+  label,
 }: {
+  /** Accessible name; defaults to "{name} {size} vial". */
+  label?: string;
   name: string;
   size?: string;
   className?: string;
@@ -23,7 +26,7 @@ export function VialArt({
   const nameSize = lines.length > 1 ? 15 : name.length > 9 ? 16 : name.length > 6 ? 19 : 22;
 
   return (
-    <svg viewBox="0 0 240 440" className={cn("h-full w-auto", className)} role="img" aria-label={`${name}${size ? ` ${size}` : ""} vial`}>
+    <svg viewBox="0 0 240 440" className={cn("h-full w-auto", className)} role="img" aria-label={label ?? `${name}${size ? ` ${size}` : ""} vial`}>
       <defs>
         <radialGradient id={g("glow")} cx="50%" cy="58%" r="50%">
           <stop offset="0%" stopColor="#8b3dff" stopOpacity="0.55" />
