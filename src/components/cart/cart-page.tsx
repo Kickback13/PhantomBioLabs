@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ArrowRight, FlaskConical, ShoppingBag } from "lucide-react";
+import { CheckoutSoon } from "@/components/checkout/checkout-soon";
 import { Button } from "@/components/ui/button";
 import { formatPrice } from "@/lib/utils";
 import { useCart } from "./cart-context";
@@ -45,11 +46,15 @@ export function CartPage() {
             <dd className="tabular-nums">{formatPrice(subtotalCents + shipping)}</dd>
           </div>
         </dl>
-        <Button asChild size="lg" className="w-full">
-          <Link href="/checkout">
-            Checkout <ArrowRight />
-          </Link>
-        </Button>
+        {settings.checkoutOpen ? (
+          <Button asChild size="lg" className="w-full">
+            <Link href="/checkout">
+              Checkout <ArrowRight />
+            </Link>
+          </Button>
+        ) : (
+          <CheckoutSoon compact />
+        )}
         <p className="flex items-center justify-center gap-1.5 text-[11px] text-subtle">
           <FlaskConical className="size-3" /> For laboratory research use only.
         </p>

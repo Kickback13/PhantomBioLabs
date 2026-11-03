@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ArrowRight, FlaskConical, ShoppingBag } from "lucide-react";
+import { CheckoutSoon } from "@/components/checkout/checkout-soon";
 import { Button } from "@/components/ui/button";
 import { Drawer } from "@/components/ui/drawer";
 import { formatPrice } from "@/lib/utils";
@@ -9,7 +10,7 @@ import { useCart } from "./cart-context";
 import { CartLines, FreeShippingMeter } from "./cart-lines";
 
 export function CartDrawer() {
-  const { open, setOpen, lines, count, subtotalCents } = useCart();
+  const { open, setOpen, lines, count, subtotalCents, settings } = useCart();
   const close = () => setOpen(false);
   return (
     <Drawer
@@ -25,11 +26,15 @@ export function CartDrawer() {
               <span className="text-xl font-semibold tracking-tight tabular-nums">{formatPrice(subtotalCents)}</span>
             </div>
             <p className="text-xs text-subtle">Shipping is calculated at checkout.</p>
-            <Button asChild size="lg" className="w-full">
-              <Link href="/checkout" onClick={close}>
-                Checkout <ArrowRight />
-              </Link>
-            </Button>
+            {settings.checkoutOpen ? (
+              <Button asChild size="lg" className="w-full">
+                <Link href="/checkout" onClick={close}>
+                  Checkout <ArrowRight />
+                </Link>
+              </Button>
+            ) : (
+              <CheckoutSoon compact />
+            )}
             <Button asChild variant="ghost" size="sm" className="w-full">
               <Link href="/cart" onClick={close}>
                 View full cart

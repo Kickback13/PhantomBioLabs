@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { getStoreSettings } from "@/lib/catalog";
+import { getPaymentProvider } from "@/lib/payments";
 import { CartProvider } from "./cart-context";
 import { CartDrawer } from "./cart-drawer";
 import { WishlistProvider } from "@/components/wishlist/wishlist-context";
@@ -8,7 +9,7 @@ import { WishlistProvider } from "@/components/wishlist/wishlist-context";
 export async function CartRoot({ children }: { children: ReactNode }) {
   const settings = await getStoreSettings();
   return (
-    <CartProvider settings={settings}>
+    <CartProvider settings={{ ...settings, checkoutOpen: getPaymentProvider() !== null }}>
       <WishlistProvider>
         {children}
         <CartDrawer />

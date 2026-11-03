@@ -17,6 +17,10 @@ function text(formData: FormData, key: string, max = 200) {
 }
 
 export async function placeOrder(_prev: CheckoutState, formData: FormData): Promise<CheckoutState> {
+  // No payment processor yet: never create an order, whatever the client sends.
+  if (!getPaymentProvider()) {
+    return { status: "error", message: "Checkout opens soon. Online payments are being set up. Message us on WhatsApp with any questions." };
+  }
   const fields: Record<string, string> = {};
   const email = text(formData, "email", 254).toLowerCase();
   if (!EMAIL.test(email)) fields.email = "Enter a valid email address.";

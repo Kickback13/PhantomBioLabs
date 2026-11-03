@@ -3,11 +3,14 @@ import Link from "next/link";
 import { PolicyLayout } from "@/components/content/policy-layout";
 import { ProseSection } from "@/components/layout/prose";
 import { site } from "@/lib/site";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Terms of Service",
-  description: "The terms that apply when you use the Phantom Bio Labs website or buy research compounds from us.",
-};
+  description:
+    "The terms that apply when you use the Phantom Bio Labs website or buy research compounds from us.",
+  path: "/terms",
+});
 
 const sections = [
   { id: "research-use", title: "Research use only" },
@@ -29,7 +32,7 @@ export default function TermsPage() {
       active="/terms"
       eyebrow="Legal"
       title="Terms of Service"
-      intro="By using this website or purchasing from Phantom Bio Labs, you agree to these terms. Please read them with our Research Use Policy."
+      intro={`This website is operated by ${site.legalName} ("${site.name}", "we", "us"). By using it or purchasing from us, you agree to these terms. Please read them with our Research Use Policy.`}
       sections={sections}
     >
       <ProseSection id="research-use" index={1} title="Research use only">
@@ -73,7 +76,7 @@ export default function TermsPage() {
       </ProseSection>
       <ProseSection id="liability" index={8} title="Limitation of liability">
         <p>
-          To the fullest extent the law allows, {site.name} is not liable for any loss or damage arising from misuse of our products, use outside laboratory research, or breach of applicable law. Our total liability for any order is limited to the amount you paid for it.
+          To the fullest extent the law allows, {site.legalName} is not liable for any loss or damage arising from misuse of our products, use outside laboratory research, or breach of applicable law. Our total liability for any order is limited to the amount you paid for it.
         </p>
       </ProseSection>
       <ProseSection id="changes" index={9} title="Changes to these terms">
@@ -81,7 +84,7 @@ export default function TermsPage() {
       </ProseSection>
       <ProseSection id="law" index={10} title="Governing law">
         <p>
-          These terms are governed by the laws of the United States and the state in which {site.name} is registered, without regard to conflict-of-law principles.
+          These terms are governed by the laws of the United States and the state in which {site.legalName} is registered, without regard to conflict-of-law principles.
         </p>
       </ProseSection>
       <ProseSection id="contact" index={11} title="Contact">

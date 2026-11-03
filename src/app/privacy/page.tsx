@@ -2,11 +2,14 @@ import type { Metadata } from "next";
 import { PolicyLayout } from "@/components/content/policy-layout";
 import { ProseSection } from "@/components/layout/prose";
 import { site } from "@/lib/site";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Privacy Policy",
-  description: "What personal information Phantom Bio Labs collects, why, who it is shared with and the choices you have.",
-};
+  description:
+    "What personal information Phantom Bio Labs collects, why, who it is shared with and the choices you have.",
+  path: "/privacy",
+});
 
 const sections = [
   { id: "collect", title: "What we collect" },
@@ -26,7 +29,7 @@ export default function PrivacyPage() {
       active="/privacy"
       eyebrow="Legal"
       title="Privacy Policy"
-      intro="We collect only what we need to run the store, fulfil your orders and keep you informed about them. We don't sell your personal information."
+      intro={`${site.legalName} ("${site.name}", "we") collects only what we need to run the store, fulfil your orders and keep you informed about them. We don't sell your personal information.`}
       sections={sections}
     >
       <ProseSection id="collect" index={1} title="What we collect">

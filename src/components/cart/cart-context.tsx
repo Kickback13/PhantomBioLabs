@@ -16,7 +16,12 @@ export type CartLine = {
   quantity: number;
 };
 
-type CartSettings = { freeShippingThresholdCents: number; flatShippingCents: number };
+type CartSettings = {
+  freeShippingThresholdCents: number;
+  flatShippingCents: number;
+  /** False while no payment processor is connected: the cart works, checkout shows "opens soon". */
+  checkoutOpen: boolean;
+};
 
 type CartContextValue = {
   lines: CartLine[];

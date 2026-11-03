@@ -18,7 +18,7 @@ export async function SiteFooter() {
       <div className="border-b border-line bg-violet-500/[0.06]">
         <div className="container-page flex items-center gap-3 py-4 text-sm">
           <FlaskConical className="size-4 shrink-0 text-violet-400" />
-          <p className="font-medium tracking-tight">{site.compliance.short}</p>
+          <p className="font-medium tracking-tight">{site.compliance.ruo}</p>
         </div>
       </div>
       <div className="container-page grid gap-12 py-16 lg:grid-cols-[1.3fr_repeat(4,1fr)]">
@@ -45,7 +45,7 @@ export async function SiteFooter() {
             <span className="font-medium text-muted">FDA disclosure.</span> {site.compliance.fda}
           </p>
           <p className="shrink-0">
-            © <CopyrightYear /> {site.name}. All rights reserved.
+            © <CopyrightYear /> {site.legalName}. All rights reserved.
           </p>
         </div>
       </div>
